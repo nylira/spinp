@@ -1,0 +1,26 @@
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  -o-{prop} args
+  {prop} args
+
+border-radius(n = 5px)
+  vendor('border-radius', arguments)
+
+box-shadow()
+  vendor('box-shadow', arguments)
+
+box-sizing(arguments = border-box)
+  vendor('box-sizing', arguments)
+
+font-smoothing(n = antialiased)
+  -webkit-font-smoothing n
+
+transition(arguments = all .15s ease) 
+  vendor('transition', arguments)
+   
+transition-duration(n = 0s) 
+  vendor('transition-duration', arguments)
+ 
+transform(n = skew(15deg)) 
+  vendor('transform', arguments)

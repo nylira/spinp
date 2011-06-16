@@ -1,0 +1,81 @@
+serif = Georgia, 'serif'
+mono = Consolas, 'Lucida Console', Monaco, Courier New, monospace
+sans = 'Helvetica Neue', Arial, Helvetica, sans-serif
+lucida = 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif 
+
+button()
+  border none
+  display inline-block
+  border 1px solid b40
+  border-radius 3px
+  cursor pointer
+  pad 0 .7em
+  dfont()
+  lh m*2px - 3px
+  text-shadow b50 0 0 5px
+  background linear-gradient(top, m70 0%, m55 100%)
+  box-shadow inset w10 0 0 3px, w8 0 1px 0
+  color txt
+  &:hover
+    background linear-gradient(top, m75 0%, m65 100%)
+  &:active
+    background linear-gradient(top, m50 0%, m65 100%)
+  &.disabled
+    cursor default
+    opacity .75
+    &:hover
+      background linear-gradient(top, m80 0%, m60 100%)
+  &[disabled]:active, &[disabled]:hover
+    background #EEEEEE
+
+ir()
+  display block
+  text-indent -999em
+  overflow hidden
+  background-repeat no-repeat
+  text-align left
+  direction ltr
+
+invisible()
+  visibility hidden
+
+hidden()
+  display none
+  invisible()
+
+visuallyhidden()
+  position absolute
+  clip rect(0 0 0 0)
+  overflow hidden
+  margin -1px
+  padding 0
+  height 1px
+  width 1px
+  border 0
+
+visuallyhiddenfocusable()
+  &:active, &:focus
+    position static
+    clip auto
+    overflow visible
+    height auto
+    margin 0
+    width auto
+
+square()
+  height arguments
+  width arguments
+
+bs()
+  br arguments
+  bl arguments
+
+be()
+  bt arguments
+  bb arguments
+
+bx(t = 1px solid #fff, r = 1px solid #999, b = 1px solid #000, l = 1px solid666)
+  bt t
+  br r
+  bb b
+  bl l

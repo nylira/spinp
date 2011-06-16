@@ -1,0 +1,27 @@
+columns = 10
+
+canvas = 960px
+c =   canvas / columns * 1px
+gutter =  c / 8
+gut =  gutter/2
+
+span()
+  width c * arguments
+
+cnt(arguments = 10)
+  span arguments
+  mar 0 auto
+  clear()
+
+col() 
+  span arguments
+  float left
+  box-sizing()
+
+colm() 
+  col arguments-gutter
+  margin 0 gut
+
+colp()
+  col arguments-gutter
+  padding 0 gut
