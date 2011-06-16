@@ -611,7 +611,8 @@ body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.tr
   text-align: center;
   text-shadow: rgba(255,255,255,0.5) 0 1px 0;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li > a:hover {
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li > a:hover,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li > a.active {
   -webkit-border-radius: 0.9em;
   -moz-border-radius: 0.9em;
   -o-border-radius: 0.9em;
@@ -630,16 +631,15 @@ body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.tr
   background: rgba(0,0,0,0.3);
 }
 body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a:active,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:active {
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:active,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a.active,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a.active {
   background: rgba(0,0,0,0.5);
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:hover + menu.social {
-  display: block;
 }
 body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social {
   width: 150px;
   position: absolute;
-  top: 1.5em;
+  top: 1.8em;
   left: 30px;
   -webkit-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
   -moz-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;

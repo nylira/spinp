@@ -8,6 +8,11 @@ $("li.share a").click(function() {
   $(this).next().toggle();
 });
 
+$(document).click(function() {
+  $("li.share a").removeClass("active");
+  $("menu.social").hide();
+});
+
 $("a.hide.menu").click(function() {
   $("#spindal").hide('slide', { direction: 'left'});
   $("a.show.menu").show('slide', { direction: 'left'});

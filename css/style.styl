@@ -232,7 +232,7 @@ body
                         font bold 12px/1.8 sans
                         text-align center
                         text-shadow w50 0 1px 0
-                        &:hover
+                        &:hover, &.active
                           border-radius .9em
                           box-shadow inset b50 1px 1px 2px
                     
@@ -241,17 +241,14 @@ body
                         > a
                           &:hover
                             bg b30
-                          &:active
+                          &:active, &.active
                             bg b50
 
                       &.share
-                        > a:hover + menu.social
-                          display block
-                      
                         menu.social
                           width 150px
                           position absolute
-                          top 1.5em
+                          top 1.8em
                           left 30px
                           box-shadow b30 0 5px m
                           display none
