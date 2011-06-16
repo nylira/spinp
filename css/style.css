@@ -290,14 +290,104 @@ button:hover {
   -o-border-radius: 0.25em;
   border-radius: 0.25em;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover,
+a:focus {
+  color: #000;
+}
+html,
 body {
-  font-size: 14px;
+  height: 100%;
+}
+body {
+  font-size: 13px;
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #333;
+  background: #000;
+}
+body #spindal {
+  background: rgba(255,255,255,0.8);
+  width: 244px;
+  position: relative;
+  z-index: 100;
+  min-height: 100%;
+}
+body #spindal header.artist {
+  padding: 1em 2em;
+}
+body #spindal header.artist img {
+  width: 184px;
+  height: 72px;
+  background: rgba(0,0,0,0.4);
+}
+body #spindal section.albums ul.albums li.album section.album.cover {
+  padding: 0 2em 1em;
+}
+body #spindal section.albums ul.albums li.album section.album.cover img {
+  height: 180px;
+  width: 180px;
   background: #fff;
-  overflow-y: scroll;
-  background-color: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f00), color-stop(1, #000));
-  background-color: -moz-linear-gradient(top, #f00 0%, #000 100%);
-  background-color: linear-gradient(top, #f00 0%, #000 100%);
+  padding: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: rgba(0,0,0,0.45) 2px 2px 4px;
+  -moz-box-shadow: rgba(0,0,0,0.45) 2px 2px 4px;
+  -o-box-shadow: rgba(0,0,0,0.45) 2px 2px 4px;
+  box-shadow: rgba(0,0,0,0.45) 2px 2px 4px;
+}
+body #spindal section.albums ul.albums li.album h2.album.title {
+  font-weight: bold;
+  padding: 0 2em;
+}
+body #spindal section.albums ul.albums li.album menu.tracks ol.tracks {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  list-style: decimal;
+}
+body #spindal section.albums ul.albums li.album menu.tracks ol.tracks li.track {
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  line-height: 24px;
+  padding: 0 2em;
+  height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body #spindal nav.artist ul li a {
+  display: block;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+  font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 0 2em;
+}
+body #spindal nav.artist ul li a:hover,
+body #spindal nav.artist ul li a:focus {
+  -webkit-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  -moz-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  -o-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  background: rgba(181,181,181,0.6);
+}
+body #spindal nav.artist ul li a:active {
+  -webkit-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
+  -moz-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
+  -o-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
+  box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
+  background: rgba(181,181,181,0.8);
+}
+body ul.bgs li.bg img {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
