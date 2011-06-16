@@ -27,31 +27,38 @@
           </section>
           <h2 class="album title">American Slang</h2>
           <menu class="tracks">
-            <ol class="tracks">
-              <li class="track">
+            <dl class="tracks">
+              <dt>
+                <a class="toggle" href="#">Play</a>
                 <h3 class="track title">American Slang</h3>
-              </li>
-              <li class="track">
-                <h3 class="track title">Stay Lucky</h3>
-              <li class="track">
-                <h3 class="track title">Bring It On</h3>
-              <li class="track">
-                <h3 class="track title">The Diamond Church Street Choir</h3>
-              <li class="track">
-                <h3 class="track title">The Queen of Lower Chelsea</h3>
-              <li class="track">
-                <h3 class="track title">Orphans</h3>
-              <li class="track">
-                <h3 class="track title">Boxer</h3>
-              <li class="track">
-                <h3 class="track title">Old Haunts</h3>
-              <li class="track">
-                <h3 class="track title">The Spirit of Jazz</h3>
-              <li class="track">
-                <h3 class="track title">We Did It When We Were Young</h3>
-              <li class="track">
-                <h3 class="track title">She Loves You</h3>
-            </ol>
+              <dd>
+                <div class="track length">
+                  <div class="buffer" style="width: 67%">Buffer 67%</div>
+                  <div class="played" style="width: 33%">Played 33%</div>
+                  <div class="scrub" style="left: 33%">Scrub</div>
+                </div>
+                <ul class="track stats">
+                  <li class="length played">1:15
+                  <li class="total plays">3,506 plays
+                  <li class="length unplayed">3:46
+                </ul>
+                <menu class="track">
+                  <ul>
+                    <li class="lyrics"><a href="#">Lyrics</a>
+                    <li class="share">
+                      <a href="#">Share</a>
+                      <menu class="social">
+                        <ul>
+                          <li><a href="#">Facebook</a>
+                          <li><a href="#">Twitter</a>
+                          <li><a href="#">Copy Link</a>
+                          <li><a href="#">Like on Facebook</a>
+                        </ul>
+                      </menu>
+                    <li class="buy"><a href="#">Buy $0.99</a>
+                  </ul>
+                </menu>
+            </dl>
           </menu><!--tracks-->
         </li><!--album-->
       </ul><!--albums-->
@@ -69,9 +76,14 @@
     </nav>
   </div><!--menu-->
 
+  <a href="#" class="play big">
+    <p><span>Play</span></p>
+  </a>
+
   <ul class="bgs">
     <li class="bg"><img src="i/artist-bg-q90.jpg">
   </ul>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
 <script src="js/script.js"></script>

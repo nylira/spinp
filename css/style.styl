@@ -25,6 +25,33 @@ body
   dfont()
   bg #000
 
+  a.play.big
+    display block
+    position absolute
+    top 50%
+    left 50%
+    z-index 1000
+    mar -75px 0 0 -75px
+    square 132px
+    border-radius 75px
+    border 9px solid b50
+    p
+      bg b80
+      square 132px
+      border-radius 66px
+      span
+        display block
+        border 4px solid #fff
+        square 124px
+        border-radius 66px
+        text-indent -999em
+        background url(../i/icon-play-big) 50px center no-repeat
+    &:hover
+      bc transparent
+      p
+        background b80 -webkit-radial-gradient(circle, w50 0%, w1 50%)
+      
+
   #spindal
     bg w80
     width 245px
@@ -76,32 +103,189 @@ body
             pad 0 2em
 
           menu.tracks
-            ol.tracks
+            dl.tracks
               bt 1px solid b20
               bb 1px solid w40
-              list-style decimal
-              li.track
+              counter-reset tracknum
+              dt
                 bt 1px solid w40
                 bb 1px solid b20
-                lh m*2 - 2px
                 pad 0 2em
+                lh m*2 - 2px
                 height m*2 - 2px
+                cursor pointer
                 white-space nowrap
                 overflow hidden
                 text-overflow ellipsis
+                counter-increment tracknum
+                position relative
+
+                a.toggle
+                  display block
+                  square 17px
+                  position absolute
+                  left 5px
+                  top 3px
+                  background url(../i/icon-play-pause.png) top left no-repeat
+                  text-indent -999em
+                  opacity 0
+
+                &:hover
+                  box-shadow inset b6 0 0 5px
+                  bg hsla(0,0,71,.6)
+                  a.toggle
+                    opacity 1
+
+                &:active
+                  a.toggle
+                    background-position 0 -17px
+
+                &.ui-state-active
+                  box-shadow inset b10 0 3px 2px
+                  bg hsla(0,0,71,.6)
+                  bb transparent
+                  a.toggle
+                    opacity 1
+                    background-position -17px 0
+                  &:hover
+                    a.toggle
+                      background-position -17px -17px
+
+                h3.track.title
+                  &:before
+                    content counter(tracknum) ".\0020"
+                               
+              dd
+                bb 1px solid b20
+                bg hsla(0,0,71,.6)
+                box-shadow inset b10 0 -3px 2px
+                pad 0 m*2
+                .track.length
+                  width 100%
+                  height 5px
+                  border-radius 3px
+                  bt 1px solid b30
+                  bg #fff
+                  box-shadow inset b15 1px 1px 2px
+                  position relative
+
+                  .played, .buffer, .scrub
+                    position absolute
+                    top 0
+                    left 0
+                    text-indent -999em
+
+                  .played, .buffer
+                    height 5px
+                    border-radius 3px
+
+                  .buffer
+                    background linear-gradient(top, m59, #000)
+                  .played
+                    background linear-gradient(top, #3382bf, #0063af)
+                  .scrub
+                    square 7px
+                    border-radius 5px
+                    background linear-gradient(top, m220, m140)
+                    box-shadow b30 0 1px 3px
+                    top - 2px
+                    border 1px solid #fff
+
+                ul.track.stats
+                  mar 0 0 .25em
+                  li
+                    display inline-block
+                    fs 75%
+                    &.length.played
+                      width 25%
+                    &.total.plays
+                      width 50%
+                      text-align center
+                    &.length.unplayed
+                      width 25%
+                      text-align right
+
+                menu.track
+                  mar 0 0 .75em
+                  position relative
+                  > ul
+                    clearfix()
+                    > li
+                      float left
+                      > a
+                        display block
+                        pad 0 .7em
+                        font bold 12px/1.8 sans
+                        text-align center
+                        text-shadow w50 0 1px 0
+                        &:hover
+                          border-radius .9em
+                          box-shadow inset b50 1px 1px 2px
+                    
+                      &.lyrics, &.share
+                        mr .8em
+                        > a
+                          &:hover
+                            bg b30
+                          &:active
+                            bg b50
+
+                      &.share
+                        > a:hover + menu.social
+                          display block
+                      
+                        menu.social
+                          width 150px
+                          position absolute
+                          top 1.5em
+                          left 30px
+                          box-shadow b30 0 5px m
+                          display none
+                          ul
+                            bg b70
+                            border-radius 3px
+                            li 
+                              a
+                                display block
+                                pad 0 1em
+                                font bold 1em/2.4 sans
+                                color #fff
+                                font-smoothing()
+                                bt 1px solid w15
+                                bb 1px solid #000
+                                &:hover
+                                  background linear-gradient(top, #4d92c7, #0264b0)
+                              &:first-of-type a
+                                bt none
+                                border-radius 3px 3px 0 0
+                              &:last-of-type a
+                                bb none
+                                border-radius 0 0 3px 3px
+                        
+                      &.buy
+                        text-align right
+                        > a
+                          color #0063af
+                          &:hover, &:focus
+                            bg w50
+                          &:active
+                            bg w60
+                  
+                  
+
     nav.artist
       ul li a
-          display block
-          text-shadow w50 0 1px 0
-          font bold 1em/2 sans
-          text-transform uppercase
-          pad 0 2em
-          &:hover, &:focus
-            box-shadow inset b6 0 0 5px
-            bg hsla(0,0,71,.6)
-          &:active
-            box-shadow inset b8 0 0 5px
-            bg hsla(0,0,71,.8)
+        display block
+        text-shadow w50 0 1px 0
+        font bold 1em/2 sans
+        text-transform uppercase
+        pad 0 2em
+        &:hover, &:focus
+          box-shadow inset b6 0 0 5px
+          bg hsla(0,0,71,.6)
+        &:active
+          box-shadow inset b8 0 0 5px
+          bg hsla(0,0,71,.8)
 
   ul.bgs
     li.bg img

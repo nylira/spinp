@@ -152,6 +152,9 @@ textarea {
   -moz-box-sizing: ;
   box-sizing: ;
 }
+* {
+  outline: none;
+}
 form {
   margin-bottom: 1.5em;
 }
@@ -309,6 +312,48 @@ body {
   color: #333;
   background: #000;
 }
+body a.play.big {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  margin: -75px 0 0 -75px;
+  height: 132px;
+  width: 132px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -o-border-radius: 75px;
+  border-radius: 75px;
+  border: 9px solid rgba(0,0,0,0.5);
+}
+body a.play.big p {
+  background: rgba(0,0,0,0.8);
+  height: 132px;
+  width: 132px;
+  -webkit-border-radius: 66px;
+  -moz-border-radius: 66px;
+  -o-border-radius: 66px;
+  border-radius: 66px;
+}
+body a.play.big p span {
+  display: block;
+  border: 4px solid #fff;
+  height: 124px;
+  width: 124px;
+  -webkit-border-radius: 66px;
+  -moz-border-radius: 66px;
+  -o-border-radius: 66px;
+  border-radius: 66px;
+  text-indent: -999em;
+  background: url("../i/icon-play-big") 50px center no-repeat;
+}
+body a.play.big:hover {
+  border-color: transparent;
+}
+body a.play.big:hover p {
+  background: rgba(0,0,0,0.8) -webkit-radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.01) 50%);
+}
 body #spindal {
   background: rgba(255,255,255,0.8);
   width: 245px;
@@ -373,20 +418,264 @@ body #spindal section.albums ul.albums li.album h2.album.title {
   font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
   padding: 0 2em;
 }
-body #spindal section.albums ul.albums li.album menu.tracks ol.tracks {
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks {
   border-top: 1px solid rgba(0,0,0,0.2);
   border-bottom: 1px solid rgba(255,255,255,0.4);
-  list-style: decimal;
+  counter-reset: tracknum;
 }
-body #spindal section.albums ul.albums li.album menu.tracks ol.tracks li.track {
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt {
   border-top: 1px solid rgba(255,255,255,0.4);
   border-bottom: 1px solid rgba(0,0,0,0.2);
-  line-height: 24px;
   padding: 0 2em;
+  line-height: 24px;
   height: 24px;
+  cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  counter-increment: tracknum;
+  position: relative;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle {
+  display: block;
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  background: url("../i/icon-play-pause.png") top left no-repeat;
+  text-indent: -999em;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover {
+  -webkit-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  -moz-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  -o-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  background: rgba(181,181,181,0.6);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover a.toggle {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:active a.toggle {
+  background-position: 0 -17px;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active {
+  -webkit-box-shadow: inset rgba(0,0,0,0.1) 0 3px 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.1) 0 3px 2px;
+  -o-box-shadow: inset rgba(0,0,0,0.1) 0 3px 2px;
+  box-shadow: inset rgba(0,0,0,0.1) 0 3px 2px;
+  background: rgba(181,181,181,0.6);
+  border-bottom: transparent;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active a.toggle {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  background-position: -17px 0;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active:hover a.toggle {
+  background-position: -17px -17px;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt h3.track.title:before {
+  content: counter(tracknum) ".\0020";
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  background: rgba(181,181,181,0.6);
+  -webkit-box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
+  -o-box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
+  box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
+  padding: 0 26px;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length {
+  width: 100%;
+  height: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  background: #fff;
+  -webkit-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
+  -o-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
+  box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
+  position: relative;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .scrub {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-indent: -999em;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer {
+  height: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3b3b3b), color-stop(1, #000));
+  background: -moz-linear-gradient(top, #3b3b3b 0%, #000 100%);
+  background: linear-gradient(top, #3b3b3b 0%, #000 100%);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3382bf), color-stop(1, #0063af));
+  background: -moz-linear-gradient(top, #3382bf 0%, #0063af 100%);
+  background: linear-gradient(top, #3382bf 0%, #0063af 100%);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .scrub {
+  height: 7px;
+  width: 7px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dcdcdc), color-stop(1, #8c8c8c));
+  background: -moz-linear-gradient(top, #dcdcdc 0%, #8c8c8c 100%);
+  background: linear-gradient(top, #dcdcdc 0%, #8c8c8c 100%);
+  -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  -o-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  top: -2px;
+  border: 1px solid #fff;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats {
+  margin: 0 0 0.25em;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li {
+  display: inline-block;
+  font-size: 75%;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.length.played {
+  width: 25%;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.total.plays {
+  width: 50%;
+  text-align: center;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.length.unplayed {
+  width: 25%;
+  text-align: right;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track {
+  margin: 0 0 0.75em;
+  position: relative;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul {
+  zoom: 1;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:before,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:after {
+  clear: both;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li {
+  float: left;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li > a {
+  display: block;
+  padding: 0 0.7em;
+  font: bold 12px/1.8 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li > a:hover {
+  -webkit-border-radius: 0.9em;
+  -moz-border-radius: 0.9em;
+  -o-border-radius: 0.9em;
+  border-radius: 0.9em;
+  -webkit-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  -o-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share {
+  margin-right: 0.8em;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a:hover,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:hover {
+  background: rgba(0,0,0,0.3);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a:active,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:active {
+  background: rgba(0,0,0,0.5);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:hover + menu.social {
+  display: block;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social {
+  width: 150px;
+  position: absolute;
+  top: 1.5em;
+  left: 30px;
+  -webkit-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
+  -o-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
+  box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
+  display: none;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul {
+  background: rgba(0,0,0,0.7);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul li a {
+  display: block;
+  padding: 0 1em;
+  font: bold 1em/2.4 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid #000;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul li a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4d92c7), color-stop(1, #0264b0));
+  background: -moz-linear-gradient(top, #4d92c7 0%, #0264b0 100%);
+  background: linear-gradient(top, #4d92c7 0%, #0264b0 100%);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul li:first-of-type a {
+  border-top: none;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul li:last-of-type a {
+  border-bottom: none;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy {
+  text-align: right;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy > a {
+  color: #0063af;
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy > a:hover,
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy > a:focus {
+  background: rgba(255,255,255,0.5);
+}
+body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy > a:active {
+  background: rgba(255,255,255,0.6);
 }
 body #spindal nav.artist ul li a {
   display: block;
