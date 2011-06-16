@@ -27,32 +27,52 @@ body
 
   #spindal
     bg w80
-    width 244px
+    width 245px
     position relative
-    z-index 100
+    z-index 1
     min-height 100%
 
     header.artist
       pad 1em 2em
-      img
-        width 184px
+      position relative
+      img.logo
+        width 185px
         height 72px
-        bg b40
+
+      a.hide.menu
+        display block
+        position absolute
+        right 0
+        top m
+        bg b50
+        border-radius 2px 0 0 2px
+        z-index 10
+        transition()
+        width 41px
+        height 60px
+        display none
+        &:hover, &:focus
+          bg b80
+        &:active
+          bg b90
+
+      &:hover
+        a.hide.menu
+          display block
 
     section.albums
       ul.albums
         li.album
           section.album.cover
-            pad 0 2em 1em
+            pad 0 m*2 - 2px m - 2px
             img
-              square 180px
-              bg #fff
-              pad 2px
+              square 185px
+              border 2px solid #fff
               border-radius 2px
               box-shadow b45 2px 2px 4px
 
           h2.album.title
-            fw bold
+            font bold 1em/2 sans
             pad 0 2em
 
           menu.tracks

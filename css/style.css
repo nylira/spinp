@@ -311,27 +311,55 @@ body {
 }
 body #spindal {
   background: rgba(255,255,255,0.8);
-  width: 244px;
+  width: 245px;
   position: relative;
-  z-index: 100;
+  z-index: 1;
   min-height: 100%;
 }
 body #spindal header.artist {
   padding: 1em 2em;
+  position: relative;
 }
-body #spindal header.artist img {
-  width: 184px;
+body #spindal header.artist img.logo {
+  width: 185px;
   height: 72px;
-  background: rgba(0,0,0,0.4);
+}
+body #spindal header.artist a.hide.menu {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 13px;
+  background: rgba(0,0,0,0.5);
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  -o-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+  z-index: 10;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  width: 41px;
+  height: 60px;
+  display: none;
+}
+body #spindal header.artist a.hide.menu:hover,
+body #spindal header.artist a.hide.menu:focus {
+  background: rgba(0,0,0,0.8);
+}
+body #spindal header.artist a.hide.menu:active {
+  background: rgba(0,0,0,0.9);
+}
+body #spindal header.artist:hover a.hide.menu {
+  display: block;
 }
 body #spindal section.albums ul.albums li.album section.album.cover {
-  padding: 0 2em 1em;
+  padding: 0 24px 11px;
 }
 body #spindal section.albums ul.albums li.album section.album.cover img {
-  height: 180px;
-  width: 180px;
-  background: #fff;
-  padding: 2px;
+  height: 185px;
+  width: 185px;
+  border: 2px solid #fff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
@@ -342,7 +370,7 @@ body #spindal section.albums ul.albums li.album section.album.cover img {
   box-shadow: rgba(0,0,0,0.45) 2px 2px 4px;
 }
 body #spindal section.albums ul.albums li.album h2.album.title {
-  font-weight: bold;
+  font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
   padding: 0 2em;
 }
 body #spindal section.albums ul.albums li.album menu.tracks ol.tracks {
