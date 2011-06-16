@@ -312,6 +312,24 @@ body {
   color: #333;
   background: #000;
 }
+body a.show.menu {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  z-index: 1;
+  height: 64px;
+  width: 45px;
+  background: url("../i/show-menu.png") left top no-repeat;
+  text-indent: -999em;
+  display: none;
+}
+body a.show.menu:hover,
+body a.show.menu:focus {
+  background-position: 0 -64px;
+}
+body a.show.menu:active {
+  background-position: 0 -128px;
+}
 body a.play.big {
   display: block;
   position: absolute;
@@ -358,7 +376,7 @@ body #spindal {
   background: rgba(255,255,255,0.8);
   width: 245px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   min-height: 100%;
 }
 body #spindal header.artist {

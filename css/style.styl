@@ -25,6 +25,21 @@ body
   dfont()
   bg #000
 
+  a.show.menu
+    position absolute
+    top m
+    left 0
+    z-index 1
+    height 64px
+    width 45px
+    background url(../i/show-menu.png) left top no-repeat
+    text-indent -999em
+    display none
+    &:hover, &:focus
+      background-position 0 -64px
+    &:active
+      background-position 0 -128px
+
   a.play.big
     display block
     position absolute
@@ -50,13 +65,12 @@ body
       bc transparent
       p
         background b80 -webkit-radial-gradient(circle, w50 0%, w1 50%)
-      
 
   #spindal
     bg w80
     width 245px
     position relative
-    z-index 1
+    z-index 2
     min-height 100%
 
     header.artist
