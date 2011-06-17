@@ -471,6 +471,37 @@ menu.share ul li:last-of-type a {
   -o-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
 }
+nav.artist ul li a {
+  display: block;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+  font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 0 2em;
+}
+nav.artist ul li a:hover,
+nav.artist ul li a:focus {
+  -webkit-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  -moz-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  -o-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
+  background: rgba(181,181,181,0.6);
+}
+nav.artist ul li a:active {
+  -webkit-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
+  -moz-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
+  -o-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
+  box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
+  background: rgba(181,181,181,0.8);
+}
+ul.bgs li.bg img {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 #spindal {
   background: rgba(255,255,255,0.8);
   width: 245px;
@@ -565,22 +596,37 @@ menu.share ul li:last-of-type a {
 #spindal section.albums ul.albums li.album section.album.cover ul.switch li a:active {
   background-color: rgba(26,114,213,0.9);
 }
-#spindal section.albums ul.albums li.album section.album.title {
-  padding: 0 2em;
+#spindal section.albums ul.albums li.album section.album.title.active {
   background: rgba(181,181,181,0.8);
-  -webkit-box-shadow: inset rgba(0,0,0,0.1) 0 0 5px;
-  -moz-box-shadow: inset rgba(0,0,0,0.1) 0 0 5px;
-  -o-box-shadow: inset rgba(0,0,0,0.1) 0 0 5px;
-  box-shadow: inset rgba(0,0,0,0.1) 0 0 5px;
+  -webkit-box-shadow: inset rgba(0,0,0,0.15) 0 0 5px;
+  -moz-box-shadow: inset rgba(0,0,0,0.15) 0 0 5px;
+  -o-box-shadow: inset rgba(0,0,0,0.15) 0 0 5px;
+  box-shadow: inset rgba(0,0,0,0.15) 0 0 5px;
+}
+#spindal section.albums ul.albums li.album section.album.title.active h2 {
+  border-top-color: rgba(255,255,255,0.4);
 }
 #spindal section.albums ul.albums li.album section.album.title h2 {
-  font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding: 0 2em;
+  font-weight: bold;
+  line-height: 25px;
+  cursor: pointer;
+  border-top: 1px solid transparent;
+}
+#spindal section.albums ul.albums li.album section.album.title .data {
+  padding: 0 2em 0.5em;
+  display: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 #spindal section.albums ul.albums li.album section.album.title .data > ul {
   font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+#spindal section.albums ul.albums li.album section.album.title .data > ul > li.links {
+  padding: 0.5em 0 0;
+}
 #spindal section.albums ul.albums li.album section.album.title .data > ul > li.links > a {
-  float: left;
+  margin-right: 1em;
+  font-size: 12px;
 }
 #spindal section.albums ul.albums li.album section.album.title .data > ul > li.links > a.button {
   display: inline-block;
@@ -601,6 +647,9 @@ menu.share ul li:last-of-type a {
   -moz-box-shadow: rgba(0,0,0,0.45) 1px 1px 2px;
   -o-box-shadow: rgba(0,0,0,0.45) 1px 1px 2px;
   box-shadow: rgba(0,0,0,0.45) 1px 1px 2px;
+}
+#spindal section.albums ul.albums li.album section.album.title .data > ul > li.links menu label {
+  font: bold 12px/1.25 "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks {
   border-top: 1px solid rgba(0,0,0,0.2);
@@ -838,35 +887,4 @@ menu.share ul li:last-of-type a {
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy a:active,
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy a.active {
   background: rgba(255,255,255,0.6);
-}
-#spindal nav.artist ul li a {
-  display: block;
-  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
-  font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  padding: 0 2em;
-}
-#spindal nav.artist ul li a:hover,
-#spindal nav.artist ul li a:focus {
-  -webkit-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
-  -moz-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
-  -o-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
-  box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
-  background: rgba(181,181,181,0.6);
-}
-#spindal nav.artist ul li a:active {
-  -webkit-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
-  -moz-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
-  -o-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
-  box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
-  background: rgba(181,181,181,0.8);
-}
-ul.bgs li.bg img {
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
 }

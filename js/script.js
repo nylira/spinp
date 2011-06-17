@@ -7,6 +7,7 @@ $("ul.albums").cycle({
 
 $("section.album.title").click(function() {
   $(this).toggleClass("active");
+  $("section.album.title h2").next().slideToggle();
 });
 
 $("dl.tracks").accordion({

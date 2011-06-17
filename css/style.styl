@@ -28,6 +28,8 @@ body
 @import 'p/a.show.hide.menu'
 @import 'p/a.play.big'
 @import 'p/menu.share'
+@import 'p/nav.artist'
+@import 'p/ul.bgs'
 
 #spindal
   bg w80
@@ -94,19 +96,29 @@ body
                   background-color hsla(212,78,47,.9)
 
         section.album.title
-          pad 0 2em
-          bg hsla(0,0,71,.8)
-          box-shadow inset b10 0 0 5px
-            
+          &.active
+            bg hsla(0,0,71,.8)
+            box-shadow inset b15 0 0 5px
+            h2
+              btc w40
           h2
-            font bold 1em/2 sans
+            pad 0 2em
+            fw bold
+            lh m*2 - 1px
+            cursor pointer
+            bt 1px solid transparent
           .data
+            pad 0 2em .5em
+            display none
+            bb 1px solid b20
             > ul
               font 11px/1.5 sans
               > li
                 &.links
+                  pad .5em 0 0
                   > a
-                    float left
+                    mr 1em
+                    fs 12px
                     &.button
                       display inline-block
                       background linear-gradient(top, #3985c1, #0767b1)
@@ -118,6 +130,9 @@ body
                       text-shadow b40 0 -1px 0
                       border 1px solid b15
                       box-shadow b45 1px 1px 2px
+                  menu
+                    label
+                      font bold 12px/1.25 sans
             
 
         menu.tracks
@@ -247,30 +262,5 @@ body
                       text-align right
                       a
                         buttonblue()
-                        
-                
-                
 
-  nav.artist
-    ul li a
-      display block
-      text-shadow w50 0 1px 0
-      font bold 1em/2 sans
-      text-transform uppercase
-      pad 0 2em
-      &:hover, &:focus
-        box-shadow inset b6 0 0 5px
-        bg hsla(0,0,71,.6)
-      &:active
-        box-shadow inset b8 0 0 5px
-        bg hsla(0,0,71,.8)
 
-ul.bgs
-  li.bg img
-    min-height: 100%
-    min-width: 1024px
-    width: 100%
-    height: auto
-    position: fixed
-    top: 0
-    left: 0
