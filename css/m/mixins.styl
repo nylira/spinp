@@ -3,6 +3,34 @@ mono = Consolas, 'Lucida Console', Monaco, Courier New, monospace
 sans = 'Helvetica Neue', Arial, Helvetica, sans-serif
 lucida = 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif 
 
+buttondark()
+  display block
+  pad 0 .7em
+  font bold 12px/1.8 sans
+  color link
+  text-align center
+  text-shadow w50 0 1px 0
+  &:hover, &.active
+    border-radius .9em
+    box-shadow inset b50 1px 1px 2px
+    bg b30
+  &:active, &.active
+    bg b50
+
+buttonblue()
+  display block
+  pad 0 .7em
+  font bold 12px/1.8 sans
+  text-align center
+  text-shadow w50 0 1px 0
+  color #0063af
+  &:hover, &.active
+    border-radius .9em
+    box-shadow inset b50 1px 1px 2px
+    bg w50
+  &:active, &.active
+    bg w60
+
 button()
   border none
   display inline-block

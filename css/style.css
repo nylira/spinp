@@ -312,7 +312,7 @@ body {
   color: #333;
   background: #000;
 }
-body a.show.menu {
+a.show.menu {
   position: absolute;
   top: 13px;
   left: 0;
@@ -323,71 +323,14 @@ body a.show.menu {
   text-indent: -999em;
   display: none;
 }
-body a.show.menu:hover,
-body a.show.menu:focus {
+a.show.menu:hover,
+a.show.menu:focus {
   background-position: 0 -64px;
 }
-body a.show.menu:active {
+a.show.menu:active {
   background-position: 0 -128px;
 }
-body a.play.big {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1000;
-  margin: -75px 0 0 -75px;
-  height: 132px;
-  width: 132px;
-  -webkit-border-radius: 75px;
-  -moz-border-radius: 75px;
-  -o-border-radius: 75px;
-  border-radius: 75px;
-  border: 9px solid rgba(0,0,0,0.5);
-}
-body a.play.big p {
-  background: rgba(0,0,0,0.8);
-  height: 132px;
-  width: 132px;
-  -webkit-border-radius: 66px;
-  -moz-border-radius: 66px;
-  -o-border-radius: 66px;
-  border-radius: 66px;
-}
-body a.play.big p span {
-  display: block;
-  border: 4px solid #fff;
-  height: 124px;
-  width: 124px;
-  -webkit-border-radius: 66px;
-  -moz-border-radius: 66px;
-  -o-border-radius: 66px;
-  border-radius: 66px;
-  text-indent: -999em;
-  background: url("../i/icon-play-big") 50px center no-repeat;
-}
-body a.play.big:hover {
-  border-color: transparent;
-}
-body a.play.big:hover p {
-  background: rgba(0,0,0,0.8) -webkit-radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.01) 50%);
-}
-body #spindal {
-  background: rgba(255,255,255,0.8);
-  width: 245px;
-  position: relative;
-  z-index: 2;
-  min-height: 100%;
-}
-body #spindal header.artist {
-  padding: 1em 2em;
-  position: relative;
-}
-body #spindal header.artist img.logo {
-  width: 185px;
-  height: 72px;
-}
-body #spindal header.artist a.hide.menu {
+a.hide.menu {
   display: block;
   position: absolute;
   right: 0;
@@ -406,22 +349,158 @@ body #spindal header.artist a.hide.menu {
   height: 60px;
   display: none;
 }
-body #spindal header.artist a.hide.menu:hover,
-body #spindal header.artist a.hide.menu:focus {
+a.hide.menu:hover,
+a.hide.menu:focus {
   background: rgba(0,0,0,0.8);
 }
-body #spindal header.artist a.hide.menu:active {
+a.hide.menu:active {
   background: rgba(0,0,0,0.9);
 }
-body #spindal header.artist:hover a.hide.menu {
+a.play.big {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  margin: -75px 0 0 -75px;
+  height: 132px;
+  width: 132px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -o-border-radius: 75px;
+  border-radius: 75px;
+  border: 9px solid rgba(0,0,0,0.5);
+}
+a.play.big p {
+  background: rgba(0,0,0,0.8);
+  height: 132px;
+  width: 132px;
+  -webkit-border-radius: 66px;
+  -moz-border-radius: 66px;
+  -o-border-radius: 66px;
+  border-radius: 66px;
+}
+a.play.big p span {
+  display: block;
+  border: 4px solid #fff;
+  height: 124px;
+  width: 124px;
+  -webkit-border-radius: 66px;
+  -moz-border-radius: 66px;
+  -o-border-radius: 66px;
+  border-radius: 66px;
+  text-indent: -999em;
+  background: url("../i/icon-play-big") 50px center no-repeat;
+}
+a.play.big:hover {
+  border-color: transparent;
+}
+a.play.big:hover p {
+  background: rgba(0,0,0,0.8) -webkit-radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.01) 50%);
+}
+menu.share {
+  position: relative;
+  display: inline-block;
+}
+menu.share span.label {
+  display: block;
+  padding: 0 0.7em;
+  font: bold 12px/1.8 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #000;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+}
+menu.share span.label:hover,
+menu.share span.label.active {
+  -webkit-border-radius: 0.9em;
+  -moz-border-radius: 0.9em;
+  -o-border-radius: 0.9em;
+  border-radius: 0.9em;
+  -webkit-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  -o-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  background: rgba(0,0,0,0.3);
+}
+menu.share span.label:active,
+menu.share span.label.active {
+  background: rgba(0,0,0,0.5);
+}
+menu.share ul {
+  width: 150px;
+  position: absolute;
+  top: 23.400000000000002px;
+  left: -50px;
+  z-index: 5000;
+  -webkit-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
+  -o-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
+  box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
+  display: none;
+  background: rgba(0,0,0,0.7);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+menu.share ul li a {
+  display: block;
+  padding: 0 1em;
+  font: bold 13px/2.4 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid #000;
+}
+menu.share ul li a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4d92c7), color-stop(1, #0264b0));
+  background: -moz-linear-gradient(top, #4d92c7 0%, #0264b0 100%);
+  background: linear-gradient(top, #4d92c7 0%, #0264b0 100%);
+}
+menu.share ul li:first-of-type a {
+  border-top: none;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+menu.share ul li:last-of-type a {
+  border-bottom: none;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+#spindal {
+  background: rgba(255,255,255,0.8);
+  width: 245px;
+  position: relative;
+  z-index: 2;
+  min-height: 100%;
+}
+#spindal header.artist {
+  padding: 1em 2em;
+  position: relative;
+}
+#spindal header.artist img.logo {
+  width: 185px;
+  height: 72px;
+}
+#spindal header.artist:hover a.hide.menu {
   display: block;
 }
-body #spindal section.albums ul.albums li.album section.album.cover {
-  padding: 0 24px 11px;
+#spindal section.albums {
+  position: relative;
 }
-body #spindal section.albums ul.albums li.album section.album.cover img {
-  height: 185px;
-  width: 185px;
+#spindal section.albums ul.albums li.album {
+  width: 245px;
+}
+#spindal section.albums ul.albums li.album section.album.cover {
+  padding: 0 26px 13px;
+}
+#spindal section.albums ul.albums li.album section.album.cover img {
+  height: 189px;
+  width: 189px;
   border: 2px solid #fff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -432,16 +511,103 @@ body #spindal section.albums ul.albums li.album section.album.cover img {
   -o-box-shadow: rgba(0,0,0,0.45) 2px 2px 4px;
   box-shadow: rgba(0,0,0,0.45) 2px 2px 4px;
 }
-body #spindal section.albums ul.albums li.album h2.album.title {
-  font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  padding: 0 2em;
+#spindal section.albums ul.albums li.album section.album.cover ul.switch {
+  position: absolute;
+  top: 0;
+  left: 26px;
+  height: 189px;
+  width: 189px;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  z-index: 1000;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks {
+#spindal section.albums ul.albums li.album section.album.cover ul.switch:hover {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+#spindal section.albums ul.albums li.album section.album.cover ul.switch li a {
+  display: block;
+  width: 41px;
+  height: 60px;
+  position: absolute;
+  top: 64px;
+  z-index: 100;
+  text-indent: -999em;
+  background: rgba(0,0,0,0.8) url("../i/album-nav-arrows.png") left top no-repeat;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+#spindal section.albums ul.albums li.album section.album.cover ul.switch li a.prev-album {
+  left: 2px;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  -o-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+}
+#spindal section.albums ul.albums li.album section.album.cover ul.switch li a.next-album {
+  right: -2px;
+  background-position: -41px 0;
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  -o-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+}
+#spindal section.albums ul.albums li.album section.album.cover ul.switch li a:hover,
+#spindal section.albums ul.albums li.album section.album.cover ul.switch li a:focus {
+  background-color: rgba(26,114,213,0.8);
+}
+#spindal section.albums ul.albums li.album section.album.cover ul.switch li a:active {
+  background-color: rgba(26,114,213,0.9);
+}
+#spindal section.albums ul.albums li.album section.album.title {
+  padding: 0 2em;
+  background: rgba(181,181,181,0.8);
+  -webkit-box-shadow: inset rgba(0,0,0,0.1) 0 0 5px;
+  -moz-box-shadow: inset rgba(0,0,0,0.1) 0 0 5px;
+  -o-box-shadow: inset rgba(0,0,0,0.1) 0 0 5px;
+  box-shadow: inset rgba(0,0,0,0.1) 0 0 5px;
+}
+#spindal section.albums ul.albums li.album section.album.title h2 {
+  font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#spindal section.albums ul.albums li.album section.album.title .data > ul {
+  font: 11px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#spindal section.albums ul.albums li.album section.album.title .data > ul > li.links > a {
+  float: left;
+}
+#spindal section.albums ul.albums li.album section.album.title .data > ul > li.links > a.button {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3985c1), color-stop(1, #0767b1));
+  background: -moz-linear-gradient(top, #3985c1 0%, #0767b1 100%);
+  background: linear-gradient(top, #3985c1 0%, #0767b1 100%);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font: bold 12px/1.25 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  padding: 0 0.8em;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
+  border: 1px solid rgba(0,0,0,0.15);
+  -webkit-box-shadow: rgba(0,0,0,0.45) 1px 1px 2px;
+  -moz-box-shadow: rgba(0,0,0,0.45) 1px 1px 2px;
+  -o-box-shadow: rgba(0,0,0,0.45) 1px 1px 2px;
+  box-shadow: rgba(0,0,0,0.45) 1px 1px 2px;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks {
   border-top: 1px solid rgba(0,0,0,0.2);
   border-bottom: 1px solid rgba(255,255,255,0.4);
   counter-reset: tracknum;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt {
   border-top: 1px solid rgba(255,255,255,0.4);
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding: 0 2em;
@@ -454,61 +620,70 @@ body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt {
   counter-increment: tracknum;
   position: relative;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle {
-  display: block;
-  height: 17px;
-  width: 17px;
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle {
   position: absolute;
-  left: 5px;
-  top: 3px;
-  background: url("../i/icon-play-pause.png") top left no-repeat;
   text-indent: -999em;
   opacity: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle.play {
+  display: block;
+  height: 17px;
+  width: 17px;
+  left: 5px;
+  top: 3px;
+  background: url("../i/icon-play-pause.png") top left no-repeat;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle.volume {
+  height: 17px;
+  width: 17px;
+  background: #000;
+  right: 2em;
+  top: 3px;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover {
   -webkit-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   -moz-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   -o-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   background: rgba(181,181,181,0.6);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover a.toggle {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:active a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:active a.toggle {
   background-position: 0 -17px;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active {
   -webkit-box-shadow: inset rgba(0,0,0,0.1) 0 3px 2px;
   -moz-box-shadow: inset rgba(0,0,0,0.1) 0 3px 2px;
   -o-box-shadow: inset rgba(0,0,0,0.1) 0 3px 2px;
   box-shadow: inset rgba(0,0,0,0.1) 0 3px 2px;
-  background: rgba(181,181,181,0.6);
+  background: rgba(181,181,181,0.8);
   border-bottom: transparent;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active a.toggle {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   background-position: -17px 0;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active:hover a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active:hover a.toggle {
   background-position: -17px -17px;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt h3.track.title:before {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt h3.track.title:before {
   content: counter(tracknum) ".\0020";
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd {
   border-bottom: 1px solid rgba(0,0,0,0.2);
-  background: rgba(181,181,181,0.6);
+  background: rgba(181,181,181,0.8);
   -webkit-box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
   -moz-box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
   -o-box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
   box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
   padding: 0 26px;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length {
   width: 100%;
   height: 5px;
   -webkit-border-radius: 3px;
@@ -523,33 +698,33 @@ body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.
   box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
   position: relative;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .scrub {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .scrub {
   position: absolute;
   top: 0;
   left: 0;
   text-indent: -999em;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer {
   height: 5px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3b3b3b), color-stop(1, #000));
   background: -moz-linear-gradient(top, #3b3b3b 0%, #000 100%);
   background: linear-gradient(top, #3b3b3b 0%, #000 100%);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3382bf), color-stop(1, #0063af));
   background: -moz-linear-gradient(top, #3382bf 0%, #0063af 100%);
   background: linear-gradient(top, #3382bf 0%, #0063af 100%);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .scrub {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .scrub {
   height: 7px;
   width: 7px;
   -webkit-border-radius: 5px;
@@ -566,53 +741,61 @@ body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.
   top: -2px;
   border: 1px solid #fff;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats {
   margin: 0 0 0.25em;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li {
   display: inline-block;
   font-size: 75%;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.length.played {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.length.played {
   width: 25%;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.total.plays {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.total.plays {
   width: 50%;
   text-align: center;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.length.unplayed {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats li.length.unplayed {
   width: 25%;
   text-align: right;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track {
   margin: 0 0 0.75em;
   position: relative;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul {
   zoom: 1;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:before,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:after {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:before,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:after {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul:after {
   clear: both;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li {
   float: left;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li > a {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share {
+  margin-right: 0.8em;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a {
   display: block;
   padding: 0 0.7em;
   font: bold 12px/1.8 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #000;
   text-align: center;
   text-shadow: rgba(255,255,255,0.5) 0 1px 0;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li > a:hover,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li > a.active {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a:hover,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:hover,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a.active,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a.active {
   -webkit-border-radius: 0.9em;
   -moz-border-radius: 0.9em;
   -o-border-radius: 0.9em;
@@ -621,103 +804,64 @@ body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.tr
   -moz-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
   -o-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
   box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share {
-  margin-right: 0.8em;
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a:hover,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:hover {
   background: rgba(0,0,0,0.3);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a:active,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:active,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a.active,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a.active {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a:active,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a:active,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a.active,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a.active {
   background: rgba(0,0,0,0.5);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social {
-  width: 150px;
-  position: absolute;
-  top: 1.8em;
-  left: 30px;
-  -webkit-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
-  -moz-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
-  -o-box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
-  box-shadow: rgba(0,0,0,0.3) 0 5px 13px;
-  display: none;
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul {
-  background: rgba(0,0,0,0.7);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul li a {
-  display: block;
-  padding: 0 1em;
-  font: bold 1em/2.4 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  border-top: 1px solid rgba(255,255,255,0.15);
-  border-bottom: 1px solid #000;
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul li a:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4d92c7), color-stop(1, #0264b0));
-  background: -moz-linear-gradient(top, #4d92c7 0%, #0264b0 100%);
-  background: linear-gradient(top, #4d92c7 0%, #0264b0 100%);
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul li:first-of-type a {
-  border-top: none;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -o-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share menu.social ul li:last-of-type a {
-  border-bottom: none;
-  -webkit-border-radius: 0 0 3px 3px;
-  -moz-border-radius: 0 0 3px 3px;
-  -o-border-radius: 0 0 3px 3px;
-  border-radius: 0 0 3px 3px;
-}
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy {
   text-align: right;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy > a {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy a {
+  display: block;
+  padding: 0 0.7em;
+  font: bold 12px/1.8 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
   color: #0063af;
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy > a:hover,
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy > a:focus {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy a:hover,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy a.active {
+  -webkit-border-radius: 0.9em;
+  -moz-border-radius: 0.9em;
+  -o-border-radius: 0.9em;
+  border-radius: 0.9em;
+  -webkit-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  -o-box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
+  box-shadow: inset rgba(0,0,0,0.5) 1px 1px 2px;
   background: rgba(255,255,255,0.5);
 }
-body #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy > a:active {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy a:active,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.buy a.active {
   background: rgba(255,255,255,0.6);
 }
-body #spindal nav.artist ul li a {
+#spindal nav.artist ul li a {
   display: block;
   text-shadow: rgba(255,255,255,0.5) 0 1px 0;
   font: bold 1em/2 "Helvetica Neue", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   padding: 0 2em;
 }
-body #spindal nav.artist ul li a:hover,
-body #spindal nav.artist ul li a:focus {
+#spindal nav.artist ul li a:hover,
+#spindal nav.artist ul li a:focus {
   -webkit-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   -moz-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   -o-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   background: rgba(181,181,181,0.6);
 }
-body #spindal nav.artist ul li a:active {
+#spindal nav.artist ul li a:active {
   -webkit-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
   -moz-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
   -o-box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
   box-shadow: inset rgba(0,0,0,0.08) 0 0 5px;
   background: rgba(181,181,181,0.8);
 }
-body ul.bgs li.bg img {
+ul.bgs li.bg img {
   min-height: 100%;
   min-width: 1024px;
   width: 100%;

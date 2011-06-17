@@ -21,17 +21,92 @@
       <a class="hide menu" href="#"><img src="i/hide-menu-arrow.png" alt="Hide menu"></a>
     </header>
     <section class="albums">
+      
       <ul class="albums">
         <li class="album">
           <section class="album cover">
+            <ul class="switch">
+              <li class="prev"><a class="prev-album" href="#" title="Previous Album">Prev</a>
+              <li class="next"><a class="next-album" href="#" title="Next Album">Next Album</a>
+            </ul>
             <img src="i/album-cover-q90.jpg">
           </section>
-          <h2 class="album title">American Slang</h2>
+          <section class="album title">
+            <h2 class="title">American Slang</h2>
+            <div class="data">
+              <ul>
+                <li>Released: Jun 15, 2010
+                <li>&copy; 2010 SideOneDummy Records
+                <li class="links">
+                  <a class="button" href="#">Buy Album $9.99</a>
+                  <menu class="share">
+                    <span class="label">Share</span>
+                    <ul>
+                      <li><a href="#">Facebook</a>
+                      <li><a href="#">Twitter</a>
+                      <li><a href="#">Copy Link</a>
+                      <li><a href="#">Like on Facebook</a>
+                    </ul>
+                  </menu>
+              </ul>
+            </div>
+          </section>
           <menu class="tracks">
             <dl class="tracks">
               <dt>
-                <a class="toggle" href="#">Play</a>
+                <a class="play toggle" href="#">Play</a>
                 <h3 class="track title">American Slang</h3>
+                <a class="volume toggle" href="#">
+                  <label>Volume</label>
+                  <form>
+                    <input class="range">
+                  </form>
+                </a>
+              <dd>
+                <div class="track length">
+                  <div class="buffer" style="width: 67%">Buffer 67%</div>
+                  <div class="played" style="width: 33%">Played 33%</div>
+                  <div class="scrub" style="left: 33%">Scrub</div>
+                </div>
+                <ul class="track stats">
+                  <li class="length played">1:15
+                  <li class="total plays">3,506 plays
+                  <li class="length unplayed">3:46
+                </ul>
+                <menu class="track">
+                  <ul>
+                    <li class="lyrics"><a href="#">Lyrics</a>
+                    <li class="share menu">
+                      <menu class="share">
+                        <span class="label">Share</span>
+                        <ul>
+                          <li><a href="#">Facebook</a>
+                          <li><a href="#">Twitter</a>
+                          <li><a href="#">Copy Link</a>
+                          <li><a href="#">Like on Facebook</a>
+                        </ul>
+                      </menu>
+                    <li class="buy"><a href="#">Buy $0.99</a>
+                  </ul>
+                </menu>
+            </dl>
+          </menu><!--tracks-->
+        </li><!--album-->
+        <li class="album">
+          <section class="album cover">
+            <ul>
+              <li><a class="prev-album" href="#" title="Previous Album">Prev</a>
+              <li><a class="next-album" href="#" title="Next Album">Next Album</a>
+            </ul>
+            <img src="i/album-cover-q90.jpg">
+          </section>
+          <h2 class="album title">The &lsquo;59 Sound</h2>
+          <menu class="tracks">
+            <dl class="tracks">
+              <dt>
+                <a class="play toggle" href="#">Play</a>
+                <h3 class="track title">American Slang</h3>
+                <a class="volume toggle" href="#">Volume</a>
               <dd>
                 <div class="track length">
                   <div class="buffer" style="width: 67%">Buffer 67%</div>
@@ -61,7 +136,6 @@
                 </menu>
             </dl>
           </menu><!--tracks-->
-        </li><!--album-->
       </ul><!--albums-->
     </section>
     <nav class="artist">
@@ -87,4 +161,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+<script src="js/jquery.cycle.all.min.js"></script>
 <script src="js/script.js"></script>

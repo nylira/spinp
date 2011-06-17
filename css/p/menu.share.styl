@@ -1,0 +1,32 @@
+menu.share
+  position relative
+  display inline-block
+  span.label
+    buttondark()
+  ul
+    width 150px
+    position absolute
+    top m*1.8
+    left -50px
+    z-index 5000
+    box-shadow b30 0 5px m
+    display none
+    bg b70
+    border-radius 3px
+    li 
+      a
+        display block
+        pad 0 1em
+        font bold m/2.4 sans
+        color #fff
+        font-smoothing()
+        bt 1px solid w15
+        bb 1px solid #000
+        &:hover
+          background linear-gradient(top, #4d92c7, #0264b0)
+      &:first-of-type a
+        bt none
+        border-radius 3px 3px 0 0
+      &:last-of-type a
+        bb none
+        border-radius 0 0 3px 3px

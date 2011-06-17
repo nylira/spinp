@@ -1,9 +1,20 @@
+$("ul.albums").cycle({
+  fx: "scrollHorz",
+  prev: ".prev-album",
+  next: ".next-album",
+  timeout: 0
+});
+
+$("section.album.title").click(function() {
+  $(this).toggleClass("active");
+});
+
 $("dl.tracks").accordion({
   //active: false,
   collapsible: true
 });
 
-$("li.share a").click(function() {
+$("menu.share span.label").click(function() {
   $(this).toggleClass("active");
   $(this).next().toggle();
 });
