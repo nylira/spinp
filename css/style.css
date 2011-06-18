@@ -241,7 +241,7 @@ a.hide.menu:active {
 }
 a.play.big {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 1000;
@@ -253,6 +253,10 @@ a.play.big {
   -o-border-radius: 75px;
   border-radius: 75px;
   border: 9px solid rgba(0,0,0,0.5);
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 a.play.big p {
   background: rgba(0,0,0,0.8);
@@ -390,7 +394,6 @@ ul.bgs li.bg img {
   width: 245px;
   position: relative;
   z-index: 2;
-  min-height: 100%;
 }
 #spindal header.artist {
   padding: 1em 2em;
@@ -540,7 +543,6 @@ ul.bgs li.bg img {
   counter-reset: tracknum;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt {
-  overflow: visible !important;
   border-top: 1px solid rgba(255,255,255,0.4);
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding: 0 2em;
@@ -553,14 +555,12 @@ ul.bgs li.bg img {
   counter-increment: tracknum;
   position: relative;
 }
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt .toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle.play {
   position: absolute;
   text-indent: -999em;
   opacity: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   display: block;
-}
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt .toggle.play {
   height: 17px;
   width: 17px;
   left: 5px;
@@ -589,11 +589,9 @@ ul.bgs li.bg img {
   background: rgba(181,181,181,0.8);
   border-bottom: transparent;
 }
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active .toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active a.toggle.play {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-}
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active .toggle.play {
   background-position: -17px 0;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active:hover a.toggle.play {
@@ -610,6 +608,7 @@ ul.bgs li.bg img {
   -o-box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
   box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
   padding: 0 26px;
+  display: none;
   position: relative;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume {
@@ -683,6 +682,7 @@ ul.bgs li.bg img {
   width: 20px;
   margin-left: -8px;
   top: -5px;
+  cursor: pointer;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length {
   width: 100%;
@@ -731,6 +731,7 @@ ul.bgs li.bg img {
   background: url("../i/slider.png") no-repeat;
   top: -2px;
   margin-left: -5px;
+  cursor: pointer;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats {
   margin: 0 0 0.25em;

@@ -1,17 +1,10 @@
-$("ul.albums").cycle({
-  fx: "scrollHorz",
-  prev: ".prev-album",
-  next: ".next-album",
-  timeout: 0
-});
-
 $("section.album.title").click(function() {
   $(this).toggleClass("active");
   $("section.album.title h2").next().slideToggle();
 });
 
 $("dl.tracks").accordion({
-  //active: false,
+  active: false,
   collapsible: true
 });
 
@@ -33,3 +26,11 @@ $("a.show.menu").click(function() {
   $("#spindal").show('slide', { direction: 'left'});
   $("a.show.menu").hide('slide', { direction: 'left'});
 });
+
+$("ul.albums").cycle({
+  fx: "scrollHorz",
+  prev: ".prev-album",
+  next: ".next-album",
+  timeout: 0
+});
+
