@@ -394,6 +394,11 @@ ul.bgs li.bg img {
   width: 245px;
   position: relative;
   z-index: 2;
+  min-height: 100%;
+  -webkit-box-shadow: rgba(0,0,0,0.25) 1px 0 3px;
+  -moz-box-shadow: rgba(0,0,0,0.25) 1px 0 3px;
+  -o-box-shadow: rgba(0,0,0,0.25) 1px 0 3px;
+  box-shadow: rgba(0,0,0,0.25) 1px 0 3px;
 }
 #spindal header.artist {
   padding: 1em 2em;
@@ -773,7 +778,7 @@ ul.bgs li.bg img {
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics,
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share {
-  margin-right: 0.8em;
+  margin-right: 0.7em;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.lyrics > a,
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd menu.track > ul > li.share > a {
