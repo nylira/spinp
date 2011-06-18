@@ -15,6 +15,10 @@ $("dl.tracks").accordion({
   collapsible: true
 });
 
+$(".volume.toggle").click(function() {
+  $(this).toggleClass("active");
+});
+
 $("menu.share span.label").click(function() {
   $(this).toggleClass("active");
   $(this).next().toggle();

@@ -155,123 +155,6 @@ textarea {
 * {
   outline: none;
 }
-form {
-  margin-bottom: 1.5em;
-}
-fieldset {
-  margin-bottom: 1.5em;
-  padding: 0;
-  border-width: 0;
-}
-legend {
-  margin-top: -0.2em 0 1em 0;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-label {
-  font-weight: normal;
-}
-button,
-input,
-select,
-textarea {
-  margin: 0;
-}
-label,
-input[type="button"],
-input[type="submit"],
-input[type="image"],
-button {
-  cursor: pointer;
-}
-input,
-select {
-  vertical-align: middle;
-}
-input[type=text],
-input[type=password],
-input[type=tel],
-input[type=email],
-input[type=url],
-input[type=search],
-textarea {
-  padding: 2px;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #c8c8c8;
-  font-family: inherit;
-  font-size: inherit;
-}
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=tel]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=search]:focus,
-textarea:focus {
-  border-color: #646464;
-}
-input[type="radio"] {
-  vertical-align: text-bottom;
-}
-input[type="checkbox"] {
-  vertical-align: bottom;
-}
-input:valid,
-textarea:valid,
-input:invalid,
-textarea:invalid {
-  -webkit-box-shadow: 0 0 2px #f00;
-  -moz-box-shadow: 0 0 2px #f00;
-  -webkit-box-shadow: 0 0 2px #f00;
-  -moz-box-shadow: 0 0 2px #f00;
-  -o-box-shadow: 0 0 2px #f00;
-  box-shadow: 0 0 2px #f00;
-}
-.no-boxshadow input:invalid,
-.no-boxshadow textarea:invalid {
-  background-color: #f0dddd;
-}
-select {
-  margin: 0.5em 0;
-  background-color: #fff;
-  border-width: 1px;
-  border-style: solid;
-}
-textarea {
-  overflow: auto;
-  padding: 2px;
-}
-button {
-  width: auto;
-  padding: 8px 12px 9px;
-  overflow: visible;
-  background-color: #e3e3e3;
-  border: 1px solid #ccc;
-  border-bottom-color: #bbb;
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 0.875em;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1;
-  color: #333;
-  text-shadow: 0 1px 0 #fff;
-}
-button:hover {
-  cursor: pointer;
-  background-color: #d9d9d9;
-}
-.ie6 legend,
-.ie7 legend {
-  margin-left: -7px;
-}
-.ie6 input {
-  vertical-align: text-bottom;
-}
-.ie7 input[type="checkbox"],
-.iem7 input[type="checkbox"] {
-  vertical-align: baseline;
-}
 ::-webkit-scrollbar {
   width: 0.5em;
   height: 0.5em;
@@ -657,6 +540,7 @@ ul.bgs li.bg img {
   counter-reset: tracknum;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt {
+  overflow: visible !important;
   border-top: 1px solid rgba(255,255,255,0.4);
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding: 0 2em;
@@ -669,26 +553,19 @@ ul.bgs li.bg img {
   counter-increment: tracknum;
   position: relative;
 }
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt .toggle {
   position: absolute;
   text-indent: -999em;
   opacity: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-}
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle.play {
   display: block;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt .toggle.play {
   height: 17px;
   width: 17px;
   left: 5px;
   top: 3px;
-  background: url("../i/icon-play-pause.png") top left no-repeat;
-}
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt a.toggle.volume {
-  height: 17px;
-  width: 17px;
-  background: #000;
-  right: 2em;
-  top: 3px;
+  background: url("../i/icon-play-pause.png") left top no-repeat;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover {
   -webkit-box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
@@ -697,11 +574,11 @@ ul.bgs li.bg img {
   box-shadow: inset rgba(0,0,0,0.06) 0 0 5px;
   background: rgba(181,181,181,0.6);
 }
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:hover a.toggle.play {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:active a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt:active a.toggle.play {
   background-position: 0 -17px;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active {
@@ -712,12 +589,14 @@ ul.bgs li.bg img {
   background: rgba(181,181,181,0.8);
   border-bottom: transparent;
 }
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active .toggle {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active .toggle.play {
   background-position: -17px 0;
 }
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active:hover a.toggle {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dt.ui-state-active:hover a.toggle.play {
   background-position: -17px -17px;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dt h3.track.title:before {
@@ -731,6 +610,79 @@ ul.bgs li.bg img {
   -o-box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
   box-shadow: inset rgba(0,0,0,0.1) 0 -3px 2px;
   padding: 0 26px;
+  position: relative;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 2em;
+  top: -25px;
+  text-indent: -999em;
+  background: url("../i/icon-volume.png") left top;
+  z-index: 10000;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume:hover,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume.active {
+  background-position: 0 -25px;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume.active .input {
+  display: block;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume .input {
+  background: rgba(0,0,0,0.8);
+  -webkit-box-shadow: inset rgba(0,0,0,0.1) 0 0 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.1) 0 0 2px;
+  -o-box-shadow: inset rgba(0,0,0,0.1) 0 0 2px;
+  box-shadow: inset rgba(0,0,0,0.1) 0 0 2px;
+  padding: 3px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  display: none;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume .input .volume {
+  width: 80px;
+  height: 6px;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.6);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: relative;
+  background: #c8c8c8;
+  -webkit-box-shadow: inset rgba(0,0,0,0.2) 1px 1px 2px;
+  -moz-box-shadow: inset rgba(0,0,0,0.2) 1px 1px 2px;
+  -o-box-shadow: inset rgba(0,0,0,0.2) 1px 1px 2px;
+  box-shadow: inset rgba(0,0,0,0.2) 1px 1px 2px;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume .input .volume .current,
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume .input .volume .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume .input .volume .current {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4d92c7), color-stop(1, #0c6ab3));
+  background: -moz-linear-gradient(top, #4d92c7 0%, #0c6ab3 100%);
+  background: linear-gradient(top, #4d92c7 0%, #0c6ab3 100%);
+  height: 6px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .toggle.volume .input .volume .slider {
+  background: url("../i/volume-slider.png") no-repeat;
+  height: 20px;
+  width: 20px;
+  margin-left: -8px;
+  top: -5px;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length {
   width: 100%;
@@ -741,15 +693,15 @@ ul.bgs li.bg img {
   border-radius: 3px;
   border-top: 1px solid rgba(0,0,0,0.3);
   background: #fff;
-  -webkit-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
-  -moz-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
-  -o-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
-  box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px;
+  -webkit-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px, rgba(255,255,255,0.3) 0 1px 0;
+  -moz-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px, rgba(255,255,255,0.3) 0 1px 0;
+  -o-box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px, rgba(255,255,255,0.3) 0 1px 0;
+  box-shadow: inset rgba(0,0,0,0.15) 1px 1px 2px, rgba(255,255,255,0.3) 0 1px 0;
   position: relative;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .played,
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .buffer,
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .scrub {
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -773,22 +725,12 @@ ul.bgs li.bg img {
   background: -moz-linear-gradient(top, #3382bf 0%, #0063af 100%);
   background: linear-gradient(top, #3382bf 0%, #0063af 100%);
 }
-#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .scrub {
-  height: 7px;
-  width: 7px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #dcdcdc), color-stop(1, #8c8c8c));
-  background: -moz-linear-gradient(top, #dcdcdc 0%, #8c8c8c 100%);
-  background: linear-gradient(top, #dcdcdc 0%, #8c8c8c 100%);
-  -webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-  -o-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-  box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+#spindal section.albums ul.albums li.album menu.tracks dl.tracks dd .track.length .slider {
+  height: 10px;
+  width: 10px;
+  background: url("../i/slider.png") no-repeat;
   top: -2px;
-  border: 1px solid #fff;
+  margin-left: -5px;
 }
 #spindal section.albums ul.albums li.album menu.tracks dl.tracks dd ul.track.stats {
   margin: 0 0 0.25em;

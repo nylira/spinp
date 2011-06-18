@@ -54,19 +54,22 @@
           <menu class="tracks">
             <dl class="tracks">
               <dt>
-                <a class="play toggle" href="#">Play</a>
+                <form class="play toggle" href="#">Play</form>
                 <h3 class="track title">American Slang</h3>
-                <a class="volume toggle" href="#">
-                  <label>Volume</label>
-                  <form>
-                    <input class="range">
-                  </form>
-                </a>
               <dd>
+                <form class="volume toggle" href="#">
+                  <span class="label">Volume</span>
+                  <div class="input">
+                    <div class="volume">
+                      <div class="current" style="width: 50%"></div>
+                      <div class="slider" style="left: 50%"></div>
+                    </div>
+                  </div>
+                </form>
                 <div class="track length">
                   <div class="buffer" style="width: 67%">Buffer 67%</div>
                   <div class="played" style="width: 33%">Played 33%</div>
-                  <div class="scrub" style="left: 33%">Scrub</div>
+                  <div class="slider" style="left: 33%">Slider</div>
                 </div>
                 <ul class="track stats">
                   <li class="length played">1:15
