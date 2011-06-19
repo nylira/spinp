@@ -5,7 +5,8 @@ $("section.album.title").click(function() {
 
 $("dl.tracks").accordion({
   active: false,
-  collapsible: true
+  collapsible: true,
+  autoHeight: false,
 });
 
 $(".volume.toggle").click(function() {

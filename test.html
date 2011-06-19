@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>The Gaslight Anthem &ndash; Spindal</title>
+<meta name="author" content="Peng Zhong">
+
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="stylesheet" media="screen" href="css/style.css?v=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+<script src="js/jquery.cycle.all.min.js"></script>
+<script src="js/script.js"></script>
+
+<script id="albumTemplate" type="text/x-jquery-tmpl">
+<li class="album">
+  <section class="album cover">
+    <ul class="switch">
+      <li class="prev"><a class="prev-album" href="#" title="Previous Album">Prev</a>
+      <li class="next"><a class="next-album" href="#" title="Next Album">Next Album</a>
+    </ul>
+    <img src="i/album-cover-q90.jpg">
+  </section>
+  <section class="album title">
+    <h2 class="title">${Title}</h2>
+    <div class="data">
+      <ul>
+        <li>Released: Jun 15, ${ReleaseYear}
+        <li>&copy; 2010 SideOneDummy Records
+        <li class="links">
+          <a class="button" href="#">Buy Album $9.99</a>
+          <menu class="share">
+            <span class="label">Share</span>
+            <ul>
+              <li><a href="#">Facebook</a>
+              <li><a href="#">Twitter</a>
+              <li><a href="#">Copy Link</a>
+              <li><a href="#">Like on Facebook</a>
+            </ul>
+          </menu>
+      </ul>
+    </div>
+  </section>
+  <menu class="tracks">
+    <dl class="tracks">
+      <dt>
+        <form class="play toggle" href="#">Play</form>
+        <h3 class="track title">American Slang</h3>
+      <dd>
+        <form class="volume toggle" href="#">
+          <span class="label">Volume</span>
+          <div class="input">
+            <div class="volume">
+              <div class="current" style="width: 50%"></div>
+              <div class="slider" style="left: 50%"></div>
+            </div>
+          </div>
+        </form>
+        <div class="track length">
+          <div class="buffer" style="width: 67%">Buffer 67%</div>
+          <div class="played" style="width: 33%">Played 33%</div>
+          <div class="slider" style="left: 33%">Slider</div>
+        </div>
+        <ul class="track stats">
+          <li class="length played">1:15
+          <li class="total plays">3,506 plays
+          <li class="length unplayed">3:46
+        </ul>
+        <menu class="track">
+          <ul>
+            <li class="lyrics"><a href="#">Lyrics</a>
+            <li class="share menu">
+              <menu class="share">
+                <span class="label">Share</span>
+                <ul>
+                  <li><a href="#">Facebook</a>
+                  <li><a href="#">Twitter</a>
+                  <li><a href="#">Copy Link</a>
+                  <li><a href="#">Like on Facebook</a>
+                </ul>
+              </menu>
+            <li class="buy"><a href="#">Buy $0.99</a>
+          </ul>
+        </menu>
+    </dl>
+  </menu>
+</li>
+</script>
+</head>
+
+<body>
+  <a class="show menu" href="#">Show menu</a>
+  <div id="spindal">
+
+    <header class="artist">
+      <img class="logo" src="i/artist-logo.png" alt="The Gaslight Anthem">
+      <a class="hide menu" href="#"><img src="i/hide-menu-arrow.png" alt="Hide menu"></a>
+    </header>
+    <section class="albums">
+     
+      <ul class="albums"></ul>
+    
+
+    </section>
+    <nav class="artist">
+      <ul>
+        <li><a href="#">Bio</a>
+        <li><a href="#">Live</a>
+        <li><a href="#">Gallery</a>
+        <li><a href="#">News</a>
+        <li><a href="#">Facebook</a>
+        <li><a href="#">Twitter</a>
+        <li><a href="#">Store</a>
+      </ul>
+    </nav>
+  </div><!--menu-->
+
+  <a href="#" class="play big">
+    <p><span>Play</span></p>
+  </a>
+
+  <ul class="bgs">
+    <li class="bg"><img src="i/artist-bg-q90.jpg">
+  </ul>
+
