@@ -7,7 +7,7 @@ dfont()
   fs m
   lh 1.5
   ff sans
-  color #333
+  color #1b1b1b
 
 link = #000
 hover = link
@@ -25,12 +25,6 @@ body
   dfont()
   bg #000
 
-@import 'p/a.show.hide.menu'
-@import 'p/a.play.big'
-@import 'p/menu.share'
-@import 'p/nav.artist'
-@import 'p/ul.bgs'
-
 #spindal
   bg w80
   width 245px
@@ -40,266 +34,19 @@ body
   box-shadow b25 1px 0 3px
 
   header.artist
-    pad 1em 2em
+    pad m 2em
     position relative
     img.logo
-      width 185px
-      height 72px
+      display block
 
     &:hover
       a.hide.menu
         display block
 
-  section.albums
-    position relative
-    ul.albums
-      li.album
-        width 245px
-        section.album.cover
-          pad 0 m*2 m
-          img
-            square 189px
-            border 2px solid #fff
-            border-radius 2px
-            box-shadow b45 2px 2px 4px
-          ul.switch
-            position absolute
-            top 0
-            left m*2
-            square 189px
-            transition()
-            z-index 1000
-            opacity 0
-            &:hover
-              opacity 1
-            li
-              a
-                display block
-                width 41px
-                height 60px
-                position absolute
-                top 62px + 2px
-                z-index 100
-                text-indent -999em
-                background b80 url(../i/album-nav-arrows.png) left top no-repeat
-                transition()
-                &.prev-album
-                  left 2px
-                  border-radius 0 2px 2px 0
-                &.next-album
-                  right -2px
-                  background-position -41px 0
-                  border-radius 2px 0 0 2px
-                &:hover, &:focus
-                  background-color hsla(212,78,47,.8)
-                &:active
-                  background-color hsla(212,78,47,.9)
-
-        section.album.title
-          &.active
-            bg hsla(0,0,71,.8)
-            box-shadow inset b15 0 0 5px
-            h2
-              btc w40
-          h2
-            pad 0 2em
-            fw bold
-            lh m*2 - 1px
-            cursor pointer
-            bt 1px solid transparent
-          .data
-            pad 0 2em .5em
-            display none
-            bb 1px solid b20
-            > ul
-              font 11px/1.5 sans
-              > li
-                &.links
-                  pad .5em 0 0
-                  > a
-                    mr 1em
-                    fs 12px
-                    &.button
-                      display inline-block
-                      background linear-gradient(top, #3985c1, #0767b1)
-                      border-radius 2px
-                      font bold 12px/1.25 sans
-                      pad 0 .8em
-                      color #fff
-                      font-smoothing()
-                      text-shadow b40 0 -1px 0
-                      border 1px solid b15
-                      box-shadow b45 1px 1px 2px
-                  menu
-                    label
-                      font bold 12px/1.25 sans
-            
-
-        menu.tracks
-          dl.tracks
-            bt 1px solid b20
-            bb 1px solid w40
-            counter-reset tracknum
-            dt
-              bt 1px solid w40
-              bb 1px solid b20
-              pad 0 2em
-              lh m*2 - 2px
-              height m*2 - 2px
-              cursor pointer
-              white-space nowrap
-              overflow hidden
-              text-overflow ellipsis
-              counter-increment tracknum
-              position relative
-
-              a.toggle.play
-                position absolute
-                text-indent -999em
-                opacity 0
-                display block
-                square 17px
-                left 5px
-                top 3px
-                background url(../i/icon-play-pause.png) left top no-repeat
-
-              &:hover
-                box-shadow inset b6 0 0 5px
-                bg hsla(0,0,71,.6)
-                a.toggle.play
-                  opacity 1
-
-              &:active
-                a.toggle.play
-                  background-position 0 -17px
-
-              &.ui-state-active
-                box-shadow inset b10 0 3px 2px
-                bg hsla(0,0,71,.8)
-                bb transparent
-                a.toggle.play
-                  opacity 1
-                  background-position -17px 0
-                &:hover
-                  a.toggle.play
-                    background-position -17px -17px
-
-              h3.track.title
-                &:before
-                  content counter(tracknum) ".\0020"
-                              
-            dd
-              bb 1px solid b20
-              bg hsla(0,0,71,.8)
-              box-shadow inset b10 0 -3px 2px
-              pad 0 m*2
-              display none
-              position relative
-              .toggle.volume
-                square 25px
-                position absolute
-                right 2em
-                top -25px
-                text-indent -999em
-                background url(../i/icon-volume.png) left top
-                z-index 10000
-                &:hover, &.active
-                  background-position 0 -25px
-                &.active
-                  .input
-                    display block
-
-                .input
-                  bg b80
-                  box-shadow inset b10 0 0 2px
-                  pad 3px
-                  border-radius 6px
-                  position absolute
-                  top -1em
-                  right -1em
-                  display none
-                  
-                  .volume
-                    width 80px
-                    height 6px
-                    bt 1px solid b30
-                    bb 1px solid b60
-                    border-radius 4px
-                    position relative
-                    bg m200
-                    box-shadow inset b20 1px 1px 2px
-                    .current, .slider
-                      position absolute
-                      top 0
-                      left 0
-                    .current
-                      background linear-gradient(top, #4d92c7, #0c6ab3)
-                      height 6px
-                      border-radius 3px
-                    .slider
-                      background url(../i/volume-slider.png) no-repeat
-                      square 20px
-                      ml -8px
-                      top -5px
-                      cursor pointer
-
-              .track.length
-                width 100%
-                height 5px
-                border-radius 3px
-                bt 1px solid b30
-                bg #fff
-                box-shadow inset b15 1px 1px 2px, w30 0 1px 0
-                position relative
-
-                .played, .buffer, .slider
-                  position absolute
-                  top 0
-                  left 0
-                  text-indent -999em
-
-                .played, .buffer
-                  height 5px
-                  border-radius 3px
-                .buffer
-                  background linear-gradient(top, m59, #000)
-                .played
-                  background linear-gradient(top, #3382bf, #0063af)
-                .slider
-                  square 10px
-                  background url(../i/slider.png) no-repeat
-                  top -2px
-                  ml -5px
-                  cursor pointer
-
-              ul.track.stats
-                mar 0 0 .25em
-                li
-                  display inline-block
-                  fs 75%
-                  &.length.played
-                    width 25%
-                  &.total.plays
-                    width 50%
-                    text-align center
-                  &.length.unplayed
-                    width 25%
-                    text-align right
-
-              menu.track
-                mar 0 0 .75em
-                position relative
-                > ul
-                  clearfix()
-                  > li
-                    float left
-                    
-                    &.lyrics, &.share
-                      mr .7em
-                      > a
-                        buttondark()
-                      
-                    &.buy
-                      text-align right
-                      a
-                        buttonblue()
+@import 'p/a.show.hide.menu'
+@import 'p/a.play.big'
+@import 'p/section.albums'
+@import 'p/menu.share'
+@import 'p/menu.tracks'
+@import 'p/nav.artist'
+@import 'p/ul.bgs'

@@ -13,7 +13,7 @@
 <link rel="stylesheet" media="screen" href="css/style.css?v=1">
 
 <script id="albumTemplate" type="text/x-jquery-tmpl">
-<li id="album-${id}" class="album">
+<li class="album">
   <section class="album cover">
     <ul class="switch">
       <li class="prev"><a class="prev-album" href="#" title="Previous Album">Prev</a>
@@ -46,6 +46,17 @@
       {{tmpl($data) "#trackTemplate"}}
     </dl>
   </menu>
+  <nav class="artist">
+      <ul>
+        <li><a href="#">Bio</a>
+        <li><a href="#">Live</a>
+        <li><a href="#">Gallery</a>
+        <li><a href="#">News</a>
+        <li><a href="#">Facebook</a>
+        <li><a href="#">Twitter</a>
+        <li><a href="#">Store</a>
+      </ul>
+    </nav>
 </li>
 </script>
 
@@ -90,6 +101,7 @@
         <li class="buy"><a href="#">Buy $0.99</a>
       </ul>
     </menu>
+    
 {{/each}}
 </script>
 
@@ -99,7 +111,7 @@
   <a class="show menu" href="#">Show menu</a>
   <div id="spindal">
     <header class="artist">
-      <img class="logo" src="i/artist-logo.png" alt="The Gaslight Anthem">
+      <img class="logo" src="i/artist-logo.png" alt="The Gaslight Anthem" width="185" height="72">
       <a class="hide menu" href="#"><img src="i/hide-menu-arrow.png" alt="Hide menu"></a>
     </header>
     <section class="albums">
@@ -107,18 +119,7 @@
       <ul class="albums"></ul>
 
     </section>
-    <nav class="artist">
-      <ul>
-        <li><a href="#">Bio</a>
-        <li><a href="#">Live</a>
-        <li><a href="#">Gallery</a>
-        <li><a href="#">News</a>
-        <li><a href="#">Facebook</a>
-        <li><a href="#">Twitter</a>
-        <li><a href="#">Store</a>
-      </ul>
-    </nav>
-  </div><!--menu-->
+      </div><!--menu-->
 
   <a href="#" class="play big">
     <p><span>Play</span></p>
@@ -128,15 +129,19 @@
     <li class="bg"><img src="i/artist-bg-q90.jpg">
   </ul>
 
+<!--
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.tmpl.min.js"></script>
 <script src="js/jquery.cycle.all.min.js"></script>
  
 <script type="text/javascript"> 
 var albums = [
-  { id: "01",
-    Title: "Sink or Swim",
+  { Title: "Sink or Swim",
     AlbumCover: "i/albums/album-01-q90.jpg",
     ReleaseYear: "2007",
     Track: [
@@ -154,8 +159,7 @@ var albums = [
       "Red at Night"
     ]
   },
-  { id: "02",
-    Title: "The '59 Sound",
+  { Title: "The '59 Sound",
     AlbumCover: "i/albums/album-02-q90.jpg",
     ReleaseYear: "2008",
     Track: [
@@ -173,8 +177,7 @@ var albums = [
       "The Backseat"
     ]
   },
-  { id: "03",
-    Title: "American Slang",
+  { Title: "American Slang",
     AlbumCover: "i/albums/album-03-q90.jpg",
     ReleaseYear: "2010",
     Track: [

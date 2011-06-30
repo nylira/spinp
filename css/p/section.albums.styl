@@ -1,0 +1,89 @@
+section.albums
+  position relative
+  height 100%
+
+  ul.albums
+    height 100%
+    li.album
+      width 245px
+      section.album.cover
+        pad 0 m*2 6px
+        img
+          square 189px
+          border 2px solid #fff
+          border-radius 2px
+          box-shadow b45 2px 2px 4px
+          display block
+
+        ul.switch
+          position absolute
+          top 0
+          left m*2
+          square 189px
+          transition()
+          z-index 1000
+          opacity 0
+          &:hover
+            opacity 1
+          li
+            a
+              display block
+              width 41px
+              height 60px
+              position absolute
+              top 62px + 2px
+              z-index 100
+              text-indent -999em
+              background b80 url(../i/album-nav-arrows.png) left top no-repeat
+              transition()
+              &.prev-album
+                left 2px
+                border-radius 0 2px 2px 0
+              &.next-album
+                right -2px
+                background-position -41px 0
+                border-radius 2px 0 0 2px
+              &:hover, &:focus
+                background-color hsla(212,78,47,.8)
+              &:active
+                background-color hsla(212,78,47,.9)
+
+      section.album.title
+        h2
+          pad 0 2em
+          fw bold
+          lh m*2
+          cursor pointer
+          bt 1px solid transparent
+          &:hover
+            bg hsla(0,0,71,.6)
+          &:active, &.active
+            bg hsla(0,0,71,.8)
+
+        .data
+          pad 0 2em .5em
+          display none
+          bg hsla(0,0,71,.8)
+          box-shadow inset b5 0 -2px 2px
+          > ul
+            font 11px/1.5 sans
+            > li
+              &.links
+                pad .5em 0 0
+                > a
+                  mr 1em
+                  fs 12px
+                  &.button
+                    display inline-block
+                    background linear-gradient(top, #3985c1, #0767b1)
+                    border-radius 2px
+                    font bold 12px/1.25 sans
+                    pad 0 .8em
+                    color #fff
+                    font-smoothing()
+                    text-shadow b40 0 -1px 0
+                    border 1px solid b15
+                    box-shadow b45 1px 1px 2px
+                menu
+                  label
+                    font bold 12px/1.25 sans

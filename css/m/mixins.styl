@@ -4,12 +4,17 @@ sans = 'Helvetica Neue', Arial, Helvetica, sans-serif
 lucida = 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif 
 
 buttondark()
-  display block
-  pad 0 .7em
+  display inline-block
+  pad 0 10px
   font bold 12px/1.8 sans
   color link
   text-align center
   text-shadow w50 0 1px 0
+  cursor pointer
+  &:hover, &.active, &:active
+    color #fff
+    text-shadow b30 0 1px 0
+    font-smoothing()
   &:hover, &.active
     border-radius .9em
     box-shadow inset b50 1px 1px 2px
@@ -19,7 +24,7 @@ buttondark()
 
 buttonblue()
   display block
-  pad 0 .7em
+  pad 0 10px
   font bold 12px/1.8 sans
   text-align center
   text-shadow w50 0 1px 0
