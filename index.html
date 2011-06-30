@@ -14,14 +14,14 @@
 
 <script id="albumTemplate" type="text/x-jquery-tmpl">
 <li class="album">
-  <section class="album cover">
+  <div class="album cover">
     <ul class="switch">
       <li class="prev"><a class="prev-album" href="#" title="Previous Album">Prev</a>
       <li class="next"><a class="next-album" href="#" title="Next Album">Next Album</a>
     </ul>
     <img src="${AlbumCover}">
-  </section>
-  <section class="album title">
+  </div>
+  <div class="album title">
     <h2 class="title">${Title}</h2>
     <div class="data">
       <ul>
@@ -29,7 +29,7 @@
         <li>&copy; 2010 SideOneDummy Records
         <li class="links">
           <a class="button" href="#">Buy Album $9.99</a>
-          <menu class="share">
+          <div class="menu share">
             <span class="label">Share</span>
             <ul>
               <li><a href="#">Facebook</a>
@@ -37,15 +37,15 @@
               <li><a href="#">Copy Link</a>
               <li><a href="#">Like on Facebook</a>
             </ul>
-          </menu>
+          </div>
       </ul>
     </div>
-  </section>
-  <menu class="tracks">
+  </div>
+  <div class="tracks menu">
     <dl class="tracks">
       {{tmpl($data) "#trackTemplate"}}
     </dl>
-  </menu>
+  </div>
   <nav class="artist">
       <ul>
         <li><a href="#">Bio</a>
@@ -65,6 +65,7 @@
   <dt>
     <a class="play toggle" href="#">Play</a>
     <h3 class="track title">${$value}</h3>
+  </dt>
   <dd>
     <form class="volume toggle" href="#">
       <span class="label">Volume</span>
@@ -85,11 +86,11 @@
       <li class="total plays">3,506 plays
       <li class="length unplayed">3:46
     </ul>
-    <menu class="track">
+    <div class="menu track">
       <ul>
         <li class="lyrics"><a href="#">Lyrics</a>
         <li class="share menu">
-          <menu class="share">
+          <div class="menu share">
             <span class="label">Share</span>
             <ul>
               <li><a href="#">Facebook</a>
@@ -97,10 +98,11 @@
               <li><a href="#">Copy Link</a>
               <li><a href="#">Like on Facebook</a>
             </ul>
-          </menu>
+          </div>
         <li class="buy"><a href="#">Buy $0.99</a>
       </ul>
-    </menu>
+    </div>
+  </dd>
     
 {{/each}}
 </script>
@@ -114,11 +116,11 @@
       <img class="logo" src="i/artist-logo.png" alt="The Gaslight Anthem" width="185" height="72">
       <a class="hide menu" href="#"><img src="i/hide-menu-arrow.png" alt="Hide menu"></a>
     </header>
-    <section class="albums">
+    <div class="albums">
       
       <ul class="albums"></ul>
 
-    </section>
+    </div>
       </div><!--menu-->
 
   <a href="#" class="play big">

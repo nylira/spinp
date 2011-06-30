@@ -1,4 +1,4 @@
-section.albums
+.albums
   position relative
   height 100%
 
@@ -6,7 +6,7 @@ section.albums
     height 100%
     li.album
       width 245px
-      section.album.cover
+      .album.cover
         pad 0 m*2 6px
         img
           square 189px
@@ -48,7 +48,7 @@ section.albums
               &:active
                 background-color hsla(212,78,47,.9)
 
-      section.album.title
+      .album.title
         h2
           pad 0 2em
           fw bold
@@ -78,7 +78,8 @@ section.albums
                     background linear-gradient(top, #3985c1, #0767b1)
                     border-radius 2px
                     font bold 12px/1.25 sans
-                    pad 0 .8em
+                    width 120px
+                    text-align center
                     color #fff
                     font-smoothing()
                     text-shadow b40 0 -1px 0

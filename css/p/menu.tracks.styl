@@ -1,5 +1,5 @@
-menu.tracks
-  dl.tracks
+.menu.tracks
+  .tracks
     bt 1px solid b20
     bb 1px solid w40
     counter-reset tracknum
@@ -71,7 +71,7 @@ menu.tracks
       .toggle.volume
         square 25px
         position absolute
-        right 2em
+        right 1.75em
         top -25px
         text-indent -999em
         background url(../i/icon-volume.png) left top
@@ -159,7 +159,7 @@ menu.tracks
             width 25%
             text-align right
 
-      menu.track
+      .menu.track
         mar 0 -6% .75em
         position relative
         > ul
@@ -171,8 +171,15 @@ menu.tracks
               width 31%
               > a
                 buttondark()
+
               
             &.buy
               width 49%
               a
                 buttonblue()
+
+      &:last-of-type, &:nth-last-of-type(2), &:nth-last-of-type(3)
+        .menu.share
+          ul
+            top auto
+            bottom m*1.8
