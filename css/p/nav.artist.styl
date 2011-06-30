@@ -1,13 +1,64 @@
 nav.artist
-  ul li a
+  ul li a, dl dt
     display block
     text-shadow w50 0 1px 0
     font bold 1em/2 sans
     text-transform uppercase
     pad 0 2em
-    &:hover, &:focus
-      box-shadow inset b6 0 0 5px
-      bg hsla(0,0,71,.6)
-    &:active
-      box-shadow inset b8 0 0 5px
-      bg hsla(0,0,71,.8)
+
+  ul
+    li
+      a
+        &:hover, &:focus
+          box-shadow inset b6 0 0 5px
+          bg hsla(0,0,71,.6)
+        &:active
+          box-shadow inset b8 0 0 5px
+            bg hsla(0,0,71,.8)
+  dl
+    dt
+      &:hover
+        box-shadow inset b6 0 0 5px
+        bg hsla(0,0,71,.6)
+      &.ui-state-active
+        box-shadow inset b8 0 0 5px
+        bg hsla(0,0,71,.8)
+
+  dd
+    bb 1px solid b20
+    bg hsla(0,0,71,.8)
+    box-shadow inset b10 0 -3px 2px
+    pad 0 m*2 m*.5
+
+    a
+      buttondark()
+    form
+      background linear-gradient(top, m135, m199)
+      pad 1px
+      relative()
+      input
+        display block
+        &[type="text"]
+          font 10px/1 sans
+          height 19px
+          bg #fff
+          box-shadow inset b20 1px 2px 1px
+          width 100%
+          mar 0
+          pad 4px 3px 5px
+          border none
+          box-sizing border-box
+        &[type='submit']
+          width 21px
+          height 19px
+          bg #000
+          absolute top 1px right 1px
+          border none
+          pad 0
+          bg url(../i/news-submit.png) left top no-repeat
+          text-indent -999em
+          box-shadow b20 -1px 0 2px
+          &:hover
+            background-position left -19px
+          &:active
+            background-position left -38px

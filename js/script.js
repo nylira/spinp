@@ -19,6 +19,11 @@ $("dl.tracks").accordion({
   collapsible: true
 });
 
+$("dl.accordion").accordion({
+  active: false,
+  collapsible: true
+});
+
 $(".volume.toggle").click(function() {
   $(this).toggleClass("active");
 });
