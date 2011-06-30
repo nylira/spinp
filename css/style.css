@@ -55,7 +55,7 @@ a.play.big:hover p{background:rgba(0,0,0,0.8) -webkit-radial-gradient(circle,rgb
 .albums ul.albums li.album .album.title .data > ul > li.links{padding:.5em 0 0;}
 .albums ul.albums li.album .album.title .data > ul > li.links > a{margin-right:1em;font-size:12px;}
 .albums ul.albums li.album .album.title .data > ul > li.links > a.button{display:inline-block;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3985c1), color-stop(1, #0767b1));background:-moz-linear-gradient(top, #3985c1 0%, #0767b1 100%);background:linear-gradient(top, #3985c1 0%, #0767b1 100%);-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px;font:bold 12px/1.25 "Helvetica Neue",Arial,Helvetica,sans-serif;width:120px;text-align:center;color:#fff;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,0.4) 0 -1px 0;border:1px solid rgba(0,0,0,0.15);-webkit-box-shadow:rgba(0,0,0,0.45) 1px 1px 2px;-moz-box-shadow:rgba(0,0,0,0.45) 1px 1px 2px;-o-box-shadow:rgba(0,0,0,0.45) 1px 1px 2px;box-shadow:rgba(0,0,0,0.45) 1px 1px 2px}
-.albums ul.albums li.album .album.title .data > ul > li.links menu label{font:bold 12px/1.25 "Helvetica Neue",Arial,Helvetica,sans-serif}
+.albums ul.albums li.album .album.title .data > ul > li.links .menu.share ul{left:auto;right:-49%}
 .menu.share{position:relative;display:inline-block;}
 .menu.share span.label{display:inline-block;padding:0 10px;font:bold 12px/1.8 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#000;text-align:center;text-shadow:rgba(255,255,255,0.5) 0 1px 0;cursor:pointer;}
 .menu.share span.label:hover,.menu.share span.label.active,.menu.share span.label:active{color:#fff;text-shadow:rgba(0,0,0,0.3) 0 1px 0;-webkit-font-smoothing:antialiased}
