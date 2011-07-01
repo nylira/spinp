@@ -1,36 +1,20 @@
-$(".prev-album").click(function() {
-  $(".album.title h2").removeClass("active").next().hide();
-  $(".ui-accordion-header").removeClass("ui-state-active").addClass("ui-state-default");
-  $(".ui-accordion-content").removeClass("ui-accordion-content-active").hide();
-});
-$(".next-album").click(function() {
-  $(".album.title h2").removeClass("active").next().hide();
-  $(".ui-accordion-header").removeClass("ui-state-active");
-  $(".ui-accordion-content").removeClass("ui-accordion-content-active").hide();
+$(".prev-album, .next-album").click(function() {
+  $(".album.title h2").removeClass("active").next().hide('slideUp');
+  $("dl.tracks, dl.accordion").accordion("activate", -1);
 });
 
-$(".album.title h2").click(function() {
-  $(this).toggleClass("active");
-  $(this).next().slideToggle();
+$(".album.title h2, .menu.share span.label").click(function() {
+  $(this).toggleClass("active").next().slideToggle();
 });
 
-$("dl.tracks").accordion({
+$("dl.tracks, dl.accordion").accordion({
   active: false,
   collapsible: true
 });
 
-$("dl.accordion").accordion({
-  active: false,
-  collapsible: true
-});
 
 $(".volume.toggle").click(function() {
   $(this).toggleClass("active");
-});
-
-$(".menu.share span.label").click(function() {
-  $(this).toggleClass("active");
-  $(this).next().toggle();
 });
 
 $("a.hide.menu").click(function() {
