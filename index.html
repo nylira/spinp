@@ -42,9 +42,9 @@
     </div>
   </div>
   <div class="tracks menu">
-    <dl class="tracks">
+    <div class="tracks accordion">
       {{tmpl($data) "#trackTemplate"}}
-    </dl>
+    </div>
   </div>
   <nav class="artist">
     <ul>
@@ -76,11 +76,11 @@
 
 <script id="trackTemplate" type="text/x-jquery-tmpl">
 {{each Track}}
-  <dt>
+  <div class="title">
     <a class="play toggle" href="#">Play</a>
     <h3 class="track title">${$value}</h3>
-  </dt>
-  <dd>
+  </div>
+  <div class="data">
     <form class="volume toggle" href="#">
       <span class="label">Volume</span>
       <div class="input">
@@ -116,7 +116,7 @@
         <li class="buy"><a href="#">Buy $0.99</a>
       </ul>
     </div>
-  </dd>
+  </div>
     
 {{/each}}
 </script>

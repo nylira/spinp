@@ -1,13 +1,13 @@
 $(".prev-album, .next-album").click(function() {
   $(".album.title h2").removeClass("active").next().hide('slideUp');
-  $("dl.tracks, dl.accordion").accordion("activate", -1);
+  $(".accordion").accordion("activate", -1);
 });
 
 $(".album.title h2, .menu.share span.label").click(function() {
   $(this).toggleClass("active").next().slideToggle();
 });
 
-$("dl.tracks, dl.accordion").accordion({
+$(".accordion").accordion({
   active: false,
   collapsible: true
 });
