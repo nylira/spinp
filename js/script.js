@@ -12,19 +12,13 @@ $(".accordion").accordion({
   collapsible: true
 });
 
-
 $(".volume.toggle").click(function() {
   $(this).toggleClass("active");
 });
 
-$("a.hide.menu").click(function() {
-  $("#spindal").hide('slide', { direction: 'left'});
-  $("a.show.menu").show('slide', { direction: 'left'});
-});
-
-$("a.show.menu").click(function() {
-  $("#spindal").show('slide', { direction: 'left'});
-  $("a.show.menu").hide('slide', { direction: 'left'});
+$("a.spindal").click(function() {
+  $("#spindal").toggleClass("active");
+  $("a.spindal.show").toggleClass("active");
 });
 
 $("ul.albums").cycle({
@@ -33,4 +27,3 @@ $("ul.albums").cycle({
   next: ".next-album",
   timeout: 0,
 });
-

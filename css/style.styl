@@ -32,16 +32,16 @@ body
   z-index 2
   min-height 100%
   box-shadow b25 1px 0 3px
+  left -245px
+  transition()
+  &.active
+    left 0
 
   header.artist
     pad m 2em
     position relative
     img.logo
       display block
-
-    &:hover
-      a.hide.menu
-        display block
 
 @import 'p/a.show.hide.menu'
 @import 'p/a.play.big'
