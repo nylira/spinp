@@ -69,8 +69,7 @@ a.play.big:hover p{background:rgba(0,0,0,0.8) -webkit-radial-gradient(circle,rgb
 .menu.share ul li a:hover{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #4d92c7), color-stop(1, #0264b0));background:-moz-linear-gradient(top, #4d92c7 0%, #0264b0 100%);background:linear-gradient(top, #4d92c7 0%, #0264b0 100%)}
 .menu.share ul li:first-of-type a{border-top:none;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;-o-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0}
 .menu.share ul li:last-of-type a{border-bottom:none;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-o-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
-.menu.tracks .tracks.accordion{border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(255,255,255,0.4);counter-reset:tracknum;-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;transition:1s;height:10px;}
-.menu.tracks .tracks.accordion.boo{height:400px !important}
+.menu.tracks .tracks.accordion{border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(255,255,255,0.4);counter-reset:tracknum;-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;transition:1s;}
 .menu.tracks .tracks.accordion div.title{border-top:1px solid rgba(255,255,255,0.4);border-bottom:1px solid rgba(0,0,0,0.2);padding:0 2em;line-height:23px;height:23px;cursor:pointer;counter-increment:tracknum;position:relative;}
 .menu.tracks .tracks.accordion div.title h3.track.title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:1.25em;font-size:12px}
 .menu.tracks .tracks.accordion div.title a.toggle.play{position:absolute;text-indent:-999em;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);display:block;height:17px;width:17px;left:5px;top:3px;background:url("../i/icon-play-pause.png") left top no-repeat}

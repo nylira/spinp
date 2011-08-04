@@ -46,9 +46,3 @@ setTimeout(function(){
   $("#spindal").toggleClass("active");
   $("a.spindal.show").toggleClass("active");
 }, 1000);
-
-setTimeout(function(){
-  var $ht = $("ul.albums").height();
-  $("ul.albums").animate({height: $ht});
-  $(".tracks.accordion").toggleClass("boo");
-}, 2000);
