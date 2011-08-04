@@ -8,8 +8,8 @@
       bt 1px solid w40
       bb 1px solid b20
       pad 0 2em
-      lh m*2 - 2px
-      height m*2 - 2px
+      lh m*2 - 3px
+      height m*2 - 3px
       cursor pointer
       counter-increment tracknum
       position relative
@@ -19,6 +19,7 @@
         overflow hidden
         text-overflow ellipsis
         pl 1.25em
+        font-size 12px
 
       a.toggle.play
         position absolute
@@ -177,9 +178,3 @@
               width 49%
               a
                 buttonblue()
-
-      &:last-of-type, &:nth-last-of-type(2), &:nth-last-of-type(3)
-        .menu.share
-          ul
-            top auto
-            bottom m*1.8

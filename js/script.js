@@ -27,3 +27,8 @@ $("ul.albums").cycle({
   next: ".next-album",
   timeout: 0,
 });
+
+setTimeout(function(){
+  $("#spindal").toggleClass("active");
+  $("a.spindal.show").toggleClass("active");
+}, 1000);

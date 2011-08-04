@@ -20,11 +20,11 @@ a{text-decoration:none;color:#000;}
 a:hover,a:focus{color:#000}
 html,body{height:100%}
 body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000}
-#spindal{background:rgba(255,255,255,0.8);width:245px;position:relative;z-index:2;min-height:100%;-webkit-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-moz-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-o-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;box-shadow:rgba(0,0,0,0.25) 1px 0 3px;left:-245px;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;transition:all .15s ease;}
+#spindal{background:rgba(255,255,255,0.8);width:245px;position:relative;z-index:2;min-height:100%;-webkit-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-moz-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-o-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;box-shadow:rgba(0,0,0,0.25) 1px 0 3px;left:-245px;-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;transition:1s;}
 #spindal.active{left:0}
 #spindal header.artist{padding:13px 2em;position:relative;}
 #spindal header.artist img.logo{display:block}
-a.spindal{position:absolute;top:13px;-webkit-transition:all .15s ease;-moz-transition:all .15s ease;-o-transition:all .15s ease;transition:all .15s ease;display:block;}
+a.spindal{position:absolute;top:13px;-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;transition:1s;display:block;}
 a.spindal.show{z-index:1;height:64px;width:45px;background:url("../i/show-menu.png") left top no-repeat;text-indent:-999em;left:-45px;}
 a.spindal.show:hover,a.spindal.show:focus{background-position:0 -64px}
 a.spindal.show:active{background-position:0 -128px}
@@ -70,8 +70,8 @@ a.play.big:hover p{background:rgba(0,0,0,0.8) -webkit-radial-gradient(circle,rgb
 .menu.share ul li:first-of-type a{border-top:none;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;-o-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0}
 .menu.share ul li:last-of-type a{border-bottom:none;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-o-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
 .menu.tracks .tracks.accordion{border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(255,255,255,0.4);counter-reset:tracknum;}
-.menu.tracks .tracks.accordion div.title{border-top:1px solid rgba(255,255,255,0.4);border-bottom:1px solid rgba(0,0,0,0.2);padding:0 2em;line-height:24px;height:24px;cursor:pointer;counter-increment:tracknum;position:relative;}
-.menu.tracks .tracks.accordion div.title h3.track.title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:1.25em}
+.menu.tracks .tracks.accordion div.title{border-top:1px solid rgba(255,255,255,0.4);border-bottom:1px solid rgba(0,0,0,0.2);padding:0 2em;line-height:23px;height:23px;cursor:pointer;counter-increment:tracknum;position:relative;}
+.menu.tracks .tracks.accordion div.title h3.track.title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:1.25em;font-size:12px}
 .menu.tracks .tracks.accordion div.title a.toggle.play{position:absolute;text-indent:-999em;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);display:block;height:17px;width:17px;left:5px;top:3px;background:url("../i/icon-play-pause.png") left top no-repeat}
 .menu.tracks .tracks.accordion div.title:hover{-webkit-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;-moz-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;-o-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;background:rgba(181,181,181,0.6);}
 .menu.tracks .tracks.accordion div.title:hover a.toggle.play{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
@@ -114,7 +114,6 @@ a.play.big:hover p{background:rgba(0,0,0,0.8) -webkit-radial-gradient(circle,rgb
 .menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a{display:block;padding:0 10px;font:bold 12px/1.8 "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;text-shadow:rgba(255,255,255,0.5) 0 1px 0;color:#0063af;}
 .menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a:hover,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a.active{-webkit-border-radius:.9em;-moz-border-radius:.9em;-o-border-radius:.9em;border-radius:.9em;-webkit-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;-moz-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;-o-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;background:rgba(255,255,255,0.5)}
 .menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a:active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a.active{background:rgba(255,255,255,0.6)}
-.menu.tracks .tracks.accordion div.data:last-of-type .menu.share ul,.menu.tracks .tracks.accordion div.data:nth-last-of-type(2) .menu.share ul,.menu.tracks .tracks.accordion div.data:nth-last-of-type(3) .menu.share ul{top:auto;bottom:23.400000000000002px}
 nav.artist ul li a,nav.artist dl dt{display:block;text-shadow:rgba(255,255,255,0.5) 0 1px 0;font:bold 1em/2 "Helvetica Neue",Arial,Helvetica,sans-serif;text-transform:uppercase;padding:0 2em}
 nav.artist ul li a:hover,nav.artist ul li a:focus{-webkit-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;-moz-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;-o-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;background:rgba(181,181,181,0.6)}
 nav.artist ul li a:active box-shadow inset b8 005px{background:rgba(181,181,181,0.8)}
