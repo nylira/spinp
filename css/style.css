@@ -19,7 +19,7 @@ tt n = uppercase){text-transform:n}
 a{text-decoration:none;color:#000;}
 a:hover,a:focus{color:#000}
 html,body{height:100%}
-body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000}
+body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000;overflow-y:scroll}
 #spindal{background:rgba(255,255,255,0.8);width:245px;position:relative;z-index:2;min-height:100%;-webkit-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-moz-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-o-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;box-shadow:rgba(0,0,0,0.25) 1px 0 3px;left:-245px;-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;transition:1s;}
 #spindal.active{left:0}
 #spindal header.artist{padding:13px 2em;position:relative;}
@@ -69,7 +69,8 @@ a.play.big:hover p{background:rgba(0,0,0,0.8) -webkit-radial-gradient(circle,rgb
 .menu.share ul li a:hover{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #4d92c7), color-stop(1, #0264b0));background:-moz-linear-gradient(top, #4d92c7 0%, #0264b0 100%);background:linear-gradient(top, #4d92c7 0%, #0264b0 100%)}
 .menu.share ul li:first-of-type a{border-top:none;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;-o-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0}
 .menu.share ul li:last-of-type a{border-bottom:none;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-o-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
-.menu.tracks .tracks.accordion{border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(255,255,255,0.4);counter-reset:tracknum;}
+.menu.tracks .tracks.accordion{border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(255,255,255,0.4);counter-reset:tracknum;-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;transition:1s;height:10px;}
+.menu.tracks .tracks.accordion.boo{height:400px !important}
 .menu.tracks .tracks.accordion div.title{border-top:1px solid rgba(255,255,255,0.4);border-bottom:1px solid rgba(0,0,0,0.2);padding:0 2em;line-height:23px;height:23px;cursor:pointer;counter-increment:tracknum;position:relative;}
 .menu.tracks .tracks.accordion div.title h3.track.title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:1.25em;font-size:12px}
 .menu.tracks .tracks.accordion div.title a.toggle.play{position:absolute;text-indent:-999em;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);display:block;height:17px;width:17px;left:5px;top:3px;background:url("../i/icon-play-pause.png") left top no-repeat}
@@ -119,7 +120,7 @@ nav.artist ul li a:hover,nav.artist ul li a:focus{-webkit-box-shadow:inset rgba(
 nav.artist ul li a:active box-shadow inset b8 005px{background:rgba(181,181,181,0.8)}
 nav.artist dl dt:hover{-webkit-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;-moz-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;-o-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;background:rgba(181,181,181,0.6)}
 nav.artist dl dt.ui-state-active{-webkit-box-shadow:inset rgba(0,0,0,0.08) 0 0 5px;-moz-box-shadow:inset rgba(0,0,0,0.08) 0 0 5px;-o-box-shadow:inset rgba(0,0,0,0.08) 0 0 5px;box-shadow:inset rgba(0,0,0,0.08) 0 0 5px;background:rgba(181,181,181,0.8)}
-nav.artist dd{border-bottom:1px solid rgba(0,0,0,0.2);background:rgba(181,181,181,0.8);-webkit-box-shadow:inset rgba(0,0,0,0.1) 0 -3px 2px;-moz-box-shadow:inset rgba(0,0,0,0.1) 0 -3px 2px;-o-box-shadow:inset rgba(0,0,0,0.1) 0 -3px 2px;box-shadow:inset rgba(0,0,0,0.1) 0 -3px 2px;padding:0 26px 6.5px;}
+nav.artist dd{border-bottom:1px solid rgba(0,0,0,0.2);background:rgba(181,181,181,0.8);-webkit-box-shadow:inset rgba(0,0,0,0.1) 0 -3px 2px;-moz-box-shadow:inset rgba(0,0,0,0.1) 0 -3px 2px;-o-box-shadow:inset rgba(0,0,0,0.1) 0 -3px 2px;box-shadow:inset rgba(0,0,0,0.1) 0 -3px 2px;padding:0 26px 6.5px;display:none;}
 nav.artist dd a{display:inline-block;padding:0 10px;font:bold 12px/1.8 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#000;text-align:center;text-shadow:rgba(255,255,255,0.5) 0 1px 0;cursor:pointer;}
 nav.artist dd a:hover,nav.artist dd a.active,nav.artist dd a:active{color:#fff;text-shadow:rgba(0,0,0,0.3) 0 1px 0;-webkit-font-smoothing:antialiased}
 nav.artist dd a:hover,nav.artist dd a.active{-webkit-border-radius:.9em;-moz-border-radius:.9em;-o-border-radius:.9em;border-radius:.9em;-webkit-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;-moz-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;-o-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;background:rgba(0,0,0,0.3)}
