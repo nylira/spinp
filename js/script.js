@@ -31,7 +31,7 @@ $(".album.title h2, .menu.share span.label").click(function() {
 });
 
 // expand and collapse tracks
-$(".acccordion").accordion({
+$(".accordion").accordion({
   active: false,
   collapsible: true
 });
