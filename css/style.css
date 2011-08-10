@@ -12,10 +12,6 @@ ul,ol{list-style:none}
 div,fieldset,input,textarea{-webkit-box-sizing:;-moz-box-sizing:;box-sizing:}
 *{outline:none}
 tt n = uppercase){text-transform:n}
-::-webkit-scrollbar{width:4px;height:4px}
-::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:start:increement{height:0;display:block;background:transparent}
-::-webkit-scrollbar-track-piece{background:transparent}
-::-webkit-scrollbar-thumb:vertical{height:40px;background:rgba(0,0,0,0.3);-webkit-border-radius:.25em;-moz-border-radius:.25em;-o-border-radius:.25em;border-radius:.25em}
 a{text-decoration:none;color:#000;}
 a:hover,a:focus{color:#000}
 html,body{height:100%}
@@ -69,6 +65,7 @@ a.play.big:hover p{background:rgba(0,0,0,0.8) -webkit-radial-gradient(circle,rgb
 .menu.share ul li a:hover{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #4d92c7), color-stop(1, #0264b0));background:-moz-linear-gradient(top, #4d92c7 0%, #0264b0 100%);background:linear-gradient(top, #4d92c7 0%, #0264b0 100%)}
 .menu.share ul li:first-of-type a{border-top:none;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;-o-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0}
 .menu.share ul li:last-of-type a{border-bottom:none;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;-o-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
+.menu.tracks{padding:0 0 200px;position:relative;z-index:1000;}
 .menu.tracks .tracks.accordion{border-top:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(255,255,255,0.4);counter-reset:tracknum;-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;transition:1s;}
 .menu.tracks .tracks.accordion div.title{border-top:1px solid rgba(255,255,255,0.4);border-bottom:1px solid rgba(0,0,0,0.2);padding:0 2em;line-height:23px;height:23px;cursor:pointer;counter-increment:tracknum;position:relative;}
 .menu.tracks .tracks.accordion div.title h3.track.title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:1.25em;font-size:12px}
@@ -114,6 +111,9 @@ a.play.big:hover p{background:rgba(0,0,0,0.8) -webkit-radial-gradient(circle,rgb
 .menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a{display:block;padding:0 10px;font:bold 12px/1.8 "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;text-shadow:rgba(255,255,255,0.5) 0 1px 0;color:#0063af;}
 .menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a:hover,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a.active{-webkit-border-radius:.9em;-moz-border-radius:.9em;-o-border-radius:.9em;border-radius:.9em;-webkit-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;-moz-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;-o-box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px;background:rgba(255,255,255,0.5)}
 .menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a:active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a.active{background:rgba(255,255,255,0.6)}
+nav.artist{margin-top:-200px;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;transition:.3s;position:relative;}
+nav.artist.pushed{margin-top:-138px}
+nav.artist.pushed-title{top:64px}
 nav.artist ul li a,nav.artist dl dt{display:block;text-shadow:rgba(255,255,255,0.5) 0 1px 0;font:bold 1em/2 "Helvetica Neue",Arial,Helvetica,sans-serif;text-transform:uppercase;padding:0 2em}
 nav.artist ul li a:hover,nav.artist ul li a:focus{-webkit-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;-moz-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;-o-box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;box-shadow:inset rgba(0,0,0,0.06) 0 0 5px;background:rgba(181,181,181,0.6)}
 nav.artist ul li a:active box-shadow inset b8 005px{background:rgba(181,181,181,0.8)}
