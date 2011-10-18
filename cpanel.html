@@ -38,11 +38,50 @@
   </div>
 
   <div id="albums">
-    <ul class="albums">
-      <li class="album active"><a href="#">Album</a>
-      <li class="album"><a href="#">Album</a>
-      <li class="album"><a href="#">Album</a>
+    <ul class="album-sets">
+      <li class="set">
+        <ul class="albums">
+          <li class="album active"><a href="#">Album</a>
+          <li class="album"><a href="#">Album</a>
+          <li class="album"><a href="#">Album</a>
+        </ul>
+      <li class="set">
+        <ul class="albums">
+          <li class="album"><a href="#">Album</a>
+          <li class="album"><a href="#">Album</a>
+          <li class="album"><a href="#">Album</a>
+        </ul>
     </ul>
+    <nav class="nav">
+      <a class="prev-set" href="#">Prev</a>
+      <a class="next-set" href="#">Next</a>
+    </nav>
+    <menu class="rollover">
+      <a class="add" href="#">Add</a>
+      <a class="help" href="#">Help</a>
+    </menu>
+  </div>
+
+  <div id="songs">
+    <table>
+      <thead>
+        <tr>
+          <th class="name">Name
+          <th class="upload">Upload Song
+          <th class="download">Download
+          <th class="lyrics">Lyrics
+          <th class="fullscreen">Full Screen
+          <th class="status">&plus;
+      <tbody>
+        <tr>
+          <td class="name">
+            <span class="num">1</span>
+            <span class="light"></span>
+            <span class="name">Song Name</span>
+          <td class="upload"><a href="#">Upload</a>
+          <td class="download">
+            <span class="light"></span>
+            <select>
     <nav class="nav">
       <a class="prev" href="#">Prev</a>
       <a class="next" href="#">Next</a>
@@ -98,8 +137,14 @@
   </div>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
+<script src="j/jquery.min.js"></script>
+<script src="j/jquery-ui.min.js"></script>
+<script src="j/jquery.cycle.all.min.js"></script>
 <script>
   $('#clx').draggable();
+  $('.album-sets').cycle({
+    fx: 'scrollHorz',
+    prev: '.prev-set',
+    next: '.next-set',
+  });
 </script>

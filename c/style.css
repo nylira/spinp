@@ -170,21 +170,21 @@ body.cpanel{overflow-y:hidden}
 #cpanel #main-menu ul li a.minimize{width:32px;background-position:-618px 0;}
 #cpanel #main-menu ul li a.minimize:hover{background-position:-618px -31px}
 #cpanel #main-menu ul li a.minimize:active,#cpanel #main-menu ul li a.minimize.active{background-position:-618px -62px}
-#cpanel #albums{position:relative;((null)):0;((null)):0;}
-#cpanel #albums ul.albums{zoom:1;padding:19px 32px;}
+#cpanel #albums{position:relative;((null)):0;((null)):0;padding:19px 32px;}
+#cpanel #albums ul.albums{zoom:1;}
 #cpanel #albums ul.albums:before,#cpanel #albums ul.albums:after{content:"";display:table}
 #cpanel #albums ul.albums:after{clear:both}
 #cpanel #albums ul.albums li.album{float:left;height:175px;width:175px;position:relative;((null)):0;((null)):0;margin:0 10px;}
 #cpanel #albums ul.albums li.album a{display:block;height:175px;width:175px;background:url("../i/cp/album-bg.jpg");text-indent:-999em;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;}
 #cpanel #albums ul.albums li.album a:hover{background-position:0 -175px}
 #cpanel #albums ul.albums li.album.active a:after{content:"";display:block;height:190px;width:190px;position:absolute;top:-8px;left:-8px;background:url("../i/cp/album-click.png")}
-#cpanel #albums nav.nav a{display:block;width:26px;height:41px;background:#000 url("../i/cp/album-nav.png");text-indent:-999em;}
-#cpanel #albums nav.nav a.prev{position:absolute;top:85px;left:8px;}
-#cpanel #albums nav.nav a.prev:hover{background-position:0 -41px}
-#cpanel #albums nav.nav a.prev:active{background-position:0 -82px}
-#cpanel #albums nav.nav a.next{position:absolute;top:85px;right:8px;background-position:26px 0;}
-#cpanel #albums nav.nav a.next:hover{background-position:26px -41px}
-#cpanel #albums nav.nav a.next:active{background-position:26px -82px}
+#cpanel #albums nav.nav a{display:block;width:26px;height:41px;background:#000 url("../i/cp/album-nav.png");text-indent:-999em;position:absolute;((null)):0;((null)):0;z-index:100;}
+#cpanel #albums nav.nav a.prev-set{position:absolute;top:85px;left:8px;}
+#cpanel #albums nav.nav a.prev-set:hover{background-position:0 -41px}
+#cpanel #albums nav.nav a.prev-set:active{background-position:0 -82px}
+#cpanel #albums nav.nav a.next-set{position:absolute;top:85px;right:8px;background-position:26px 0;}
+#cpanel #albums nav.nav a.next-set:hover{background-position:26px -41px}
+#cpanel #albums nav.nav a.next-set:active{background-position:26px -82px}
 #cpanel #albums menu.rollover{display:none;-webkit-transition:;-moz-transition:;transition:;}
 #cpanel #albums menu.rollover a{display:block;width:26px;height:24px;background:#000 url("../i/cp/album-rollover.png");text-indent:-999em;}
 #cpanel #albums menu.rollover a.add{position:absolute;top:18px;right:8px;}
