@@ -1,58 +1,55 @@
 .albums
-  position relative
-  height 100%
+  relative()
+  h 100%
 
   ul.albums
-    height 100%
+    h 100%
     li.album
-      width 245px
+      w 245px
       .album.cover
-        pad 0 m*2 6px
+        p 0 x*2 6px
         img
-          square 189px
-          border 2px solid #fff
+          r 189px
+          b 2px solid #fff
           border-radius 2px
           box-shadow b45 2px 2px 4px
-          display block
+          d block
 
         ul.switch
-          position absolute
-          top 0
-          left m*2
-          square 189px
+          absolute top 0 left x*2
+          r 189px
           transition()
-          z-index 1000
-          opacity 0
+          z 1000
+          o 0
           &:hover
-            opacity 1
+            o 1
           li
             a
-              display block
-              width 41px
-              height 60px
-              position absolute
-              top 62px + 2px
-              z-index 100
-              text-indent -999em
-              background b80 url(../i/album-nav-arrows.png) left top no-repeat
+              d block
+              w 41px
+              h 60px
+              absolute top 62px + 2px
+              z 100
+              ti -999em
+              bg b80 url(../i/album-nav-arrows.png) left top no-repeat
               transition()
               &.prev-album
                 left 2px
                 border-radius 0 2px 2px 0
               &.next-album
                 right -2px
-                background-position -41px 0
+                bgp -41px 0
                 border-radius 2px 0 0 2px
               &:hover, &:focus
-                background-color hsla(212,78,47,.8)
+                bgc hsla(212,78,47,.8)
               &:active
-                background-color hsla(212,78,47,.9)
+                bgc hsla(212,78,47,.9)
 
       .album.title
         h2
-          pad 0 2em
+          p 0 2em
           fw bold
-          lh m*2
+          lh x*2
           cursor pointer
           bt 1px solid transparent
           &:hover
@@ -61,29 +58,29 @@
             bg hsla(0,0,71,.8)
 
         .data
-          pad 0 2em .5em
-          display none
+          p 0 2em .5em
+          d none
           bg hsla(0,0,71,.8)
           box-shadow inset b5 0 -2px 2px
           > ul
             font 11px/1.5 sans
             > li
               &.links
-                pad .5em 0 0
+                p .5em 0 0
                 > a
                   mr 1em
                   fs 12px
                   &.button
-                    display inline-block
+                    d inline-block
                     background linear-gradient(top, #3985c1, #0767b1)
                     border-radius 2px
-                    font bold 12px/1.25 sans
-                    width 120px
-                    text-align center
-                    color #fff
-                    font-smoothing()
+                    f bold 12px/1.25 sans
+                    w 120px
+                    ta center
+                    c #fff
+                    aa()
                     text-shadow b40 0 -1px 0
-                    border 1px solid b15
+                    b 1px solid b15
                     box-shadow b45 1px 1px 2px
                 .menu.share
                   ul

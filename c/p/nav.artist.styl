@@ -1,17 +1,17 @@
 nav.artist
-  margin-top: -200px
+  mt -200px
   transition .3s ease all
-  position relative
+  relative()
   &.pushed
-    margin-top -138px
+    mt -138px
   &.pushed-title
     top 64px
   ul li a, dl dt
-    display block
-    text-shadow w50 0 1px 0
-    font bold 1em/2 sans
-    text-transform uppercase
-    pad 0 2em
+    d block
+    ts w50 0 1px 0
+    f bold 1em/2 sans
+    tt uppercase
+    p 0 2em
 
   ul
     li
@@ -21,7 +21,7 @@ nav.artist
           bg hsla(0,0,71,.6)
         &:active
           box-shadow inset b8 0 0 5px
-            bg hsla(0,0,71,.8)
+          bg hsla(0,0,71,.8)
   dl
     dt
       &:hover
@@ -35,39 +35,39 @@ nav.artist
     bb 1px solid b20
     bg hsla(0,0,71,.8)
     box-shadow inset b10 0 -3px 2px
-    pad 0 m*2 m*.5
-    display none
+    p 0 x*2 x*.5
+    d none
 
     a
       buttondark()
     form
       background linear-gradient(top, m135, m199)
-      pad 1px
+      p 1px
       relative()
       input
-        display block
+        d block
         &[type="text"]
-          font 10px/1 sans
-          height 19px
+          f 10px/1 sans
+          h 19px
           bg #fff
           box-shadow inset b20 1px 2px 1px
-          width 100%
-          mar 0
-          pad 4px 3px 5px
-          border none
+          w 100%
+          m 0
+          p 4px 3px 5px
+          b none
           box-sizing border-box
         &[type='submit']
-          width 21px
-          height 19px
+          w 21px
+          h 19px
           bg #000
           absolute top 1px right 1px
-          border none
-          pad 0
+          b none
+          p 0
           bg url(../i/news-submit.png) left top no-repeat
-          text-indent -999em
+          ti -999em
           box-shadow b20 -1px 0 2px
           cursor pointer
           &:hover
-            background-position left -19px
+            bgp left -19px
           &:active
-            background-position left -38px
+            bgp left -38px

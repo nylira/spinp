@@ -1,9 +1,10 @@
+@import 'n/index'
 @import 'm/all'
 
-m = 13px
+x = 13px
 
-dfont()
-  fs m
+df()
+  fs x
   lh 1.5
   ff sans
   color #1b1b1b
@@ -12,24 +13,33 @@ link = #000
 hover = link
 
 a
-  text-decoration none
-  color link
+  c link
+  td none
   &:hover, &:focus
-    color hover
+    c hover
 
 html, body
   height 100%
 
 body
-  dfont()
+  df()
   bg #000
-  overflow-y scroll
+  oy scroll
+
+  .content
+    w 200px
+    h 100px
+    m 0 auto
+    bg #f00
+    s x*4
+    bz 5px #000 #f00 #0f0 #00f
+    abs top 20px right 20px
 
 #spindal
   bg w80
-  width 245px
-  position relative
-  z-index 2
+  w 245px
+  relative()
+  z 2
   min-height 100%
   box-shadow b25 1px 0 3px
   left -245px
@@ -38,10 +48,10 @@ body
     left 0
 
   header.artist
-    pad m 2em
-    position relative
+    p m 2em
+    relative()
     img.logo
-      display block
+      d block
 
 @import 'p/a.show.hide.menu'
 @import 'p/a.play.big'
