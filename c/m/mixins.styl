@@ -3,6 +3,64 @@ mono = Consolas, 'Lucida Console', Monaco, Courier New, monospace
 sans = 'Helvetica Neue', Arial, Helvetica, sans-serif
 lucida = 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif 
 
+buttondark()
+  d inline-block
+  p 0 10px
+  f bold 12px/1.8 sans
+  c link
+  ta center
+  text-shadow w50 0 1px 0
+  cursor pointer
+  &:hover, &.active, &:active
+    c #fff
+    text-shadow b30 0 1px 0
+    aa()
+  &:hover, &.active
+    border-radius .9em
+    box-shadow inset b50 1px 1px 2px
+    bg b30
+  &:active, &.active
+    bg b50
+
+buttonblue()
+  d block
+  p 0 10px
+  f bold 12px/1.8 sans
+  ta center
+  text-shadow w50 0 1px 0
+  c #0063af
+  &:hover, &.active
+    border-radius .9em
+    box-shadow inset b50 1px 1px 2px
+    bg w50
+  &:active, &.active
+    bg w60
+
+button()
+  b none
+  d inline-block
+  b 1px solid b40
+  border-radius 3px
+  cursor pointer
+  p 0 .7em
+  df()
+  lh m*2px - 3px
+  text-shadow b50 0 0 5px
+  background linear-gradient(top, m70 0%, m55 100%)
+  box-shadow inset w10 0 0 3px, w8 0 1px 0
+  color txt
+  &:hover
+    background linear-gradient(top, m75 0%, m65 100%)
+  &:active
+    background linear-gradient(top, m50 0%, m65 100%)
+  &.disabled
+    cursor default
+    opacity .75
+    &:hover
+      background linear-gradient(top, m80 0%, m60 100%)
+  &[disabled]:active, &[disabled]:hover
+    background #EEEEEE
+
 span.amp
   font-family Baskerville,Palatino,"Book Antiqua",serif
   font-style italic

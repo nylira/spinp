@@ -19,7 +19,7 @@
           absolute top 0 left x*2
           r 189px
           transition()
-          z 1000
+          z-index 1000
           o 0
           &:hover
             o 1
@@ -29,7 +29,7 @@
               w 41px
               h 60px
               absolute top 62px + 2px
-              z 100
+              z-index 100
               ti -999em
               bg b80 url(../i/album-nav-arrows.png) left top no-repeat
               transition()
@@ -37,7 +37,7 @@
                 left 2px
                 border-radius 0 2px 2px 0
               &.next-album
-                right -2px
+                right 2px
                 bgp -41px 0
                 border-radius 2px 0 0 2px
               &:hover, &:focus

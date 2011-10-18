@@ -1,7 +1,7 @@
 .menu.tracks
   p 0 0 200px
   relative()
-  z 1000
+  z-index 1000
   .tracks.accordion
     bt 1px solid b20
     bb 1px solid w40
@@ -70,11 +70,10 @@
 
       .toggle.volume
         r 25px
-        position absolute
         absolute top -25px right 1.75em
         ti -999em
         bg url(../i/icon-volume.png) left top
-        z 10000
+        z-index 10000
         &:hover, &.active
           bgp 0 -25px
         &.active
@@ -142,7 +141,7 @@
         m 0 0 .25em
         li
           display inline-block
-          s 75%
+          s x*.75
           &.length.played
             w 25%
           &.total.plays

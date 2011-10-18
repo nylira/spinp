@@ -2,6 +2,7 @@ nav.artist
   mt -200px
   transition .3s ease all
   relative()
+  z-index 500
   &.pushed
     mt -138px
   &.pushed-title
@@ -37,6 +38,7 @@ nav.artist
     box-shadow inset b10 0 -3px 2px
     p 0 x*2 x*.5
     d none
+    clearfix()
 
     a
       buttondark()
