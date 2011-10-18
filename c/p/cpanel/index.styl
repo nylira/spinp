@@ -1,3 +1,5 @@
+body.cpanel
+  overflow-y hidden
 #cpanel
   bg m38 url(../i/cp/cp-bg.png)
   w 650px
@@ -30,21 +32,60 @@
       clearfix()
       li
         float left
-        w 103px
-        bg b60
-        &.condense
-          w 32px
         a
           d block
-          background linear-gradient(top, w20, b20)
-          b 1px solid #000
-          box-shadow b75 0 1px 3px, inset b40 0 -15px 0, inset w60 0 0 2px
-          lhh 31px
-          fw bold
-          ta center
-          text-shadow b80 0 -1px 1px
-          c #fff
-          aa()
+          w 103px
+          h 31px
+          box-shadow b75 0 1px 3px
+          ti -999em
+          bg url(../i/cp/main-menu.png) top left no-repeat
+
+          &.active, &:active
+            box-shadow #000 0 0 0
+
+          &.home
+            &:hover
+              bgp 0 -31px
+            &:active, &.active
+              bgp 0 -62px
+          &.profile
+            bgp -103px 0
+            &:hover
+              bgp -103px -31px
+            &:active, &.active
+              bgp -103px -62px
+          &.music
+            bgp -206px 0
+            &:hover
+              bgp -206px -31px
+            &:active, &.active
+              bgp -206px -62px
+          &.gallery
+            bgp -309px 0
+            &:hover
+              bgp -309px -31px
+            &:active, &.active
+              bgp -309px -62px
+          &.stats
+            bgp -412px 0
+            &:hover
+              bgp -412px -31px
+            &:active, &.active
+              bgp -412px -62px
+          &.account
+            bgp -515px 0
+            &:hover
+              bgp -515px -31px
+            &:active, &.active
+              bgp -515px -62px
+          &.minimize
+            w 32px
+            bgp -618px 0
+            &:hover
+              bgp -618px -31px
+            &:active, &.active
+              bgp -618px -62px
+
   #albums
     relative()
     ul.albums
@@ -69,7 +110,7 @@
           r 190px
           absolute top -8px left -8px
           bg url(../i/cp/album-click.png)
-    nav
+    nav.nav
       a
         d block
         w 26px
@@ -89,7 +130,32 @@
             bgp 26px -41px
           &:active
             bgp 26px -82px
-        
+    menu.rollover
+      d none
+      transition()
+      a
+        d block
+        w 26px
+        h 24px
+        bg #000 url(../i/cp/album-rollover.png)
+        ti -999em
+        &.add
+          absolute top 18px right 8px
+          &:hover
+            bgp 0 -24px
+          &:active
+            bgp 0 -48px
+        &.help
+          absolute bottom 17px right 8px
+          bgp 26px 0
+          &:hover
+            bgp 26px -24px
+          &:active
+            bgp 26px -48px
+    &:hover
+      menu.rollover
+        d block
+
   #bottom-bar
     h 17px
     box-shadow b50 0 -1px 2px, inset w5 0 1px 0
