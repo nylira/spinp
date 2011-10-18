@@ -26,37 +26,5 @@ body
   bg #000
   oy scroll
 
-  .content
-    w 200px
-    h 100px
-    m 0 auto
-    bg #f00
-    s x*4
-    bz 5px #000 #f00 #0f0 #00f
-    abs top 20px right 20px
-
-#spindal
-  bg w80
-  w 245px
-  relative()
-  left -245px
-  z 2
-  min-height 100%
-  box-shadow b25 1px 0 3px
-  transition 1s ease all
-  &.active
-    left 0
-
-  header.artist
-    p x 2em
-    relative()
-    img.logo
-      d block
-
-@import 'p/a.show.hide.menu'
-@import 'p/a.play.big'
-@import 'p/section.albums'
-@import 'p/menu.share'
-@import 'p/menu.tracks'
-@import 'p/nav.artist'
-@import 'p/ul.bgs'
+@import 'p/player/index'
+@import 'p/cpanel/index'

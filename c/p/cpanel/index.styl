@@ -1,0 +1,96 @@
+#cpanel
+  bg m38 url(../i/cp/cp-bg.png)
+  w 650px
+  m 200px auto
+  box-shadow b60 0 0 10px
+  border-radius 5px 5px 0 0
+  relative()
+  z-index 2
+
+  #top-bar
+    h 16px
+    background linear-gradient(top, m8, m40)
+    box-shadow b70 0 1px 5px, inset b50 0 -1px 3px
+    border-radius 4px 4px 0 0
+    cursor pointer
+    &:hover
+      bg m30
+
+    a#logout
+      float right
+      d block
+      c m60
+      r 16px
+      lh 16px
+      &:hover
+        c m110
+
+  #main-menu
+    ul
+      clearfix()
+      li
+        float left
+        w 103px
+        bg b60
+        &.condense
+          w 32px
+        a
+          d block
+          background linear-gradient(top, w20, b20)
+          b 1px solid #000
+          box-shadow b75 0 1px 3px, inset b40 0 -15px 0, inset w60 0 0 2px
+          lhh 31px
+          fw bold
+          ta center
+          text-shadow b80 0 -1px 1px
+          c #fff
+          aa()
+  #albums
+    relative()
+    ul.albums
+      clearfix()
+      p 19px 32px
+      li.album
+        float left
+        r 175px
+        relative()
+        m 0 10px
+        a
+          d block
+          r 175px
+          bg url(../i/cp/album-bg.jpg)
+          ti -999em
+          box-shadow w7 0 1px 0
+          &:hover
+            bgp 0 -175px
+        &.active a:after
+          content ''
+          d block
+          r 190px
+          absolute top -8px left -8px
+          bg url(../i/cp/album-click.png)
+    nav
+      a
+        d block
+        w 26px
+        h 41px
+        bg #000 url(../i/cp/album-nav.png)
+        ti -999em
+        &.prev
+          absolute top 85px left 8px
+          &:hover
+            bgp 0 -41px
+          &:active
+            bgp 0 -82px
+        &.next
+          absolute top 85px right 8px
+          bgp 26px 0
+          &:hover
+            bgp 26px -41px
+          &:active
+            bgp 26px -82px
+        
+  #bottom-bar
+    h 17px
+    box-shadow b50 0 -1px 2px, inset w5 0 1px 0
+    background #000 linear-gradient(top, w15, w1)

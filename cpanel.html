@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>The Gaslight Anthem &ndash; Spindal</title>
+<meta name="author" content="Peng Zhong">
+
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="stylesheet" media="screen" href="c/style.css?v=1">
+
+</head>
+<body>
+
+<ul class="bgs">
+  <li class="bg"><img src="i/artist-bg-q90.jpg">
+</ul>
+
+<div id="cpanel">
+
+  <div id="top-bar">
+    <a id="logout" href="#">&times;</a>
+  </div>
+
+  <div id="main-menu">
+    <ul>
+      <li><a href="#">S</a>
+      <li><a href="#">Profile</a>
+      <li><a href="#">Music</a>
+      <li><a href="#">Gallery</a>
+      <li><a href="#">Stats</a>
+      <li><a href="#">Account</a>
+      <li class="condense"><a href="#">&uArr;</a>
+    </ul>
+  </div>
+
+  <div id="albums">
+    <ul class="albums">
+      <li class="album active"><a href="#">Album</a>
+      <li class="album"><a href="#">Album</a>
+      <li class="album"><a href="#">Album</a>
+    </ul>
+    <nav>
+      <a class="prev" href="#">Prev</a>
+      <a class="next" href="#">Next</a>
+    </nav>
+  </div>
+
+  <div id="songs">
+    <table>
+      <thead>
+        <tr>
+          <th class="name">Name
+          <th class="upload">Upload Song
+          <th class="download">Download
+          <th class="lyrics">Lyrics
+          <th class="fullscreen">Full Screen
+          <th class="status">&plus;
+      <tbody>
+        <tr>
+          <td class="name">
+            <span class="num">1</span>
+            <span class="light"></span>
+            <span class="name">Song Name</span>
+          <td class="upload"><a href="#">Upload</a>
+          <td class="download">
+            <span class="light"></span>
+            <select>
+              <option>Free</option>
+              <option>$ Custom</option>
+              <option>$ 0.99</option>
+              <option>$ 1.29</option>
+              <option>iTunes</option>
+              <option>Amazon</option>
+            </select>
+          <td class="lyrics">
+            <span class="light"></span>
+            <a class="add" href="#">&plus;</a>
+          <td class="fullscreen">
+            <span class="light"></span>
+            <select>
+              <option>Slideshow</option>
+              <option>Video</option>
+            </select>
+          <td class="status">
+            <a class="status">Delete<a>
+    </table>
+  </div>
+
+  <div id="bottom-bar">
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+  $('#clx').draggable();
+</script>

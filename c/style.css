@@ -7,7 +7,6 @@ ins{background-color:#ff9;color:#000;text-decoration:none}
 mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
 abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 ul,ol{list-style:none}
 :focus{outline:none}
 strong{font-weight:bold}
@@ -21,8 +20,7 @@ span.amp{font-family:Baskerville,Palatino,"Book Antiqua",Georgia,"serif";font-st
 a{color:#000;text-decoration:none;}
 a:hover,a:focus{color:#000}
 html,body{height:100%}
-body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000;overflow-y:scroll;}
-body .content{width:200px;height:100px;margin:0 auto;background:#f00;font-size:52px;border-top:5px solid #000;border-right:5px solid #f00;border-bottom:5px solid #0f0;border-left:5px solid #00f;position:absolute;top:20px;right:20px}
+body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000;overflow-y:scroll}
 #spindal{background:rgba(255,255,255,0.80);width:245px;position:relative;((null)):0;((null)):0;left:-245px;z-index:2;min-height:100%;-webkit-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-moz-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-webkit-transition:1s ease all;-moz-transition:1s ease all;transition:1s ease all;}
 #spindal.active{left:0}
 #spindal header.artist{padding:13px 2em;position:relative;((null)):0;((null)):0;}
@@ -140,3 +138,30 @@ nav.artist dd form input[type="submit"]{width:21px;height:19px;background:#000;p
 nav.artist dd form input[type="submit"]:hover{background-position:left -19px}
 nav.artist dd form input[type="submit"]:active{background-position:left -38px}
 ul.bgs li.bg img{min-height:100%;min-width:1024px;width:100%;height:auto;position:fixed;top:0;left:0}
+#cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;margin:200px auto;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;z-index:2;}
+#cpanel #top-bar{height:16px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #080808), color-stop(1, #282828));background:-webkit-linear-gradient(top, #080808 0%, #282828 100%);background:-moz-linear-gradient(top, #080808 0%, #282828 100%);background:linear-gradient(top, #080808 0%, #282828 100%);-webkit-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-moz-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;cursor:pointer;}
+#cpanel #top-bar:hover{background:#1e1e1e}
+#cpanel #top-bar a#logout{float:right;display:block;color:#3c3c3c;height:16px;width:16px;line-height:16px;}
+#cpanel #top-bar a#logout:hover{color:#6e6e6e}
+#cpanel #main-menu ul{zoom:1;}
+#cpanel #main-menu ul:before,#cpanel #main-menu ul:after{content:"";display:table}
+#cpanel #main-menu ul:after{clear:both}
+#cpanel #main-menu ul li{float:left;width:103px;background:rgba(0,0,0,0.60);}
+#cpanel #main-menu ul li.condense{width:32px}
+#cpanel #main-menu ul li a{display:block;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.20)), color-stop(1, rgba(0,0,0,0.20)));background:-webkit-linear-gradient(top, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);background:linear-gradient(top, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);border:1px solid #000;-webkit-box-shadow:rgba(0,0,0,0.75) 0 1px 3px,inset rgba(0,0,0,0.40) 0 -15px 0,inset rgba(255,255,255,0.60) 0 0 2px;-moz-box-shadow:rgba(0,0,0,0.75) 0 1px 3px,inset rgba(0,0,0,0.40) 0 -15px 0,inset rgba(255,255,255,0.60) 0 0 2px;box-shadow:rgba(0,0,0,0.75) 0 1px 3px,inset rgba(0,0,0,0.40) 0 -15px 0,inset rgba(255,255,255,0.60) 0 0 2px;height:31px;line-height:31px;font-weight:bold;text-align:center;text-shadow:rgba(0,0,0,0.80) 0 -1px 1px;color:#fff;-webkit-font-smoothing:antialiased}
+#cpanel #albums{position:relative;((null)):0;((null)):0;}
+#cpanel #albums ul.albums{zoom:1;padding:19px 32px;}
+#cpanel #albums ul.albums:before,#cpanel #albums ul.albums:after{content:"";display:table}
+#cpanel #albums ul.albums:after{clear:both}
+#cpanel #albums ul.albums li.album{float:left;height:175px;width:175px;position:relative;((null)):0;((null)):0;margin:0 10px;}
+#cpanel #albums ul.albums li.album a{display:block;height:175px;width:175px;background:url("../i/cp/album-bg.jpg");text-indent:-999em;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;}
+#cpanel #albums ul.albums li.album a:hover{background-position:0 -175px}
+#cpanel #albums ul.albums li.album.active a:after{content:"";display:block;height:190px;width:190px;position:absolute;top:-8px;left:-8px;background:url("../i/cp/album-click.png")}
+#cpanel #albums nav a{display:block;width:26px;height:41px;background:#000 url("../i/cp/album-nav.png");text-indent:-999em;}
+#cpanel #albums nav a.prev{position:absolute;top:85px;left:8px;}
+#cpanel #albums nav a.prev:hover{background-position:0 -41px}
+#cpanel #albums nav a.prev:active{background-position:0 -82px}
+#cpanel #albums nav a.next{position:absolute;top:85px;right:8px;background-position:26px 0;}
+#cpanel #albums nav a.next:hover{background-position:26px -41px}
+#cpanel #albums nav a.next:active{background-position:26px -82px}
+#cpanel #bottom-bar{height:17px;-webkit-box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;-moz-box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;background:#000 -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.15)), color-stop(1, rgba(255,255,255,0.01)));background:#000 -webkit-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%);background:#000 -moz-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%);background:#000 linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%)}
