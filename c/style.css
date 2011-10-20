@@ -139,36 +139,38 @@ nav.artist dd form input[type="submit"]:hover{background-position:left -19px}
 nav.artist dd form input[type="submit"]:active{background-position:left -38px}
 ul.bgs li.bg img{min-height:100%;min-width:1024px;width:100%;height:auto;position:fixed;top:0;left:0}
 body.cpanel{overflow-y:hidden}
-#cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;margin:200px auto;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;z-index:2;}
+#cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;margin:120px auto;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;z-index:2;}
+#cpanel .light{display:inline-block;height:20px;width:20px;background:url("../i/cp/light.png") top left no-repeat;}
+#cpanel .light.disabled,#cpanel .light:hover{background-position:0 -20px}
 #cpanel #top-bar{height:16px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #080808), color-stop(1, #282828));background:-webkit-linear-gradient(top, #080808 0%, #282828 100%);background:-moz-linear-gradient(top, #080808 0%, #282828 100%);background:linear-gradient(top, #080808 0%, #282828 100%);-webkit-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-moz-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;cursor:pointer;}
-#cpanel #top-bar:hover{background:#1e1e1e}
+#cpanel #top-bar:hover,#cpanel #top-bar:focus{background:#1e1e1e}
 #cpanel #top-bar a#logout{float:right;display:block;color:#3c3c3c;height:16px;width:16px;line-height:16px;}
-#cpanel #top-bar a#logout:hover{color:#6e6e6e}
+#cpanel #top-bar a#logout:hover,#cpanel #top-bar a#logout:focus{color:#6e6e6e}
 #cpanel #main-menu ul{zoom:1;}
 #cpanel #main-menu ul:before,#cpanel #main-menu ul:after{content:"";display:table}
 #cpanel #main-menu ul:after{clear:both}
 #cpanel #main-menu ul li{float:left;}
 #cpanel #main-menu ul li a{display:block;width:103px;height:31px;-webkit-box-shadow:rgba(0,0,0,0.75) 0 1px 3px;-moz-box-shadow:rgba(0,0,0,0.75) 0 1px 3px;box-shadow:rgba(0,0,0,0.75) 0 1px 3px;text-indent:-999em;background:url("../i/cp/main-menu.png") top left no-repeat;}
 #cpanel #main-menu ul li a.active,#cpanel #main-menu ul li a:active{-webkit-box-shadow:#000 0 0 0;-moz-box-shadow:#000 0 0 0;box-shadow:#000 0 0 0}
-#cpanel #main-menu ul li a.home:hover{background-position:0 -31px}
+#cpanel #main-menu ul li a.home:hover,#cpanel #main-menu ul li a.home:focus{background-position:0 -31px}
 #cpanel #main-menu ul li a.home:active,#cpanel #main-menu ul li a.home.active{background-position:0 -62px}
 #cpanel #main-menu ul li a.profile{background-position:-103px 0;}
-#cpanel #main-menu ul li a.profile:hover{background-position:-103px -31px}
+#cpanel #main-menu ul li a.profile:hover,#cpanel #main-menu ul li a.profile:focus{background-position:-103px -31px}
 #cpanel #main-menu ul li a.profile:active,#cpanel #main-menu ul li a.profile.active{background-position:-103px -62px}
 #cpanel #main-menu ul li a.music{background-position:-206px 0;}
-#cpanel #main-menu ul li a.music:hover{background-position:-206px -31px}
+#cpanel #main-menu ul li a.music:hover,#cpanel #main-menu ul li a.music:focus{background-position:-206px -31px}
 #cpanel #main-menu ul li a.music:active,#cpanel #main-menu ul li a.music.active{background-position:-206px -62px}
 #cpanel #main-menu ul li a.gallery{background-position:-309px 0;}
-#cpanel #main-menu ul li a.gallery:hover{background-position:-309px -31px}
+#cpanel #main-menu ul li a.gallery:hover,#cpanel #main-menu ul li a.gallery:focus{background-position:-309px -31px}
 #cpanel #main-menu ul li a.gallery:active,#cpanel #main-menu ul li a.gallery.active{background-position:-309px -62px}
 #cpanel #main-menu ul li a.stats{background-position:-412px 0;}
-#cpanel #main-menu ul li a.stats:hover{background-position:-412px -31px}
+#cpanel #main-menu ul li a.stats:hover,#cpanel #main-menu ul li a.stats:focus{background-position:-412px -31px}
 #cpanel #main-menu ul li a.stats:active,#cpanel #main-menu ul li a.stats.active{background-position:-412px -62px}
 #cpanel #main-menu ul li a.account{background-position:-515px 0;}
-#cpanel #main-menu ul li a.account:hover{background-position:-515px -31px}
+#cpanel #main-menu ul li a.account:hover,#cpanel #main-menu ul li a.account:focus{background-position:-515px -31px}
 #cpanel #main-menu ul li a.account:active,#cpanel #main-menu ul li a.account.active{background-position:-515px -62px}
 #cpanel #main-menu ul li a.minimize{width:32px;background-position:-618px 0;}
-#cpanel #main-menu ul li a.minimize:hover{background-position:-618px -31px}
+#cpanel #main-menu ul li a.minimize:hover,#cpanel #main-menu ul li a.minimize:focus{background-position:-618px -31px}
 #cpanel #main-menu ul li a.minimize:active,#cpanel #main-menu ul li a.minimize.active{background-position:-618px -62px}
 #cpanel #albums{position:relative;((null)):0;((null)):0;padding:19px 32px;}
 #cpanel #albums ul.albums{zoom:1;}
@@ -176,22 +178,46 @@ body.cpanel{overflow-y:hidden}
 #cpanel #albums ul.albums:after{clear:both}
 #cpanel #albums ul.albums li.album{float:left;height:175px;width:175px;position:relative;((null)):0;((null)):0;margin:0 10px;}
 #cpanel #albums ul.albums li.album a{display:block;height:175px;width:175px;background:url("../i/cp/album-bg.jpg");text-indent:-999em;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;}
-#cpanel #albums ul.albums li.album a:hover{background-position:0 -175px}
+#cpanel #albums ul.albums li.album a:hover,#cpanel #albums ul.albums li.album a:focus{background-position:0 -175px}
 #cpanel #albums ul.albums li.album.active a:after{content:"";display:block;height:190px;width:190px;position:absolute;top:-8px;left:-8px;background:url("../i/cp/album-click.png")}
 #cpanel #albums nav.nav a{display:block;width:26px;height:41px;background:#000 url("../i/cp/album-nav.png");text-indent:-999em;position:absolute;((null)):0;((null)):0;z-index:100;}
 #cpanel #albums nav.nav a.prev-set{position:absolute;top:85px;left:8px;}
-#cpanel #albums nav.nav a.prev-set:hover{background-position:0 -41px}
+#cpanel #albums nav.nav a.prev-set:hover,#cpanel #albums nav.nav a.prev-set:focus{background-position:0 -41px}
 #cpanel #albums nav.nav a.prev-set:active{background-position:0 -82px}
 #cpanel #albums nav.nav a.next-set{position:absolute;top:85px;right:8px;background-position:26px 0;}
-#cpanel #albums nav.nav a.next-set:hover{background-position:26px -41px}
+#cpanel #albums nav.nav a.next-set:hover,#cpanel #albums nav.nav a.next-set:focus{background-position:26px -41px}
 #cpanel #albums nav.nav a.next-set:active{background-position:26px -82px}
 #cpanel #albums menu.rollover{display:none;-webkit-transition:;-moz-transition:;transition:;}
 #cpanel #albums menu.rollover a{display:block;width:26px;height:24px;background:#000 url("../i/cp/album-rollover.png");text-indent:-999em;}
 #cpanel #albums menu.rollover a.add{position:absolute;top:18px;right:8px;}
-#cpanel #albums menu.rollover a.add:hover{background-position:0 -24px}
+#cpanel #albums menu.rollover a.add:hover,#cpanel #albums menu.rollover a.add:focus{background-position:0 -24px}
 #cpanel #albums menu.rollover a.add:active{background-position:0 -48px}
 #cpanel #albums menu.rollover a.help{position:absolute;bottom:17px;right:8px;background-position:26px 0;}
-#cpanel #albums menu.rollover a.help:hover{background-position:26px -24px}
+#cpanel #albums menu.rollover a.help:hover,#cpanel #albums menu.rollover a.help:focus{background-position:26px -24px}
 #cpanel #albums menu.rollover a.help:active{background-position:26px -48px}
-#cpanel #albums:hover menu.rollover{display:block}
+#cpanel #albums:hover menu.rollover,#cpanel #albums:focus menu.rollover{display:block}
+#cpanel #songs table tr th{background:url("../i/cp/songs-th.png") top left no-repeat;height:26px;line-height:26px;text-align:center;color:transparent}
+#cpanel #songs table tr th.name,#cpanel #songs table tr td.name{min-width:186px}
+#cpanel #songs table tr th.upload,#cpanel #songs table tr td.upload{min-width:98px;background-position:-186px 0}
+#cpanel #songs table tr th.download,#cpanel #songs table tr td.download{min-width:114px;background-position:-284px 0}
+#cpanel #songs table tr th.lyrics,#cpanel #songs table tr td.lyrics{min-width:60px;background-position:-398px 0}
+#cpanel #songs table tr th.fullscreen,#cpanel #songs table tr td.fullscreen{min-width:152px;background-position:-458px 0}
+#cpanel #songs table tr th.status,#cpanel #songs table tr td.status{min-width:40px;background-position:-610px 0}
+#cpanel #songs table tbody tr{background:#343638;}
+#cpanel #songs table tbody tr:nth-of-type(even){background:#3e4042}
+#cpanel #songs table tbody tr td .light{margin:7px 0 8px}
+#cpanel #songs table tbody tr td.name{-webkit-font-smoothing:antialiased;}
+#cpanel #songs table tbody tr td.name span.num{padding-left:8px;font:bold 12px/35px "Helvetica Neue",Arial,Helvetica,sans-serif;color:#a0a0a0;text-shadow:rgba(0,0,0,0.80) 0 -1px 0}
+#cpanel #songs table tbody tr td.name span.name{font:bold 12px/35px "Helvetica Neue",Arial,Helvetica,sans-serif;color:#fff}
+#cpanel #songs table tbody tr td.upload{text-align:center;}
+#cpanel #songs table tbody tr td.upload a{display:inline-block;text-indent:-999em;height:26px;width:26px;margin:5px 0 4px;background:url("../i/cp/song-upload.png") top left no-repeat;}
+#cpanel #songs table tbody tr td.upload a:hover,#cpanel #songs table tbody tr td.upload a:focus{background-position:0 -26px}
+#cpanel #songs table tbody tr td.upload a:active{background-position:0 -52px}
+#cpanel #songs table tbody tr td.lyrics a.add{display:inline-block;height:21px;width:21px;margin:7px 0;background:url("../i/cp/song-lyrics.png") top left no-repeat;text-indent:-999em;}
+#cpanel #songs table tbody tr td.lyrics a.add:hover,#cpanel #songs table tbody tr td.lyrics a.add:focus{background-position:0 -21px}
+#cpanel #songs table tbody tr td.lyrics a.add:active{background-position:0 -42px}
+#cpanel #songs table tbody tr td.status{text-align:center;}
+#cpanel #songs table tbody tr td.status a.delete{display:inline-block;height:21px;width:19px;margin:7px 0;background:url("../i/cp/song-delete.png") top left no-repeat;text-indent:-999em;}
+#cpanel #songs table tbody tr td.status a.delete:hover,#cpanel #songs table tbody tr td.status a.delete:focus{background-position:0 -21px}
+#cpanel #songs table tbody tr td.status a.delete:active{background-position:0 -42px}
 #cpanel #bottom-bar{height:17px;-webkit-box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;-moz-box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;background:#000 -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.15)), color-stop(1, rgba(255,255,255,0.01)));background:#000 -webkit-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%);background:#000 -moz-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%);background:#000 linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%)}
