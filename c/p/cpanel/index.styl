@@ -19,6 +19,7 @@ body.cpanel
     d inline-block
     r 20px
     bg url(../i/cp/light.png) top left no-repeat
+    cursor pointer
     &.disabled, &:hover
       bgp 0 -20px
 
@@ -96,16 +97,23 @@ body.cpanel
             bgp -618px 0
             &:hover, &:focus
               bgp -618px -31px
-            &:active, &.active
+            &:active
               bgp -618px -62px
+            &.minimized
+              bgp -648px 0
+              &:hover, &:focus
+                bgp -648px -31px
+              &:active
+                bgp -648px -62px
 
   #albums
     relative()
     p 19px 32px
     ul.albums
       clearfix()
+      h 175px
       li.album
-        float left
+        d inline-block
         r 175px
         relative()
         m 0 10px
@@ -255,26 +263,44 @@ body.cpanel
                   bgp 0 -42px
 
             &.fullscreen
-              .selectBox-dropdown
+              .selector
                 w 114px
-                bg url(../i/cp/song-fullscreen-bg.png) top left no-repeat
-                pl 1px
-                &:hover, &:focus
-                  .selectBox-label
-                    c m235
+                h 21px
+                relative()
+                d inline-block
 
-              .selectBox-label, .selectBox-options li a
-                d block
-                m 2px 0
-                w 91px
-                lhh 17px
-                text-shadow b80 0 -1px 0
-                bg url(../i/cp/song-fullscreen-button.png) top left no-repeat
-                ta center
-                            
-              .selectBox-options
-                li
-                  a
+                .selector-dropdown
+                  w 114px
+                  h 21px
+                  bg url(../i/cp/song-fullscreen-bg.png) top left no-repeat
+                  pl 1px
+                  absolute top 0 left 0
+                  &:hover, &:focus
+                    .selector-label
+                      c m235
+
+                  &.active
+                    h 40px
+                    bgp 0 -22px
+                    box-shadow inset b13 0 0 7px, b30 2px 2px 4px
+                    bb none
+                    border-radius 3px
+                    z-index 15000
+                    .selector-options li a.video
+                      d block
+                    .selector-arrow
+                      bgp 0 -36px
+
+                  .selector-arrow
+                    cursor pointer
+                    &:hover
+                      bgp 0 -18px
+
+                  .selector-dropdown-menu
+                    bg transparent
+                    box-shadow none
+
+                  .selector-options li a
                     d block
                     m 2px 0
                     w 91px
@@ -282,14 +308,16 @@ body.cpanel
                     text-shadow b80 0 -1px 0
                     bg url(../i/cp/song-fullscreen-button.png) top left no-repeat
                     ta center
-
-                  &:last-of-type a
-                    border-radius 0 0 3px 3px 
-
-                  &.selectBox-hover a
-                    bg #1a81c9
-                    background linear-gradient(top, #338fcf, #0073c3)
-
+                    &:hover, &:focus
+                      bgp 0 -17px
+                      c m235
+                    &:active
+                      bgp 0 -34px
+                      c m180
+                    &.video
+                      d none
+                            
+              
             &.status
               ta center
               a.delete

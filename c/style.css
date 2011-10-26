@@ -21,16 +21,16 @@ a{color:#000;text-decoration:none;}
 a:hover,a:focus{color:#000}
 html,body{height:100%}
 body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000;overflow-y:scroll}
-.selectBox-dropdown{padding:0 23px 0 5px;position:relative;margin:7px 0 8px;-webkit-font-smoothing:antialiased;height:21px;color:#fff;background:#282828;display:inline-block;}
-.selectBox-dropdown:hover,.selectBox-dropdown:focus{color:#fff;}
-.selectBox-dropdown:hover .selectBox-arrow,.selectBox-dropdown:focus .selectBox-arrow{background-position:0 -18px}
-.selectBox-dropdown.selectBox-menuShowing .selectBox-arrow{background-position:0 -36px}
-.selectBox-dropdown .selectBox-label{width:100%;font:bold 12px/20px "Helvetica Neue",Arial,Helvetica,sans-serif}
-.selectBox-dropdown .selectBox-arrow{position:absolute;top:1px;right:1px;width:19px;height:18px;background:url("../i/cp/song-select-arrow.png") top left no-repeat}
-.selectBox-dropdown-menu{position:absolute;z-index:99999;max-height:200px;overflow:auto;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px;-webkit-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;-moz-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;background:#282828}
-.selectBox-options li a{display:block;padding:0 5px;font:bold 12px/22px "Helvetica Neue",Arial,Helvetica,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
-.selectBox-options li:last-of-type a{-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
-.selectBox-options li.selectBox-hover a{background:#1a81c9;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #338fcf), color-stop(1, #0073c3));background:-webkit-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:-moz-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:linear-gradient(top, #338fcf 0%, #0073c3 100%)}
+.selectBox-dropdown,.selector-dropdown{padding:0 23px 0 5px;position:relative;margin:7px 0 8px;-webkit-font-smoothing:antialiased;height:21px;color:#fff;background:#282828;display:inline-block;}
+.selectBox-dropdown:hover,.selector-dropdown:hover,.selectBox-dropdown:focus,.selector-dropdown:focus{color:#fff;}
+.selectBox-dropdown:hover .selectBox-arrow,.selector-dropdown:hover .selectBox-arrow,.selectBox-dropdown:focus .selectBox-arrow,.selector-dropdown:focus .selectBox-arrow{background-position:0 -18px}
+.selectBox-dropdown.selectBox-menuShowing .selectBox-arrow,.selector-dropdown.selectBox-menuShowing .selectBox-arrow,.selectBox-dropdown.selectBox-menuShowing .selector-arrow,.selector-dropdown.selectBox-menuShowing .selector-arrow{background-position:0 -36px}
+.selectBox-dropdown .selectBox-label,.selector-dropdown .selectBox-label{width:100%;font:bold 12px/20px "Helvetica Neue",Arial,Helvetica,sans-serif}
+.selectBox-dropdown .selectBox-arrow,.selector-dropdown .selectBox-arrow,.selectBox-dropdown .selector-arrow,.selector-dropdown .selector-arrow{position:absolute;top:1px;right:1px;width:19px;height:18px;background:url("../i/cp/song-select-arrow.png") top left no-repeat}
+.selectBox-dropdown-menu,.selector-dropdown-menu{position:absolute;z-index:99999;max-height:200px;overflow:auto;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px;-webkit-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;-moz-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;background:#282828}
+.selectBox-options li a,.selector-options li a{display:block;padding:0 5px;font:bold 12px/22px "Helvetica Neue",Arial,Helvetica,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+.selectBox-options li:last-of-type a,.selector-options li:last-of-type a{-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
+.selectBox-options li.selectBox-hover a,.selector-options li.selectBox-hover a{background:#1a81c9;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #338fcf), color-stop(1, #0073c3));background:-webkit-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:-moz-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:linear-gradient(top, #338fcf 0%, #0073c3 100%)}
 #spindal{background:rgba(255,255,255,0.80);width:245px;position:relative;((null)):0;((null)):0;left:-245px;z-index:2;min-height:100%;-webkit-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-moz-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-webkit-transition:1s ease all;-moz-transition:1s ease all;transition:1s ease all;}
 #spindal.active{left:0}
 #spindal header.artist{padding:13px 2em;position:relative;((null)):0;((null)):0;}
@@ -151,7 +151,7 @@ ul.bgs li.bg img{min-height:100%;min-width:1024px;width:100%;height:auto;positio
 html.cpanel,body.cpanel{height:100%;overflow-y:hidden}
 body.cpanel{overflow-y:hidden}
 #cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;margin:0 auto;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;top:100px;z-index:2;}
-#cpanel .light{display:inline-block;height:20px;width:20px;background:url("../i/cp/light.png") top left no-repeat;}
+#cpanel .light{display:inline-block;height:20px;width:20px;background:url("../i/cp/light.png") top left no-repeat;cursor:pointer;}
 #cpanel .light.disabled,#cpanel .light:hover{background-position:0 -20px}
 #cpanel #top-bar{height:16px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #080808), color-stop(1, #282828));background:-webkit-linear-gradient(top, #080808 0%, #282828 100%);background:-moz-linear-gradient(top, #080808 0%, #282828 100%);background:linear-gradient(top, #080808 0%, #282828 100%);-webkit-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-moz-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;cursor:pointer;}
 #cpanel #top-bar:hover,#cpanel #top-bar:focus{background:#1e1e1e}
@@ -182,12 +182,15 @@ body.cpanel{overflow-y:hidden}
 #cpanel #main-menu ul li a.account:active,#cpanel #main-menu ul li a.account.active{background-position:-515px -62px}
 #cpanel #main-menu ul li a.minimize{width:32px;background-position:-618px 0;}
 #cpanel #main-menu ul li a.minimize:hover,#cpanel #main-menu ul li a.minimize:focus{background-position:-618px -31px}
-#cpanel #main-menu ul li a.minimize:active,#cpanel #main-menu ul li a.minimize.active{background-position:-618px -62px}
+#cpanel #main-menu ul li a.minimize:active{background-position:-618px -62px}
+#cpanel #main-menu ul li a.minimize.minimized{background-position:-648px 0;}
+#cpanel #main-menu ul li a.minimize.minimized:hover,#cpanel #main-menu ul li a.minimize.minimized:focus{background-position:-648px -31px}
+#cpanel #main-menu ul li a.minimize.minimized:active{background-position:-648px -62px}
 #cpanel #albums{position:relative;((null)):0;((null)):0;padding:19px 32px;}
-#cpanel #albums ul.albums{zoom:1;}
+#cpanel #albums ul.albums{zoom:1;height:175px;}
 #cpanel #albums ul.albums:before,#cpanel #albums ul.albums:after{content:"";display:table}
 #cpanel #albums ul.albums:after{clear:both}
-#cpanel #albums ul.albums li.album{float:left;height:175px;width:175px;position:relative;((null)):0;((null)):0;margin:0 10px;}
+#cpanel #albums ul.albums li.album{display:inline-block;height:175px;width:175px;position:relative;((null)):0;((null)):0;margin:0 10px;}
 #cpanel #albums ul.albums li.album a{display:block;height:175px;width:175px;background:url("../i/cp/album-bg.jpg");text-indent:-999em;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;}
 #cpanel #albums ul.albums li.album a:hover,#cpanel #albums ul.albums li.album a:focus{background-position:0 -175px}
 #cpanel #albums ul.albums li.album.active a:after{content:"";display:block;height:190px;width:190px;position:absolute;top:-8px;left:-8px;background:url("../i/cp/album-click.png")}
@@ -231,12 +234,19 @@ body.cpanel{overflow-y:hidden}
 #cpanel #songs table tbody tr td.lyrics a.add{display:inline-block;height:21px;width:21px;margin:7px 0;background:url("../i/cp/song-lyrics.png") top left no-repeat;text-indent:-999em;}
 #cpanel #songs table tbody tr td.lyrics a.add:hover,#cpanel #songs table tbody tr td.lyrics a.add:focus{background-position:0 -21px}
 #cpanel #songs table tbody tr td.lyrics a.add:active{background-position:0 -42px}
-#cpanel #songs table tbody tr td.fullscreen .selectBox-dropdown{width:114px;background:url("../i/cp/song-fullscreen-bg.png") top left no-repeat;padding-left:1px;}
-#cpanel #songs table tbody tr td.fullscreen .selectBox-dropdown:hover .selectBox-label,#cpanel #songs table tbody tr td.fullscreen .selectBox-dropdown:focus .selectBox-label{color:#ebebeb}
-#cpanel #songs table tbody tr td.fullscreen .selectBox-label,#cpanel #songs table tbody tr td.fullscreen .selectBox-options li a{display:block;margin:2px 0;width:91px;height:17px;line-height:17px;text-shadow:rgba(0,0,0,0.80) 0 -1px 0;background:url("../i/cp/song-fullscreen-button.png") top left no-repeat;text-align:center}
-#cpanel #songs table tbody tr td.fullscreen .selectBox-options li a{display:block;margin:2px 0;width:91px;height:17px;line-height:17px;text-shadow:rgba(0,0,0,0.80) 0 -1px 0;background:url("../i/cp/song-fullscreen-button.png") top left no-repeat;text-align:center}
-#cpanel #songs table tbody tr td.fullscreen .selectBox-options li:last-of-type a{-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
-#cpanel #songs table tbody tr td.fullscreen .selectBox-options li.selectBox-hover a{background:#1a81c9;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #338fcf), color-stop(1, #0073c3));background:-webkit-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:-moz-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:linear-gradient(top, #338fcf 0%, #0073c3 100%)}
+#cpanel #songs table tbody tr td.fullscreen .selector{width:114px;height:21px;position:relative;((null)):0;((null)):0;display:inline-block;}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown{width:114px;height:21px;background:url("../i/cp/song-fullscreen-bg.png") top left no-repeat;padding-left:1px;position:absolute;top:0;left:0;}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown:hover .selector-label,#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown:focus .selector-label{color:#ebebeb}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown.active{height:40px;background-position:0 -22px;-webkit-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;-moz-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;border-bottom:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;z-index:15000;}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown.active .selector-options li a.video{display:block}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown.active .selector-arrow{background-position:0 -36px}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-arrow{cursor:pointer;}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-arrow:hover{background-position:0 -18px}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-dropdown-menu{background:transparent;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-options li a{display:block;margin:2px 0;width:91px;height:17px;line-height:17px;text-shadow:rgba(0,0,0,0.80) 0 -1px 0;background:url("../i/cp/song-fullscreen-button.png") top left no-repeat;text-align:center;}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-options li a:hover,#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-options li a:focus{background-position:0 -17px;color:#ebebeb}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-options li a:active{background-position:0 -34px;color:#b4b4b4}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-options li a.video{display:none}
 #cpanel #songs table tbody tr td.status{text-align:center;}
 #cpanel #songs table tbody tr td.status a.delete{display:inline-block;height:21px;width:19px;margin:7px 0;background:url("../i/cp/song-delete.png") top left no-repeat;text-indent:-999em;}
 #cpanel #songs table tbody tr td.status a.delete:hover,#cpanel #songs table tbody tr td.status a.delete:focus{background-position:0 -21px}
