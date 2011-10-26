@@ -21,6 +21,16 @@ a{color:#000;text-decoration:none;}
 a:hover,a:focus{color:#000}
 html,body{height:100%}
 body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000;overflow-y:scroll}
+.selectBox-dropdown{padding:0 23px 0 5px;position:relative;margin:7px 0 8px;-webkit-font-smoothing:antialiased;height:21px;color:#fff;background:#282828;display:inline-block;}
+.selectBox-dropdown:hover,.selectBox-dropdown:focus{color:#fff;}
+.selectBox-dropdown:hover .selectBox-arrow,.selectBox-dropdown:focus .selectBox-arrow{background-position:0 -18px}
+.selectBox-dropdown.selectBox-menuShowing .selectBox-arrow{background-position:0 -36px}
+.selectBox-dropdown .selectBox-label{width:100%;font:bold 12px/20px "Helvetica Neue",Arial,Helvetica,sans-serif}
+.selectBox-dropdown .selectBox-arrow{position:absolute;top:1px;right:1px;width:19px;height:18px;background:url("../i/cp/song-select-arrow.png") top left no-repeat}
+.selectBox-dropdown-menu{position:absolute;z-index:99999;max-height:200px;overflow:auto;-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px;-webkit-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;-moz-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;background:#282828}
+.selectBox-options li a{display:block;padding:0 5px;font:bold 12px/22px "Helvetica Neue",Arial,Helvetica,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+.selectBox-options li:last-of-type a{-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
+.selectBox-options li.selectBox-hover a{background:#1a81c9;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #338fcf), color-stop(1, #0073c3));background:-webkit-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:-moz-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:linear-gradient(top, #338fcf 0%, #0073c3 100%)}
 #spindal{background:rgba(255,255,255,0.80);width:245px;position:relative;((null)):0;((null)):0;left:-245px;z-index:2;min-height:100%;-webkit-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-moz-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;box-shadow:rgba(0,0,0,0.25) 1px 0 3px;-webkit-transition:1s ease all;-moz-transition:1s ease all;transition:1s ease all;}
 #spindal.active{left:0}
 #spindal header.artist{padding:13px 2em;position:relative;((null)):0;((null)):0;}
@@ -138,8 +148,9 @@ nav.artist dd form input[type="submit"]{width:21px;height:19px;background:#000;p
 nav.artist dd form input[type="submit"]:hover{background-position:left -19px}
 nav.artist dd form input[type="submit"]:active{background-position:left -38px}
 ul.bgs li.bg img{min-height:100%;min-width:1024px;width:100%;height:auto;position:fixed;top:0;left:0}
+html.cpanel,body.cpanel{height:100%;overflow-y:hidden}
 body.cpanel{overflow-y:hidden}
-#cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;margin:120px auto;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;z-index:2;}
+#cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;margin:0 auto;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;top:100px;z-index:2;}
 #cpanel .light{display:inline-block;height:20px;width:20px;background:url("../i/cp/light.png") top left no-repeat;}
 #cpanel .light.disabled,#cpanel .light:hover{background-position:0 -20px}
 #cpanel #top-bar{height:16px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #080808), color-stop(1, #282828));background:-webkit-linear-gradient(top, #080808 0%, #282828 100%);background:-moz-linear-gradient(top, #080808 0%, #282828 100%);background:linear-gradient(top, #080808 0%, #282828 100%);-webkit-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-moz-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;cursor:pointer;}
@@ -196,8 +207,10 @@ body.cpanel{overflow-y:hidden}
 #cpanel #albums menu.rollover a.help:hover,#cpanel #albums menu.rollover a.help:focus{background-position:26px -24px}
 #cpanel #albums menu.rollover a.help:active{background-position:26px -48px}
 #cpanel #albums:hover menu.rollover,#cpanel #albums:focus menu.rollover{display:block}
-#cpanel #songs table tr th{background:url("../i/cp/songs-th.png") top left no-repeat;height:26px;line-height:26px;text-align:center;color:transparent}
-#cpanel #songs table tr th.name,#cpanel #songs table tr td.name{min-width:186px}
+#cpanel ul.thead{background:url("../i/cp/songs-th.png") top left no-repeat;display:block;height:26px;line-height:26px;}
+#cpanel ul.thead li{display:table-cell;text-align:center;color:transparent}
+#cpanel #songs{max-height:360px;overflow-y:scroll;position:relative;((null)):0;((null)):0;}
+#cpanel #songs table tr th.name,#cpanel #songs table tr td.name{min-width:186px;cursor:text}
 #cpanel #songs table tr th.upload,#cpanel #songs table tr td.upload{min-width:98px;background-position:-186px 0}
 #cpanel #songs table tr th.download,#cpanel #songs table tr td.download{min-width:114px;background-position:-284px 0}
 #cpanel #songs table tr th.lyrics,#cpanel #songs table tr td.lyrics{min-width:60px;background-position:-398px 0}
@@ -206,6 +219,7 @@ body.cpanel{overflow-y:hidden}
 #cpanel #songs table tbody tr{background:#343638;}
 #cpanel #songs table tbody tr:nth-of-type(even){background:#3e4042}
 #cpanel #songs table tbody tr td .light{margin:7px 0 8px}
+#cpanel #songs table tbody tr td select{margin:7px 0 8px}
 #cpanel #songs table tbody tr td.name{-webkit-font-smoothing:antialiased;}
 #cpanel #songs table tbody tr td.name span.num{padding-left:8px;font:bold 12px/35px "Helvetica Neue",Arial,Helvetica,sans-serif;color:#a0a0a0;text-shadow:rgba(0,0,0,0.80) 0 -1px 0}
 #cpanel #songs table tbody tr td.name span.name{font:bold 12px/35px "Helvetica Neue",Arial,Helvetica,sans-serif;color:#fff}
@@ -213,9 +227,16 @@ body.cpanel{overflow-y:hidden}
 #cpanel #songs table tbody tr td.upload a{display:inline-block;text-indent:-999em;height:26px;width:26px;margin:5px 0 4px;background:url("../i/cp/song-upload.png") top left no-repeat;}
 #cpanel #songs table tbody tr td.upload a:hover,#cpanel #songs table tbody tr td.upload a:focus{background-position:0 -26px}
 #cpanel #songs table tbody tr td.upload a:active{background-position:0 -52px}
+#cpanel #songs table tbody tr td.download .selectBox-dropdown{width:76px;background:url("../i/cp/song-download-bg.png") top left no-repeat}
 #cpanel #songs table tbody tr td.lyrics a.add{display:inline-block;height:21px;width:21px;margin:7px 0;background:url("../i/cp/song-lyrics.png") top left no-repeat;text-indent:-999em;}
 #cpanel #songs table tbody tr td.lyrics a.add:hover,#cpanel #songs table tbody tr td.lyrics a.add:focus{background-position:0 -21px}
 #cpanel #songs table tbody tr td.lyrics a.add:active{background-position:0 -42px}
+#cpanel #songs table tbody tr td.fullscreen .selectBox-dropdown{width:114px;background:url("../i/cp/song-fullscreen-bg.png") top left no-repeat;padding-left:1px;}
+#cpanel #songs table tbody tr td.fullscreen .selectBox-dropdown:hover .selectBox-label,#cpanel #songs table tbody tr td.fullscreen .selectBox-dropdown:focus .selectBox-label{color:#ebebeb}
+#cpanel #songs table tbody tr td.fullscreen .selectBox-label,#cpanel #songs table tbody tr td.fullscreen .selectBox-options li a{display:block;margin:2px 0;width:91px;height:17px;line-height:17px;text-shadow:rgba(0,0,0,0.80) 0 -1px 0;background:url("../i/cp/song-fullscreen-button.png") top left no-repeat;text-align:center}
+#cpanel #songs table tbody tr td.fullscreen .selectBox-options li a{display:block;margin:2px 0;width:91px;height:17px;line-height:17px;text-shadow:rgba(0,0,0,0.80) 0 -1px 0;background:url("../i/cp/song-fullscreen-button.png") top left no-repeat;text-align:center}
+#cpanel #songs table tbody tr td.fullscreen .selectBox-options li:last-of-type a{-webkit-border-radius:0 0 3px 3px;-moz-border-radius:0 0 3px 3px;border-radius:0 0 3px 3px}
+#cpanel #songs table tbody tr td.fullscreen .selectBox-options li.selectBox-hover a{background:#1a81c9;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #338fcf), color-stop(1, #0073c3));background:-webkit-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:-moz-linear-gradient(top, #338fcf 0%, #0073c3 100%);background:linear-gradient(top, #338fcf 0%, #0073c3 100%)}
 #cpanel #songs table tbody tr td.status{text-align:center;}
 #cpanel #songs table tbody tr td.status a.delete{display:inline-block;height:21px;width:19px;margin:7px 0;background:url("../i/cp/song-delete.png") top left no-repeat;text-indent:-999em;}
 #cpanel #songs table tbody tr td.status a.delete:hover,#cpanel #songs table tbody tr td.status a.delete:focus{background-position:0 -21px}

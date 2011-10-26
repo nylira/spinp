@@ -1,13 +1,18 @@
+html.cpanel, body.cpanel
+  height 100%
+  overflow-y hidden
+
 body.cpanel
   overflow-y hidden
 
 #cpanel
   bg m38 url(../i/cp/cp-bg.png)
   w 650px
-  m 120px auto
+  m 0 auto
   box-shadow b60 0 0 10px
   border-radius 5px 5px 0 0
   relative()
+  top 100px
   z-index 2
 
   .light
@@ -165,17 +170,26 @@ body.cpanel
     &:hover, &:focus
       menu.rollover
         d block
+
+  ul.thead
+    bg url(../i/cp/songs-th.png) top left no-repeat
+    d block
+    lhh 26px
+    li
+      display table-cell
+      ta center
+      c transparent
+
   #songs
+    max-height 360px
+    overflow-y scroll
+    relative()
     table
       tr
-        th
-          bg url(../i/cp/songs-th.png) top left no-repeat
-          lhh 26px
-          ta center
-          c transparent
         th, td
           &.name
             min-width 186px
+            cursor text
           &.upload
             min-width 98px
             bgp -186px 0
@@ -199,6 +213,8 @@ body.cpanel
           td
             .light
               m 7px 0 8px
+            select
+              m 7px 0 8px
             &.name
               aa()
               span.num
@@ -221,6 +237,11 @@ body.cpanel
                   bgp 0 -26px
                 &:active
                   bgp 0 -52px
+            &.download
+              .selectBox-dropdown
+                w 76px
+                bg url(../i/cp/song-download-bg.png) top left no-repeat
+                
             &.lyrics
               a.add
                 d inline-block
@@ -232,6 +253,43 @@ body.cpanel
                   bgp 0 -21px
                 &:active
                   bgp 0 -42px
+
+            &.fullscreen
+              .selectBox-dropdown
+                w 114px
+                bg url(../i/cp/song-fullscreen-bg.png) top left no-repeat
+                pl 1px
+                &:hover, &:focus
+                  .selectBox-label
+                    c m235
+
+              .selectBox-label, .selectBox-options li a
+                d block
+                m 2px 0
+                w 91px
+                lhh 17px
+                text-shadow b80 0 -1px 0
+                bg url(../i/cp/song-fullscreen-button.png) top left no-repeat
+                ta center
+                            
+              .selectBox-options
+                li
+                  a
+                    d block
+                    m 2px 0
+                    w 91px
+                    lhh 17px
+                    text-shadow b80 0 -1px 0
+                    bg url(../i/cp/song-fullscreen-button.png) top left no-repeat
+                    ta center
+
+                  &:last-of-type a
+                    border-radius 0 0 3px 3px 
+
+                  &.selectBox-hover a
+                    bg #1a81c9
+                    background linear-gradient(top, #338fcf, #0073c3)
+
             &.status
               ta center
               a.delete
@@ -245,10 +303,6 @@ body.cpanel
                   bgp 0 -21px
                 &:active
                   bgp 0 -42px
-
-            
-
-          
 
   #bottom-bar
     h 17px
