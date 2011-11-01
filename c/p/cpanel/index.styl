@@ -18,7 +18,7 @@ body.cpanel
   .light
     d inline-block
     r 20px
-    bg url(../i/cp/light.png) top left no-repeat
+    bg url(../i/cp/light.png) top center no-repeat
     cursor pointer
     &.disabled, &:hover
       bgp 0 -20px
@@ -112,12 +112,14 @@ body.cpanel
     ul.albums
       clearfix()
       h 175px
+      w 100%
       li.album
         d inline-block
         r 175px
+        w 195px
         relative()
-        m 0 10px
         a
+          m 0 10px
           d block
           r 175px
           bg url(../i/cp/album-bg.jpg)
@@ -125,13 +127,14 @@ body.cpanel
           box-shadow w7 0 1px 0
           &:hover, &:focus
             bgp 0 -175px
-        &.active a:after
-          content ''
-          d block
-          r 190px
-          absolute top -8px left -8px
-          bg url(../i/cp/album-click.png)
     nav.nav
+      .active
+        content ''
+        d block
+        r 190px
+        absolute top 12px left 34px
+        bg url(../i/cp/album-click.png)
+
       a
         d block
         w 26px
@@ -190,6 +193,8 @@ body.cpanel
 
   #songs
     max-height 360px
+    overflow hidden
+    overflow-x hidden
     overflow-y scroll
     relative()
     table
@@ -220,16 +225,18 @@ body.cpanel
             bg rgb(62,64,66)
           td
             .light
-              m 7px 0 8px
+              m 6px 3px 9px
             select
-              m 7px 0 8px
+              m 6px 0 9px
             &.name
               aa()
               span.num
-                pl 8px
                 f bold 12px/35px sans
                 c m160
                 text-shadow b80 0 -1px 0
+                w 20px
+                ta right
+                d inline-block
               span.name
                 f bold 12px/35px sans
                 c #fff
@@ -324,7 +331,7 @@ body.cpanel
                 d inline-block
                 h 21px
                 w 19px
-                m 7px 0
+                m 7px 2px 7px 0
                 bg url(../i/cp/song-delete.png) top left no-repeat
                 ti -999em
                 &:hover, &:focus

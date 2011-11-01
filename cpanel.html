@@ -39,23 +39,18 @@
 
   <div id="panel-content">
     <div id="albums">
-      <ul class="album-sets">
-        <li class="set">
-          <ul class="albums">
-            <li class="album active"><a href="#">Album</a>
-            <li class="album"><a href="#">Album</a>
-            <li class="album"><a href="#">Album</a>
-          </ul>
-        <li class="set">
-          <ul class="albums">
-            <li class="album"><a href="#">Album</a>
-            <li class="album"><a href="#">Album</a>
-            <li class="album"><a href="#">Album</a>
-          </ul>
+      <ul class="albums">
+        <li class="album"><a href="#">Album</a>
+        <li class="album"><a href="#">Album</a>
+        <li class="album"><a href="#">Album</a>
+        <li class="album"><a href="#">Album</a>
+        <li class="album"><a href="#">Album</a>
+        <li class="album"><a href="#">Album</a>
       </ul>
       <nav class="nav">
         <a class="prev-set" href="#">Prev</a>
         <a class="next-set" href="#">Next</a>
+        <div class="active"></div>
       </nav>
       <menu class="rollover">
         <a class="add" href="#">Add</a>
@@ -533,55 +528,69 @@
 
 <script src="j/jquery.min.js"></script>
 <script src="j/jquery-ui.min.js"></script>
-<script src="j/jquery.cycle.all.min.js"></script>
-<script src="j/jcarousellite.min.js"></script>
+<script src="j/jquery.bxSlider.min.js"></script>
+<script src="j/jquery.mousewheel.js"></script>
+<script src="j/mwheelIntent.js"></script>
+<script src="j/jquery.jscrollpane.min.js"></script>
 <script src="j/jquery.selectBox.min.js"></script>
 <script>
-  /* draggable header, needs improvement */
-  $('#cpanel').draggable({
-    handle: '#top-bar',
-    containment: 'window'
-  });
-  $('#logout').click(function() {
-    if(confirm('Are you sure you want to log out?')) {
-      $('#cpanel').fadeOut().delay(1000).fadeIn();
-    }
-  });
-  /* album cycle  */
-  $('.album-sets').cycle({
-    fx: 'scrollHorz',
-    prev: '.prev-set',
-    next: '.next-set',
-    timeout: 0,
-    pause: true,
+
+/* draggable header */
+$('#cpanel').draggable({
+  handle: '#top-bar',
+  containment: 'window'
+});
+
+$('#logout').click(function() {
+  if(confirm('Are you sure you want to log out?')) {
+    $('#cpanel').fadeOut().delay(1000).fadeIn();
+  }
+});
+
+/* minimize button */
+$('a.minimize').click(function() {
+  $('#panel-content').slideToggle();
+  $(this).toggleClass('minimized');
+});
+
+/* bxslider album nav */
+$(function(){
+  var slider = $('ul.albums').bxSlider({
+    controls: false,
+    displaySlideQty: 3,
+    moveSlideQty: 1
   });
 
-/*
-  $(".album-sets").jCarouselLite({
-    btnNext: ".next-set",
-    btnPrev: ".prev-set"
-  });
-*/
-
-  /* minimize button */
-  $('a.minimize').click(function() {
-    $('#panel-content').slideToggle();
-    $(this).toggleClass('minimized');
+  $('.prev-set').click(function(){
+    slider.goToPreviousSlide();
+    return false;
   });
 
-  /* custom selectbox */
-  $("select").selectBox();
+  $('.next-set').click(function(){
+    slider.goToNextSlide();
+    return false;
+  });
+}); 
 
-  /* select box watching */
-  $('td.fullscreen .selector .selector-arrow').click(function(){
-    $(this).parent().toggleClass('active');
-  });
-  $('.selector-dropdown a.slideshow').click(function(){
-    $(this).closest('.selector-dropdown').removeClass('active');
-    alert('Slideshow configuration pop-up');
-  });
-  $('.selector-dropdown a.video').click(function(){
-    $(this).closest('.selector-dropdown').removeClass('active');
-    alert('Video configuration pop-up');
-  });
+/* song scrolling */
+$(function()
+{
+  $('#songs').jScrollPane();
+});
+
+/* custom selectbox */
+$("select").selectBox();
+
+/* select box watching */
+$('td.fullscreen .selector .selector-arrow').click(function(){
+  $(this).parent().toggleClass('active');
+});
+$('.selector-dropdown a.slideshow').click(function(){
+  $(this).closest('.selector-dropdown').removeClass('active');
+  alert('Slideshow configuration pop-up');
+});
+$('.selector-dropdown a.video').click(function(){
+  $(this).closest('.selector-dropdown').removeClass('active');
+  alert('Video configuration pop-up');
+});
 </script>

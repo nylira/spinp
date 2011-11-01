@@ -1,0 +1,79 @@
+.jspContainer
+  overflow hidden
+  position relative
+
+.jspPane
+  position absolute
+
+.jspVerticalBar
+  position absolute
+  top 0
+  right 0
+  w 8px
+  h 100%
+  bg #aaa
+
+.jspHorizontalBar
+  position absolute
+  bottom 0
+  left 0
+  w 100%
+  h 16px
+  bg red
+
+.jspVerticalBar *
+.jspHorizontalBar *
+  m 0
+  p 0
+
+.jspCap
+  display none
+
+.jspHorizontalBar .jspCap
+  float left
+
+.jspTrack
+  bg #aaa url(../i/cp/song-scroll.png) -8px top
+  position relative
+
+.jspDrag
+  bg #222 url(../i/cp/song-scroll.png)
+  position relative
+  top 0
+  left 0
+  cursor pointer
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+  float left
+  h 100%
+
+.jspArrow
+  bg #50506d
+  text-indent -20000px
+  display block
+  cursor pointer
+
+.jspArrow.jspDisabled
+  cursor default
+  bg #80808d
+
+.jspVerticalBar .jspArrow
+  h 16px
+
+.jspHorizontalBar .jspArrow
+  w 16px
+  float left
+  h 100%
+
+.jspVerticalBar .jspArrow:focus
+  outline none
+
+.jspCorner
+  bg #eeeef4
+  float left
+  h 100%
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+  m 0 -3px 0 0
