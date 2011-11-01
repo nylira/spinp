@@ -573,9 +573,13 @@ $(function(){
 }); 
 
 /* song scrolling */
-$(function()
-{
+$(function() {
   $('#songs').jScrollPane();
+});
+
+/* lights! */
+$(function() {
+  $('.light').click(function(){ $(this).toggleClass('disabled')});
 });
 
 /* custom selectbox */
