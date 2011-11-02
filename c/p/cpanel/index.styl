@@ -87,24 +87,25 @@ body.cpanel
             &:active, &.active
               bgp -412px -62px
           &.account
+            w 104px
             bgp -515px 0
             &:hover, &:focus
               bgp -515px -31px
             &:active, &.active
               bgp -515px -62px
           &.minimize
-            w 32px
-            bgp -618px 0
+            w 31px
+            bgp -619px 0
             &:hover, &:focus
-              bgp -618px -31px
+              bgp -619px -31px
             &:active
-              bgp -618px -62px
+              bgp -619px -62px
             &.minimized
-              bgp -648px 0
+              bgp -649px 0
               &:hover, &:focus
-                bgp -648px -31px
+                bgp -649px -31px
               &:active
-                bgp -648px -62px
+                bgp -649px -62px
 
   #albums
     relative()
@@ -192,11 +193,12 @@ body.cpanel
       c transparent
 
   #songs
-    max-height 360px
+    max-height 270px + 7px
     overflow hidden
     overflow-x hidden
     overflow-y scroll
     relative()
+    z-index 0
     table
       tr
         th, td
@@ -272,16 +274,14 @@ body.cpanel
             &.fullscreen
               .selector
                 w 114px
-                h 21px
-                relative()
                 d inline-block
+                relative()
 
                 .selector-dropdown
                   w 114px
                   h 21px
                   bg url(../i/cp/song-fullscreen-bg.png) top left no-repeat
                   pl 1px
-                  absolute top 0 left 0
                   &:hover, &:focus
                     .selector-label
                       c m235
@@ -289,10 +289,11 @@ body.cpanel
                   &.active
                     h 40px
                     bgp 0 -22px
-                    box-shadow inset b13 0 0 7px, b30 2px 2px 4px
+                    box-shadow inset b13 0 0 7px, b60 2px 2px 4px
                     bb none
                     border-radius 3px
-                    z-index 15000
+                    absolute top 0 left 0
+                    z-index 999999
                     .selector-options li a.video
                       d block
                     .selector-arrow

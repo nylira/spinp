@@ -194,15 +194,15 @@ body.cpanel{overflow-y:hidden}
 #cpanel #main-menu ul li a.stats{background-position:-412px 0;}
 #cpanel #main-menu ul li a.stats:hover,#cpanel #main-menu ul li a.stats:focus{background-position:-412px -31px}
 #cpanel #main-menu ul li a.stats:active,#cpanel #main-menu ul li a.stats.active{background-position:-412px -62px}
-#cpanel #main-menu ul li a.account{background-position:-515px 0;}
+#cpanel #main-menu ul li a.account{width:104px;background-position:-515px 0;}
 #cpanel #main-menu ul li a.account:hover,#cpanel #main-menu ul li a.account:focus{background-position:-515px -31px}
 #cpanel #main-menu ul li a.account:active,#cpanel #main-menu ul li a.account.active{background-position:-515px -62px}
-#cpanel #main-menu ul li a.minimize{width:32px;background-position:-618px 0;}
-#cpanel #main-menu ul li a.minimize:hover,#cpanel #main-menu ul li a.minimize:focus{background-position:-618px -31px}
-#cpanel #main-menu ul li a.minimize:active{background-position:-618px -62px}
-#cpanel #main-menu ul li a.minimize.minimized{background-position:-648px 0;}
-#cpanel #main-menu ul li a.minimize.minimized:hover,#cpanel #main-menu ul li a.minimize.minimized:focus{background-position:-648px -31px}
-#cpanel #main-menu ul li a.minimize.minimized:active{background-position:-648px -62px}
+#cpanel #main-menu ul li a.minimize{width:31px;background-position:-619px 0;}
+#cpanel #main-menu ul li a.minimize:hover,#cpanel #main-menu ul li a.minimize:focus{background-position:-619px -31px}
+#cpanel #main-menu ul li a.minimize:active{background-position:-619px -62px}
+#cpanel #main-menu ul li a.minimize.minimized{background-position:-649px 0;}
+#cpanel #main-menu ul li a.minimize.minimized:hover,#cpanel #main-menu ul li a.minimize.minimized:focus{background-position:-649px -31px}
+#cpanel #main-menu ul li a.minimize.minimized:active{background-position:-649px -62px}
 #cpanel #albums{position:relative;((null)):0;((null)):0;padding:19px 32px;}
 #cpanel #albums ul.albums{zoom:1;height:175px;width:100%;}
 #cpanel #albums ul.albums:before,#cpanel #albums ul.albums:after{content:"";display:table}
@@ -229,7 +229,7 @@ body.cpanel{overflow-y:hidden}
 #cpanel #albums:hover menu.rollover,#cpanel #albums:focus menu.rollover{display:block}
 #cpanel ul.thead{background:url("../i/cp/songs-th.png") top left no-repeat;display:block;height:26px;line-height:26px;}
 #cpanel ul.thead li{display:table-cell;text-align:center;color:transparent}
-#cpanel #songs{max-height:360px;overflow:hidden;overflow-x:hidden;overflow-y:scroll;position:relative;((null)):0;((null)):0;}
+#cpanel #songs{max-height:277px;overflow:hidden;overflow-x:hidden;overflow-y:scroll;position:relative;((null)):0;((null)):0;z-index:0;}
 #cpanel #songs table tr th.name,#cpanel #songs table tr td.name{min-width:186px;cursor:text}
 #cpanel #songs table tr th.upload,#cpanel #songs table tr td.upload{min-width:98px;background-position:-186px 0}
 #cpanel #songs table tr th.download,#cpanel #songs table tr td.download{min-width:114px;background-position:-284px 0}
@@ -251,10 +251,10 @@ body.cpanel{overflow-y:hidden}
 #cpanel #songs table tbody tr td.lyrics a.add{display:inline-block;height:21px;width:21px;margin:7px 0;background:url("../i/cp/song-lyrics.png") top left no-repeat;text-indent:-999em;}
 #cpanel #songs table tbody tr td.lyrics a.add:hover,#cpanel #songs table tbody tr td.lyrics a.add:focus{background-position:0 -21px}
 #cpanel #songs table tbody tr td.lyrics a.add:active{background-position:0 -42px}
-#cpanel #songs table tbody tr td.fullscreen .selector{width:114px;height:21px;position:relative;((null)):0;((null)):0;display:inline-block;}
-#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown{width:114px;height:21px;background:url("../i/cp/song-fullscreen-bg.png") top left no-repeat;padding-left:1px;position:absolute;top:0;left:0;}
+#cpanel #songs table tbody tr td.fullscreen .selector{width:114px;display:inline-block;position:relative;((null)):0;((null)):0;}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown{width:114px;height:21px;background:url("../i/cp/song-fullscreen-bg.png") top left no-repeat;padding-left:1px;}
 #cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown:hover .selector-label,#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown:focus .selector-label{color:#ebebeb}
-#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown.active{height:40px;background-position:0 -22px;-webkit-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;-moz-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;border-bottom:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;z-index:15000;}
+#cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown.active{height:40px;background-position:0 -22px;-webkit-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.60) 2px 2px 4px;-moz-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.60) 2px 2px 4px;box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.60) 2px 2px 4px;border-bottom:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;position:absolute;top:0;left:0;z-index:999999;}
 #cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown.active .selector-options li a.video{display:block}
 #cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown.active .selector-arrow{background-position:0 -36px}
 #cpanel #songs table tbody tr td.fullscreen .selector .selector-dropdown .selector-arrow{cursor:pointer;}
