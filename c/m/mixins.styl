@@ -61,6 +61,45 @@ button()
   &[disabled]:active, &[disabled]:hover
     background #EEEEEE
 
+button-window()
+  d block
+  ta center
+  bxs()
+  w 86px
+  h 32px
+  bg #666
+  border-radius 5px
+  bg url(../i/popups/button.png)
+  box-shadow w7 0 1px 0
+  f bold 13px/31px sans
+  c #fff
+  text-shadow #000 0 -1px 0
+  aa()
+  cursor pointer
+  &:hover, &:focus
+    bgp 0 -32px
+  &:active, &.active
+    bgp 0 -64px
+
+button-window-dim()
+  button-window()
+  w 124px
+  bg url(../i/popups/button-dim.png) 
+
+button-window-em()
+  button-window()
+  bg url(../i/popups/button-em.png) -1px -1px
+  b 1px solid transparent
+  cursor pointer
+  &:hover, &:focus
+    bgp -1px -33px
+    box-shadow rgba(41,121,206,.8) 0 0 5px
+    bc rgba(41,121,206,.8)
+  &:active, &.active
+    bgp -1px -65px
+    box-shadow rgba(41,121,206,.8) 0 0 5px
+    bc rgba(41,121,206,.8)
+
 span.amp
   font-family Baskerville,Palatino,"Book Antiqua",serif
   font-style italic

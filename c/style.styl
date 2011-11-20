@@ -26,7 +26,16 @@ body
   bg #000
   oy scroll
 
+  .light
+    d inline-block
+    r 20px
+    bg url(../i/cp/light.png) top center no-repeat
+    cursor pointer
+    &.disabled
+      bgp 0 -20px
+
 @import 'j/jquery.selectBox'
 @import 'j/jquery.jscrollpane'
-@import 'p/player/index'
-@import 'p/cpanel/index'
+@import 'p/player'
+@import 'p/cpanel'
+@import 'p/popups'

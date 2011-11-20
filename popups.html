@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="cpanel">
+
+<head>
+<meta charset="utf-8">
+
+<title>The Gaslight Anthem &ndash; Spindal</title>
+<meta name="author" content="Peng Zhong">
+
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="stylesheet" media="screen" href="c/style.css?v=1">
+
+</head>
+<body class="popups">
+
+<ul class="bgs">
+  <li class="bg"><img src="i/artist-bg-q90.jpg">
+</ul>
+
+<form class="popup album-settings" action="#">
+  <header>
+    <ul>
+      <li class="title">Album Settings
+      <li class="exit"><a class="exit" href="#">Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row album-name">
+        <div class="light"></div>
+        <input type="text" placeholder="Album Name">
+        <a class="help">?</a>
+      <li class="row cover-art">
+        <div class="light"></div>
+        <div class="upload-cover-art">Upload Cover Art</div>
+        <a class="help">?</a>
+      <li class="row short select">
+        <div class="light"></div>
+        <label>Download Album</label>
+        <select>
+          <option>Free</option> 
+          <option>$ Custom</option> 
+          <option>$ 9.99</option> 
+          <option>$ 12.99</option> 
+          <option>iTunes</option> 
+          <option>Amazon</option> 
+        </select>
+        <a class="help">?</a>
+      <li class="row short">
+        <div class="light"></div>
+        <label>Share Album and Songs</label>
+        <a class="help">?</a>
+      <li class="row short">
+        <div class="light"></div>
+        <label>Number of Song Plays</label>
+        <a class="help">?</a>
+      <li class="row short">
+        <div class="light"></div>
+        <label>Parental Advisory Warning</label>
+        <a class="help">?</a>
+      <li class="row">
+        <div class="light"></div>
+        <input type="text" placeholder="Release Date">
+        <a class="help">?</a>
+      <li class="row">
+        <div class="light"></div>
+        <input type="text" placeholder="Record Label">
+        <a class="help">?</a>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li class="left"><a class="delete">Delete Album</a>
+      <li><a class="save">Save</a>
+      <li><a class="cancel">Cancel</a>
+    </ul>
+  </footer>
+</form>
+
+<script src="j/jquery.min.js"></script>
+<script src="j/jquery-ui.min.js"></script>
+<script src="j/jquery.mousewheel.js"></script>
+<script src="j/mwheelIntent.js"></script>
+<script src="j/jquery.jscrollpane.min.js"></script>
+<script src="j/jquery.selectBox.min.js"></script>
+<script>
+
+/* draggable header */
+$('#cpanel').draggable({
+  handle: '#top-bar',
+  containment: 'window'
+});
+
+$('#logout').click(function() {
+  if(confirm('Are you sure you want to log out?')) {
+    $('#cpanel').fadeOut().delay(1000).fadeIn();
+  }
+});
+
+/* song scrolling */
+$(function() {
+  $('#songs').jScrollPane();
+});
+
+/* lights! */
+$(function() {
+  $('.light').click(function(){
+    $(this).toggleClass('disabled');
+    $(this).parent('li.row').toggleClass('disabled');
+  });
+  $('.light').hover(function(){
+    $(this).parent('li.row').toggleClass('hover');
+  });
+});
+
+/* custom selectbox */
+$("select").selectBox();
+
+/* select box watching */
+$('td.fullscreen .selector .selector-arrow').click(function(){
+  $(this).parent().toggleClass('active');
+});
+$('.selector-dropdown a.slideshow').click(function(){
+  $(this).closest('.selector-dropdown').removeClass('active');
+  alert('Slideshow configuration pop-up');
+});
+$('.selector-dropdown a.video').click(function(){
+  $(this).closest('.selector-dropdown').removeClass('active');
+  alert('Video configuration pop-up');
+});
+</script>
