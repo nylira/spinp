@@ -1,23 +1,32 @@
-body.popups
-  .popup
-    bg m54 url(../i/popups/bg.png)
-    fl()
-    m 40px 0 0 40px
-    clearfix()
-    relative()
+.popup
+  d block
+  clearfix()
+  fixed top 150px left 50%
+  bg m54 url(../i/popups/bg.png)
+  box-shadow b75 0 0 8px
+  border-radius 5px
+  d none
+  z 9999
+  &.visible
+    d block
+
+  &.window
     w 525px
     h 455px
-    z-index 2
-    box-shadow b75 0 0 8px
-    border-radius 5px
+    ml -263px
 
-    input::-webkit-input-placeholder
-      c #fff !important
-      aa()
-    input:-moz-placeholder
-      c #fff !impotant
-      aa()
+  &.message
+    w 394px
+    h 178px
+    top 300px
+    ml -197px
 
+  input::-webkit-input-placeholder
+    c #fff !important
+    aa()
+  input:-moz-placeholder
+    c #fff !impotant
+    aa()
 
 @import 'header'
 @import 'content'
@@ -25,3 +34,5 @@ body.popups
 
 @import 'popup.slideshow'
 @import 'popup.album-settings'
+@import 'popup.textarea'
+@import 'popup.custom-price'

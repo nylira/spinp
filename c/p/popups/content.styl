@@ -1,7 +1,20 @@
 .popup
   .content
-    h 360px
-    overflow-y scroll
+    a.help
+      d block
+      w 14px
+      f bold 11px/15px sans
+      ta center
+      c m111
+      bg m60
+      box-shadow #211d1e 0 -1px 0, inset w5 0 -1px 0
+      border-radius 7px
+      absolute top 13px right 7px
+      cursor pointer
+      transition()
+      &:hover
+        c m150
+        bg m70
     ul.rows
       p 11px 9px 1px 3px
       clearfix()
@@ -62,17 +75,24 @@
               top 3px
               right 3px
         a.help
-          d block
-          w 14px
-          f bold 11px/15px sans
-          ta center
-          c m111
-          bg m60
-          box-shadow #211d1e 0 -1px 0, inset w5 0 -1px 0
-          border-radius 7px
           absolute top 13px right 7px
-          cursor pointer
-          transition()
-          &:hover
-            c m150
-            bg m70
+
+  &.window
+    .content
+      h 360px
+      overflow-y scroll
+      
+  &.message
+    .content
+      h 83px
+      overflow hidden
+      .msg
+        p 34px 0
+        ta center
+        relative()
+        p
+          f bold 15px/15px sans
+          c #fff
+          aa()
+        a.help
+          absolute top 34px right 15px

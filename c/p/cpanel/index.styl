@@ -111,7 +111,7 @@ body.cpanel
         r 175px
         w 195px
         relative()
-        a
+        > a
           m 0 10px
           d block
           r 175px
@@ -120,6 +120,11 @@ body.cpanel
           box-shadow w7 0 1px 0
           &:hover, &:focus
             bgp 0 -175px
+          span.settings
+            d block
+            absolute bottom 0 right 10px
+            r 50px
+            hide-text()
     nav.nav
       .active
         content ''
