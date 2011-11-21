@@ -63,9 +63,6 @@ $(function() {
   $('#songs').jScrollPane();
 });
 
-$(function() {
-});
-
 /* lights! */
 $(function() {
   $('.light').click(function(){
@@ -80,16 +77,23 @@ $(function() {
 /* custom selectbox */
 $("select").selectBox();
 
+$('td.download select').change(function() {
+  if($(this).val() === "custom") {
+    $('.popup.custom-price').toggleClass('visible');
+  }
+});
+
 /* select box watching */
 $('td.fullscreen .selector .selector-arrow').click(function(){
   $(this).parent().toggleClass('active');
 });
 $('.selector-dropdown a.slideshow').click(function(){
   $(this).closest('.selector-dropdown').removeClass('active');
-  $('.popup.slideshow').toggleClass('visible');
-  $('.popup.slideshow .content').jScrollPane();
+  $('.popup.slideshow').toggleClass('visible').children('.content').jScrollPane();
 });
 $('.selector-dropdown a.video').click(function(){
   $(this).closest('.selector-dropdown').removeClass('active');
   $('.popup.video').toggleClass('visible');
 });
+
+

@@ -23,7 +23,7 @@ html,body{height:100%}
 body{font-size:13px;line-height:1.5;font-family:'Helvetica Neue',Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000;overflow-y:scroll;}
 body .light{display:inline-block;height:20px;width:20px;background:url("../i/cp/light.png") top center no-repeat;cursor:pointer;}
 body .light.disabled{background-position:0 -20px}
-.selectBox-dropdown,.selector-dropdown{padding:0 23px 0 5px;position:relative;margin:7px 0 8px;-webkit-font-smoothing:antialiased;height:21px;color:#fff;background:#282828;display:inline-block;}
+.selectBox-dropdown,.selector-dropdown{padding:0 5px;position:relative;margin:7px 0 8px;-webkit-font-smoothing:antialiased;height:21px;color:#fff;background:#282828;display:inline-block;}
 .selectBox-dropdown:hover,.selector-dropdown:hover,.selectBox-dropdown:focus,.selector-dropdown:focus{color:#fff;}
 .selectBox-dropdown:hover .selectBox-arrow,.selector-dropdown:hover .selectBox-arrow,.selectBox-dropdown:focus .selectBox-arrow,.selector-dropdown:focus .selectBox-arrow{background-position:0 -18px}
 .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow,.selector-dropdown.selectBox-menuShowing .selectBox-arrow,.selectBox-dropdown.selectBox-menuShowing .selector-arrow,.selector-dropdown.selectBox-menuShowing .selector-arrow{background-position:0 -36px}
