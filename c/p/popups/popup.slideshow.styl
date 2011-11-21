@@ -44,11 +44,23 @@
             c m70
             text-shadow #000 0 -1px 0
             aa()
-          &:hover:before
-            content ''
-            bg url(../i/popups/screenshot-upload.png)
-            r 89px
-            top 0
+          a.upload
+            d block
+            bg url(../i/popups/screenshot-upload.png) -12px -12px
+            r 65px
+            m 12px
+            opacity 0
+            hide-text()
+            &:hover
+              bgp -12px -101px
+            &:active
+              bgp -12px -190px
+          &:hover
+            &:before
+              d none
+            a.upload
+              opacity 1
+          
         &.add
           &:before
             r 41px

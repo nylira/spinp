@@ -227,21 +227,33 @@ body.cpanel
             select
               m 6px 0 9px
             &.name
-              aa()
               white-space nowrap
               overflow hidden
               text-overflow ellipsis
-              f bold 12px/35px sans
-              c w50
               span.num
                 f bold 12px/35px sans
                 c m160
                 text-shadow b80 0 -1px 0
-                w 20px
+                w 18px
                 ta right
                 d inline-block
-              span.name
+              .light
+                m 6px 0 9px 3px
+              input.name
+                d inline-block
+                bxs()
+                w 150px
+                h 24px
+                m 5px -14px 6px 0
+                p 6px 2px
+                bg transparent
+                b 0
+                f bold 12px/1 sans
+                aa()
                 c #fff
+                &:focus
+                  background linear-gradient(top, m50, m38)
+                  box-shadow w7 0 1px 0, inset b13 0 1px 2px
             &.upload
               ta center
               a

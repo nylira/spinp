@@ -1,3 +1,17 @@
+.lightbox-screen
+  content ''
+  w 100%
+  h 100%
+  bg b60
+  relative()
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z 9998
+  transition .5s ease-in-out opacity
+
 .popup
   d block
   clearfix()
@@ -7,17 +21,18 @@
   border-radius 5px
   z 9999
   transform rotateY(-90deg) rotateX(45deg) scale(.25)
-  transition .5s ease-in-out -webkit-transform, .5s ease-in-out opacity
+  transition .15s ease opacity
   opacity 0
   &.visible
-    transform rotateY(0deg) scale(1)
     opacity 1
+    transform rotateY(0deg) scale(1)
 
   &.window
     w 525px
     h 455px
     ml -263px
-
+    transition .5s ease-in-out -webkit-transform, .5s ease-in-out opacity
+    
   &.message
     w 394px
     h 178px

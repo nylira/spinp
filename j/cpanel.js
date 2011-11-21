@@ -32,6 +32,9 @@ $.fn.vAlign = function() {
     $(this).toggleClass('visible');
     if ($(this).hasClass("visible")) {
       $(this).vAlign();
+      $('body').append('<div class="lightbox-screen" />');
+    } else {
+      $('.lightbox-screen').remove();
     };
   };
 })(jQuery);
@@ -136,4 +139,11 @@ $('.selector-dropdown a.video').click(function(){
   $('.popup.video').showPop();
 });
 
+/* textarea blur */
+$("textarea").focus(function(event) {
+  // Erase text from inside textarea
+  $(this).text("");
+  // Disable text erase
+  $(this).unbind(event);
+});
 
