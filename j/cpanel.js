@@ -90,6 +90,7 @@ $('td.fullscreen .selector .selector-arrow').click(function(){
 $('.selector-dropdown a.slideshow').click(function(){
   $(this).closest('.selector-dropdown').removeClass('active');
   $('.popup.slideshow').toggleClass('visible').children('.content').jScrollPane();
+  $('ul.images').sortable().disableSelection();
 });
 $('.selector-dropdown a.video').click(function(){
   $(this).closest('.selector-dropdown').removeClass('active');
