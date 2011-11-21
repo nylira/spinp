@@ -1,23 +1,39 @@
 .popup
   .content
     clearfix()
+    overflow visible
     .jspPane
       m 0 !important
-    a.help
-      d block
-      w 14px
-      f bold 11px/15px sans
-      ta center
-      c m111
-      bg m60
-      box-shadow #211d1e 0 -1px 0, inset w5 0 -1px 0
-      border-radius 7px
+    div.help
       absolute top 13px right 7px
-      cursor pointer
-      transition()
+      w 14px
+      h 15px
+      span.icon
+        d block
+        w 14px
+        f bold 11px/15px sans
+        ta center
+        c m111
+        bg m60
+        box-shadow #211d1e 0 -1px 0, inset w5 0 -1px 0
+        border-radius 7px
+        cursor pointer
+      .ui-tooltip-top, .ui-tooltip-bottom
+        z 1000
+        opacity 0
+        transition 250ms ease-in-out opacity
+      .ui-tooltip-top
+        fixed top -1000px right 0
+      .ui-tooltip-bottom
+        bottom -1000px
       &:hover
-        c m150
-        bg m70
+        .ui-tooltip-top
+          absolute top 25px right -15px
+          opacity 1
+        .ui-tooltip-bottom
+          absolute bottom 25px right -17px
+          opacity 1
+
     ul.rows
       p 11px 9px 1px 3px
       clearfix()
@@ -77,18 +93,20 @@
             &.selectBox-arrow
               top 3px
               right 3px
-        a.help
+        .help
           absolute top 13px right 7px
 
   &.window
     .content
       h 360px
-      overflow-y scroll
+
+  &.slideshow
+    overflow-y scroll
       
   &.message
     .content
       h 83px
-      overflow hidden
+      overflow visible
       .msg
         p 34px 0
         ta center
@@ -97,5 +115,5 @@
           f bold 15px/15px sans
           c #fff
           aa()
-        a.help
+        .help
           absolute top 34px right 15px
