@@ -115,7 +115,7 @@ $(function() {
 /* custom selectbox */
 $("select").selectBox();
 
-$('td.download select').change(function() {
+$('select').change(function() {
   if($(this).val() === "custom") {
     $('.popup.custom-price').showPop();
   }
