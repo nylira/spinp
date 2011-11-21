@@ -1,0 +1,58 @@
+.popup.slideshow
+  .content
+    ul.rows
+      pr 0
+      li.row
+        w 240px
+        &.transition-time
+          a.selectBox
+            w 54px
+            right 70px
+          span.unit
+            f bold 13px/40px sans
+            pl 7px
+            c m160
+            text-shadow #000 0 -1px 0
+            aa()
+            position absolute
+            absolute top 0 left 170px
+        &.transition-style
+          ml 9px
+        label
+          left 11px
+    ul.images
+      clearfix()
+      p 0 0 0 11px
+      li.image
+        r 89px
+        m 0 5px 11px 6px
+        fl()
+        bg m30
+        relative()
+        &.empty, &.add
+          cursor pointer
+          box-shadow w7 0 1px 0, inset  b37 0 1px 1px, inset b7 0 0 7px
+          &:before
+            d block
+            content ''
+        &.empty
+          &:before
+            relative top 28px
+            content 'Upload Image'
+            f bold 14px/1.2 sans
+            ta center
+            c m70
+            text-shadow #000 0 -1px 0
+            aa()
+          &:hover:before
+            c #fff
+        &.add
+          &:before
+            r 41px
+            relative top 24px left 24px
+            bg url(../i/popups/screenshot-add.png)
+            box-shadow b22 0 2px 2px
+          &:hover:before, &:focus:before
+            bgp 0 -41px
+          &:active:before
+            bgp 0 -82px

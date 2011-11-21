@@ -1,0 +1,32 @@
+.popup.album-settings
+  .content
+    ul.rows
+      li.row
+        &.album-name
+          h 45px
+          .light
+            top 11px
+          input
+            h 29px
+            p 8px .5em 7px
+            f bold 14px/1 sans
+          a.help
+            top 15px
+        &.cover-art
+          h 183px
+          w 205px
+          a.help
+            absolute bottom 9px left 7px
+            top auto
+          .upload-cover-art
+            r 167px
+            hide-text()
+            box-shadow w7 0 1px 0
+            absolute top 8px right 9px
+            cursor pointer
+            bg url(../i/popups/cover-art.png)
+            &:hover
+              bgp 0 -167px
+        &.short
+          w 272px
+          mb 8px
