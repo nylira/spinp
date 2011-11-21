@@ -1,0 +1,39 @@
+.popup
+  header
+    bb 1px solid m20
+    bg m28
+    background linear-gradient(top, m39, m35 50%, m29 50%, m25)
+    border-radius 4px 4px 0 0
+    box-shadow b25 0 3px 1px
+
+    ul 
+      clearfix()
+      bb 1px solid m39
+      h 38px
+      bxs()
+      li
+        fl()
+        &.title
+          hide-text()
+          w 200px
+          h 37px
+        &.exit
+          r 25px
+          hide-text()
+          cursor pointer
+          absolute top 7px right 7px
+          bg url(../i/popups/exit.png)
+          box-shadow w7 0 1px 0
+          border-radius 3px
+          &:hover, &:focus
+            bgp 0 -25px
+          &:active, &.active
+            bgp 0 -50px
+  &.album-settings header li.title
+    bg url(../i/popups/form-album-settings.png)
+  &.slideshow header li.title
+    bg url(../i/popups/form-slideshow.png)
+  &.lyrics header li.title
+    bg url(../i/popups/form-lyrics.png)
+  &.video header li.title
+    bg url(../i/popups/form-video.png)

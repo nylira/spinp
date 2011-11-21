@@ -79,6 +79,67 @@
   </footer>
 </form>
 
+<form class="popup slideshow" action="#">
+  <header>
+    <ul>
+      <li class="title">Slideshow
+      <li class="exit"><a class="exit" href="#">Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row transition-time select">
+        <label>Transition Time</label>
+        <select>
+          <option>3.0</option> 
+          <option>3.5</option> 
+          <option>4.0</option> 
+          <option>4.5</option> 
+          <option>5.0</option> 
+          <option>6.0</option> 
+        </select>
+        <span class="unit">sec.</span>
+        <a class="help">?</a>
+      <li class="row transition-style select">
+        <label>Transition Style</label>
+        <select>
+          <option>Normal</option> 
+          <option>Slide</option> 
+          <option>Fade</option> 
+        </select>
+        <a class="help">?</a>
+    </ul>
+    <ul class="images">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image empty">
+      <li class="image add">
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save">Save</a>
+      <li><a class="cancel">Cancel</a>
+    </ul>
+  </footer>
+</form>
+
 <script src="j/jquery.min.js"></script>
 <script src="j/jquery-ui.min.js"></script>
 <script src="j/jquery.mousewheel.js"></script>
@@ -88,8 +149,8 @@
 <script>
 
 /* draggable header */
-$('#cpanel').draggable({
-  handle: '#top-bar',
+$('form').draggable({
+  handle: 'header',
   containment: 'window'
 });
 
@@ -99,9 +160,9 @@ $('#logout').click(function() {
   }
 });
 
-/* song scrolling */
+/* content scrolling */
 $(function() {
-  $('#songs').jScrollPane();
+  $('form .content').jScrollPane();
 });
 
 /* lights! */

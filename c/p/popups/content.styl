@@ -1,0 +1,106 @@
+.popup
+  .content
+    h 360px
+    overflow-y scroll
+    ul.rows
+      p 11px 9px 1px 3px
+      clearfix()
+      relative()
+      li.row
+        fl()
+        m 0 14px 10px 0
+        m 0 0 10px 14px
+        lhh 40px
+        w 491px
+        border-radius 3px
+        bg rgba(40,40,40,.7)
+        box-shadow inset b37 0 1px 1px, inset b7 0 0 7px, w7 0 1px 0
+        relative()
+        clearfix()
+        &.hover
+          bg rgba(40,40,40,.5)
+        &.disabled
+          bg rgba(40,40,40,.8)
+        .light
+          absolute top 8px left 4px
+        label
+          f bold 13px/40px sans
+          c m160
+          text-shadow #000 0 -1px 0
+          aa()
+          position absolute
+          left 28px + 2px
+        input
+          bxs()
+          position absolute
+          top 8px
+          left 28px
+          right 26px
+          bottom 8px
+          b none
+          h 24px
+          p 6px .5em 5px
+          f bold 13px/1 sans
+          c #fff
+          aa()
+          bg m30
+          box-shadow w7 0 1px 0, inset b37 0 1px 0, inset b7 0 0 7px
+          border-radius 3px
+        a.selectBox
+          d block !important
+          absolute top 2px right 28px
+          w 98px
+          h 24px
+          bg m30
+          border-radius 3px
+          box-shadow w7 0 1px 0, inset b75 0 1px 1px, inset b13 0 0 7px
+          pl 8px
+          span
+            &.selectBox-label
+              lh 24px
+            &.selectBox-arrow
+              top 3px
+              right 3px
+        a.help
+          d block
+          w 14px
+          f bold 11px/15px sans
+          ta center
+          c m111
+          bg m60
+          box-shadow #211d1e 0 -1px 0, inset w5 0 -1px 0
+          border-radius 7px
+          absolute top 13px right 7px
+          cursor pointer
+          transition()
+          &:hover
+            c m150
+            bg m70
+        &.album-name
+          h 45px
+          .light
+            top 11px
+          input
+            h 29px
+            p 8px .5em 7px
+            f bold 14px/1 sans
+          a.help
+            top 15px
+        &.cover-art
+          h 183px
+          w 205px
+          a.help
+            absolute bottom 9px left 7px
+            top auto
+          .upload-cover-art
+            r 167px
+            hide-text()
+            box-shadow w7 0 1px 0
+            absolute top 8px right 9px
+            cursor pointer
+            bg url(../i/popups/cover-art.png)
+            &:hover
+              bgp 0 -167px
+        &.short
+          w 272px
+          mb 8px

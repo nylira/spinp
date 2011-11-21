@@ -1,0 +1,24 @@
+.popup
+  footer
+    bg rgba(30,30,30,.8)
+    box-shadow inset w10 0 1px 0, b60 0 -1px 0
+    clearfix()
+    border-radius 0 0 4px 4px
+    relative()
+    z 1000
+    ul
+      clearfix()
+      p 12px 17px
+      li
+        fr()
+        ml 12px
+        &.left
+          fl()
+          ml 0
+        a
+          &.delete
+            button-window-dim()
+          &.cancel
+            button-window()
+          &.save
+            button-window-em()
