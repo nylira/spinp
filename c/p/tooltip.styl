@@ -1,0 +1,57 @@
+.ui-tooltip, .ui-tooltip-top, .ui-tooltip-right, .ui-tooltip-bottom, .ui-tooltip-left
+  d block
+  w 225px
+  relative()
+  f 12px/1.2 sans
+  aa()
+  c #fff
+  p .6em 1em
+  bg m140
+  border-radius 3px
+  box-shadow b19 0 5px 5px
+  a
+    d inline
+    td underline
+    c #fff
+
+.ui-tooltip:after, .ui-tooltip-top:after, .ui-tooltip-right:after, .ui-tooltip-bottom:after, .ui-tooltip-left:after
+  content "\25B8"
+  display block
+  font-size 2em
+  height 0
+  line-height 0
+  position absolute
+
+.ui-tooltip:after, .ui-tooltip-bottom:after
+  color m140
+  bottom 0
+  right -90px
+  text-align center
+  transform rotate(90deg)
+  width 100%
+
+.ui-tooltip-top:after
+  bottom auto
+  color m140
+  right -90px
+  top 0
+  text-align center
+  text-shadow none
+  transform rotate(-90deg)
+  width 100%
+
+.ui-tooltip-right:after
+  color #222222
+  right -0.375em
+  top 50%
+  margin-top -.05em
+  text-shadow 0 1px 2px #000000
+  transform rotate(0)
+
+.ui-tooltip-left:after
+  color #222222
+  left -0.375em
+  top 50%
+  margin-top .1em
+  text-shadow 0 -1px 2px #000000
+  transform rotate(180deg)
