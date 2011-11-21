@@ -356,10 +356,12 @@ body.cpanel{overflow-y:hidden}
 .popup footer ul li a.save:active,.popup footer ul li a.yes:active,.popup footer ul li a.save.active,.popup footer ul li a.yes.active{background-position:-1px -65px;-webkit-box-shadow:rgba(41,121,206,0.80) 0 0 5px;-moz-box-shadow:rgba(41,121,206,0.80) 0 0 5px;box-shadow:rgba(41,121,206,0.80) 0 0 5px;border-color:rgba(41,121,206,0.80)}
 .popup.message.confirm ul{padding-left:93px;}
 .popup.message.confirm ul li{float:left}
-.popup.slideshow .content ul.rows{padding-right:0;}
+.popup.slideshow .content ul.rows{padding-right:0;position:relative;((null)):0;((null)):0;z-index:10000;}
 .popup.slideshow .content ul.rows li.row{width:240px;}
-.popup.slideshow .content ul.rows li.row.transition-time a.selectBox{width:54px;right:70px}
-.popup.slideshow .content ul.rows li.row.transition-time span.unit{font:bold 13px/40px 'Helvetica Neue',Arial,Helvetica,sans-serif;padding-left:7px;color:#a0a0a0;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;position:absolute;position:absolute;top:0;left:170px}
+.popup.slideshow .content ul.rows li.row.transition-time input{display:block;position:absolute;top:8px;right:auto;bottom:auto;left:116px;width:54px;height:24px;margin:0;padding:6px 0 6px 8px;background:#1e1e1e;border:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;font:bold 12px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}
+.popup.slideshow .content ul.rows li.row.transition-time input[type=number]::-webkit-inner-spin-button{background:url("../i/popups/input-number.png") top left;height:8px;width:16px;-webkit-appearance:none}
+.popup.slideshow .content ul.rows li.row.transition-time input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none}
+.popup.slideshow .content ul.rows li.row.transition-time span.unit{font:bold 13px/40px 'Helvetica Neue',Arial,Helvetica,sans-serif;padding-left:7px;color:#a0a0a0;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;position:absolute;top:0;left:170px}
 .popup.slideshow .content ul.rows li.row.transition-style{margin-left:9px}
 .popup.slideshow .content ul.rows li.row label{left:11px}
 .popup.slideshow .content ul.images{zoom:1;padding:0 0 0 11px;}
@@ -391,7 +393,9 @@ body.cpanel{overflow-y:hidden}
 .popup.textarea .content ul.rows{padding-right:0;}
 .popup.textarea .content ul.rows li.row label{left:11px}
 .popup.textarea .content ul.rows li.row.textarea{padding:11px 11px 13px;height:284px;}
-.popup.textarea .content ul.rows li.row.textarea textarea{display:block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:468px;height:260px;padding:8px;background:#fff;-webkit-box-shadow:inset rgba(140,140,140,0.80) 0 1px 0;-moz-box-shadow:inset rgba(140,140,140,0.80) 0 1px 0;box-shadow:inset rgba(140,140,140,0.80) 0 1px 0;font:13px/1.3 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#bcb9b9;resize:none;border:none}
+.popup.textarea .content ul.rows li.row.textarea .textarea-scroll{width:468px;height:260px;overflow:scroll;}
+.popup.textarea .content ul.rows li.row.textarea .textarea-scroll textarea{display:block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:468px;height:auto;min-height:260px;overflow:hidden;padding:8px;background:#fff;-webkit-box-shadow:inset rgba(140,140,140,0.80) 0 1px 0;-moz-box-shadow:inset rgba(140,140,140,0.80) 0 1px 0;box-shadow:inset rgba(140,140,140,0.80) 0 1px 0;font:13px/1.3 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#bcb9b9;resize:none;border:none;}
+.popup.textarea .content ul.rows li.row.textarea .textarea-scroll textarea:focus{color:#333}
 .popup.custom-price .content ul.rows{padding-top:21px;}
 .popup.custom-price .content ul.rows li.row{width:358px;position:relative;((null)):0;((null)):0;}
 .popup.custom-price .content ul.rows li.row label{left:11px}

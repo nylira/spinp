@@ -8,15 +8,23 @@
         &.textarea
           p 11px 11px 13px
           h 284px
-          textarea
-            d block
-            bxs()
+          .textarea-scroll
             w 468px
             h 260px
-            p 8px
-            bg #fff
-            box-shadow inset rgba(140,140,140,.8) 0 1px 0
-            f 13px/1.3 sans
-            c #bcb9b9
-            resize none
-            b none
+            overflow scroll
+            textarea
+              d block
+              bxs()
+              w 468px
+              height auto
+              min-height 260px
+              overflow hidden
+              p 8px
+              bg #fff
+              box-shadow inset rgba(140,140,140,.8) 0 1px 0
+              f 13px/1.3 sans
+              c #bcb9b9
+              resize none
+              b none
+              &:focus
+                c #333

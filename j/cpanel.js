@@ -94,6 +94,7 @@ $('.popup.album-settings a.delete').click(function() {
 })
 $('td.lyrics a.add').click(function() {
   $('.popup.lyrics').showPop();
+  $('.popup.lyrics .textarea-scroll').jScrollPane();
 });
 $('td.status a.delete').click(function() {
   $('.popup.delete-song').showPop();
@@ -137,6 +138,7 @@ $('.selector-dropdown a.slideshow').click(function(){
 $('.selector-dropdown a.video').click(function(){
   $(this).closest('.selector-dropdown').removeClass('active');
   $('.popup.video').showPop();
+  $('.popup.video .textarea-scroll').jScrollPane();
 });
 
 /* textarea blur */
@@ -145,5 +147,11 @@ $("textarea").focus(function(event) {
   $(this).text("");
   // Disable text erase
   $(this).unbind(event);
+});
+
+$('.popup.textarea textarea').autoResize({
+  animateCallback : function() {
+    $(this).closest('.textarea-scroll').jScrollPane();
+  }
 });
 

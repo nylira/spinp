@@ -202,14 +202,7 @@
     <ul class="rows">
       <li class="row transition-time select">
         <label>Transition Time</label>
-        <select>
-          <option>3.0</option> 
-          <option>3.5</option> 
-          <option>4.0</option> 
-          <option>4.5</option> 
-          <option>5.0</option> 
-          <option>6.0</option> 
-        </select>
+        <input type="number" value="3.5" step="0.5">
         <span class="unit">sec.</span>
         <div class="help">
           <span class="icon">?</span>
@@ -274,7 +267,7 @@
           <span class="ui-tooltip-top">Enter the Lyrics below and space out text to be read clearly.</span>
         </div>
       <li class="row textarea">
-        <textarea>
+        <div class="textarea-scroll"><textarea>
 Lyrics Sample:
 
 I can't stand it I know you planned it
@@ -293,7 +286,7 @@ I'll tell you now I keep it on and on
 
 'cause what you see you might not get
 And we can bet so don't you get souped yet
-You're scheming on a thing that's a mirage</textarea>
+You're scheming on a thing that's a mirage</textarea></div>
     </ul>
   </div>
   <footer>
@@ -321,11 +314,11 @@ You're scheming on a thing that's a mirage</textarea>
           <span class="ui-tooltip-top">Past the embed code below from either the Youtube&reg; or Vimeo&reg; video. Need more help? <a href="#">Click here</a></span>
         </div>
       <li class="row textarea">
-        <textarea>
+        <div class="textarea-scroll"><textarea>
 Embed Sample:
 
 <iframe width="420" height="345" src="http://www.youtube.com/embed/
-b62FfUf78V0" frameborder="0" allowfullscreen></iframe></textarea>
+b62FfUf78V0" frameborder="0" allowfullscreen></iframe></textarea></div>
     </ul>
   </div>
   <footer>
@@ -435,5 +428,6 @@ b62FfUf78V0" frameborder="0" allowfullscreen></iframe></textarea>
 <script src="j/jquery.jscrollpane.min.js"></script>
 <script src="j/jquery.selectBox.min.js"></script>
 <script src="j/jquery.tmpl.min.js"></script>
+<script src="j/jquery.autoresize.min.js"></script>
 <script src="j/mwheelIntent.js"></script>
 <script src="j/cpanel.js"></script>
