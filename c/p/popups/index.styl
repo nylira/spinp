@@ -1,14 +1,17 @@
 .popup
   d block
   clearfix()
-  fixed top 0 left 50%
+  fixed top -1000px left 50%
   bg m54 url(../i/popups/bg.png)
   box-shadow b75 0 0 8px
   border-radius 5px
-  d none
   z 9999
+  transform rotateY(-90deg) rotateX(45deg) scale(.25)
+  transition .5s ease-in-out -webkit-transform, .5s ease-in-out opacity
+  opacity 0
   &.visible
-    d block
+    transform rotateY(0deg) scale(1)
+    opacity 1
 
   &.window
     w 525px

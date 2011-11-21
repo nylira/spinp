@@ -12,6 +12,41 @@
 
 <link rel="stylesheet" media="screen" href="c/style.css?v=1">
 
+<script id="songTemplate" type="text/x-jquery-tmpl">
+  <tr>
+    <td class="name">
+      <span class="num">${index}</span>
+      <span class="light"></span>
+      <span class="name">${title}</span>
+    <td class="upload"><a href="#">Upload</a>
+    <td class="download">
+      <span class="light"></span>
+      <select>
+        <option>Free</option>
+        <option value="custom">$ Custom</option>
+        <option>$ 0.99</option>
+        <option>$ 1.29</option>
+        <option>iTunes</option>
+        <option>Amazon</option>
+      </select>
+    <td class="lyrics">
+      <span class="light"></span>
+      <a class="add" href="#">&plus;</a>
+    <td class="fullscreen">
+      <span class="light"></span>
+      <div class="selector">
+        <div class="selector-dropdown">
+          <ul class="selector-options selector-dropdown-menu">
+            <li><a class="slideshow" href="#">Slideshow</a>
+            <li><a class="video" href="#">Video</a>
+          </ul>
+          <div class="selector-arrow"></div>
+        </div>
+      </div>
+    <td class="status">
+      <a class="delete">Delete<a>
+</script>
+
 </head>
 <body class="cpanel">
 
@@ -66,465 +101,10 @@
       <li class="fullscreen">Full Screen
       <li class="status">&plus;
     </ul>
-    <div id="songs">
-      <table>
-        <tbody>
-          <tr>
-            <td class="name">
-              <span class="num">1</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">2</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-
-          <tr>
-            <td class="name">
-              <span class="num">3</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">4</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-
-          <tr>
-            <td class="name">
-              <span class="num">5</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">6</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">7</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">8</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">9</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">10</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">11</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">12</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">13</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-          <tr>
-            <td class="name">
-              <span class="num">14</span>
-              <span class="light"></span>
-              <span class="name">Song Name</span>
-            <td class="upload"><a href="#">Upload</a>
-            <td class="download">
-              <span class="light"></span>
-              <select>
-                <option>Free</option>
-                <option value="custom">$ Custom</option>
-                <option>$ 0.99</option>
-                <option>$ 1.29</option>
-                <option>iTunes</option>
-                <option>Amazon</option>
-              </select>
-            <td class="lyrics">
-              <span class="light"></span>
-              <a class="add" href="#">&plus;</a>
-            <td class="fullscreen">
-              <span class="light"></span>
-              <div class="selector">
-                <div class="selector-dropdown">
-                  <ul class="selector-options selector-dropdown-menu">
-                    <li><a class="slideshow" href="#">Slideshow</a>
-                    <li><a class="video" href="#">Video</a>
-                  </ul>
-                  <div class="selector-arrow"></div>
-                </div>
-              </div>
-            <td class="status">
-              <a class="delete">Delete<a>
-      </table>
-    </div>
+    <div id="songs"><table></table></div>
   </div><!--panel-content-->
   <div id="bottom-bar"></div>
 </div>
-
 
 <form class="popup window album-settings">
   <header>
@@ -807,7 +387,8 @@ b62FfUf78V0" frameborder="0" allowfullscreen></iframe></textarea>
 <script src="j/jquery-ui.min.js"></script>
 <script src="j/jquery.bxSlider.min.js"></script>
 <script src="j/jquery.mousewheel.js"></script>
-<script src="j/mwheelIntent.js"></script>
 <script src="j/jquery.jscrollpane.min.js"></script>
 <script src="j/jquery.selectBox.min.js"></script>
+<script src="j/jquery.tmpl.min.js"></script>
+<script src="j/mwheelIntent.js"></script>
 <script src="j/cpanel.js"></script>

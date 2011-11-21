@@ -199,7 +199,7 @@ body.cpanel
       tr
         th, td
           &.name
-            min-width 186px
+            max-width 186px
             cursor text
           &.upload
             min-width 98px
@@ -228,6 +228,11 @@ body.cpanel
               m 6px 0 9px
             &.name
               aa()
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
+              f bold 12px/35px sans
+              c w50
               span.num
                 f bold 12px/35px sans
                 c m160
@@ -236,7 +241,6 @@ body.cpanel
                 ta right
                 d inline-block
               span.name
-                f bold 12px/35px sans
                 c #fff
             &.upload
               ta center

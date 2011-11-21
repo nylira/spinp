@@ -1,11 +1,27 @@
+var songs = [
+  { index: "1", title: "Boomboxes and Dictionaries" },
+  { index: "2", title: "I Coulda Been a Contender" },
+  { index: "3", title: "Wooderson" },
+  { index: "4", title: "We Came to Dance" },
+  { index: "5", title: "1930" },
+  { index: "6", title: "The Navesink Banks" },
+  { index: "7", title: "Red in the Morning" },
+  { index: "8", title: "I'da Called You Woody, Joe" },
+  { index: "9", title: "Angry Johnny and the Radio" },
+  { index: "10", title: "Drive" },
+  { index: "11", title: "We're Getting a Divorce, You Keep the Diner" },
+  { index: "12", title: "Red at Night" }
+];
+$("#songTemplate").tmpl(songs).appendTo("#songs table");
+
 /* vertical alignment */
 (function ($) {
 $.fn.vAlign = function() {
   return this.each(function(i){
-  var ah = $(this).height();
-  var ph = $(window).height();
-  var mh = Math.ceil((ph-ah) / 2);
-  $(this).css('top', mh);
+  var box = $(this).height();
+  var viewport = $(window).height();
+  var offset = Math.ceil((viewport - box) / 2);
+  $(this).css('top', offset);
   });
 };
 })(jQuery);
@@ -13,12 +29,13 @@ $.fn.vAlign = function() {
 /* show popup function */
 (function ($) {
   $.fn.showPop = function() {
-  $(this).toggleClass('visible').vAlign();
+    $(this).toggleClass('visible');
+    if ($(this).hasClass("visible")) {
+      $(this).vAlign();
+    };
   };
 })(jQuery);
   
-$(function() {})
-
 /* draggable header */
 $('#cpanel')
   .draggable({
@@ -118,3 +135,5 @@ $('.selector-dropdown a.video').click(function(){
   $(this).closest('.selector-dropdown').removeClass('active');
   $('.popup.video').showPop();
 });
+
+
