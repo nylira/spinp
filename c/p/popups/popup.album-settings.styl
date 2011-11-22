@@ -28,10 +28,25 @@
             hide-text()
             box-shadow w7 0 1px 0
             absolute top 8px right 9px
-            cursor pointer
             bg url(../i/popups/cover-art.png)
+
+            a.upload
+              d block
+              bg url(../i/popups/cover-art-upload.png)
+              r 80px
+              m 43px
+              opacity 0
+              hide-text()
+              &:hover
+                bgp 0 -80px
+              &:active
+                bgp 0 -160px
+
             &:hover
               bgp 0 -167px
+              a.upload
+                opacity 1
+
         &.short
           w 272px
           mb 8px

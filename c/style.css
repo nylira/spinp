@@ -387,8 +387,12 @@ body.cpanel{overflow-y:hidden}
 .popup.album-settings .content ul.rows li.row.cover-art .help{position:absolute;bottom:9px;left:7px;top:auto;}
 .popup.album-settings .content ul.rows li.row.cover-art .help .ui-tooltip-bottom{right:auto;left:-15px;}
 .popup.album-settings .content ul.rows li.row.cover-art .help .ui-tooltip-bottom:after{left:-90px}
-.popup.album-settings .content ul.rows li.row.cover-art .upload-cover-art{height:167px;width:167px;text-indent:-99999em;overflow:hidden;text-align:left;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;position:absolute;top:8px;right:9px;cursor:pointer;background:url("../i/popups/cover-art.png");}
-.popup.album-settings .content ul.rows li.row.cover-art .upload-cover-art:hover{background-position:0 -167px}
+.popup.album-settings .content ul.rows li.row.cover-art .upload-cover-art{height:167px;width:167px;text-indent:-99999em;overflow:hidden;text-align:left;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;position:absolute;top:8px;right:9px;background:url("../i/popups/cover-art.png");}
+.popup.album-settings .content ul.rows li.row.cover-art .upload-cover-art a.upload{display:block;background:url("../i/popups/cover-art-upload.png");height:80px;width:80px;margin:43px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);text-indent:-99999em;overflow:hidden;text-align:left;}
+.popup.album-settings .content ul.rows li.row.cover-art .upload-cover-art a.upload:hover{background-position:0 -80px}
+.popup.album-settings .content ul.rows li.row.cover-art .upload-cover-art a.upload:active{background-position:0 -160px}
+.popup.album-settings .content ul.rows li.row.cover-art .upload-cover-art:hover{background-position:0 -167px;}
+.popup.album-settings .content ul.rows li.row.cover-art .upload-cover-art:hover a.upload{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
 .popup.album-settings .content ul.rows li.row.short{width:272px;margin-bottom:8px}
 .popup.textarea .content ul.rows{padding-right:0;}
 .popup.textarea .content ul.rows li.row label{left:11px}
