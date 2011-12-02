@@ -58,7 +58,7 @@ $('.popup.logout a.yes').click(function(){
 
 /* minimize button */
 $('a.minimize').click(function() {
-  $('#panel-content').slideToggle();
+  $('#cpanel-panels').slideToggle();
   $(this).toggleClass('minimized');
 });
 

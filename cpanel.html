@@ -60,49 +60,51 @@
     <a id="logout" href="#">&times;</a>
   </div>
 
-  <div id="main-menu">
-    <ul>
-      <li><a class="home" href="#">S</a>
-      <li><a class="profile" href="#">Profile</a>
-      <li><a class="music active" href="#">Music</a>
-      <li><a class="gallery" href="#">Gallery</a>
-      <li><a class="stats" href="#">Stats</a>
-      <li><a class="account" href="#">Account</a>
-      <li><a class="minimize" href="#">Minimize</a>
+  <div id="cpanel-tabs">
+    <ul class="tabs">
+      <li class="tab"><a class="home" href="#">S</a>
+      <li class="tab"><a class="profile" href="#">Profile</a>
+      <li class="tab"><a class="music active" href="#">Music</a>
+      <li class="tab"><a class="gallery" href="#">Gallery</a>
+      <li class="tab"><a class="stats" href="#">Stats</a>
+      <li class="tab"><a class="account" href="#">Account</a>
+      <li class="tab"><a class="minimize" href="#">Minimize</a>
     </ul>
   </div>
 
-  <div id="panel-content">
-    <div id="albums">
-      <ul class="albums">
-        <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
-        <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
-        <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
-        <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
-        <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
-        <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
-      </ul>
-      <nav class="nav">
-        <a class="prev-set" href="#">Prev</a>
-        <a class="next-set" href="#">Next</a>
-        <div class="active"></div>
-      </nav>
-      <menu class="rollover">
-        <a class="add" href="#">Add</a>
-        <a class="help" href="#">Help</a>
-      </menu>
-    </div>
-
-    <ul class="thead">
-      <li class="name">Name
-      <li class="upload">Upload Song
-      <li class="download">Download
-      <li class="lyrics">Lyrics
-      <li class="fullscreen">Full Screen
-      <li class="status">&plus;
+  <div id="cpanel-panels">
+    <ul class="panels">
+      <li class="music panel">
+        <div id="albums">
+          <ul class="albums">
+            <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
+            <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
+            <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
+            <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
+            <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
+            <li class="album"><a href="#">Album <span class="settings">Settings</span></a>
+          </ul>
+          <nav class="nav">
+            <a class="prev-set" href="#">Prev</a>
+            <a class="next-set" href="#">Next</a>
+            <div class="active"></div>
+          </nav>
+          <menu class="rollover">
+            <a class="add" href="#">Add</a>
+            <a class="help" href="#">Help</a>
+          </menu>
+        </div>
+        <ul class="thead">
+          <li class="name">Name
+          <li class="upload">Upload Song
+          <li class="download">Download
+          <li class="lyrics">Lyrics
+          <li class="fullscreen">Full Screen
+          <li class="status">&plus;
+        </ul>
+        <div id="songs"><table></table></div>
     </ul>
-    <div id="songs"><table></table></div>
-  </div><!--panel-content-->
+  </div><!--cpanel-panels-->
   <div id="bottom-bar"></div>
 </div>
 
