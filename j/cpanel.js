@@ -39,13 +39,6 @@ $.fn.vAlign = function() {
   };
 })(jQuery);
   
-/* draggable header */
-$('#cpanel')
-  .draggable({
-    handle: '#top-bar',
-    containment: 'window'
-  })
-  .vAlign();
 
 /* logout functions */
 $('#logout').click(function() {
@@ -57,8 +50,8 @@ $('.popup.logout a.yes').click(function(){
 });
 
 /* minimize button */
-$('a.minimize').click(function() {
-  $('#cpanel-panels').slideToggle();
+$('#cpanel-tabs li.minimize').click(function() {
+  $('.panel').slideToggle();
   $(this).toggleClass('minimized');
 });
 
@@ -155,3 +148,13 @@ $('.popup.textarea textarea').autoResize({
   }
 });
 
+/* draggable header */
+$('#cpanel')
+  .tabs({
+    selected: 5,
+  })
+  .draggable({
+    handle: '#top-bar',
+    containment: 'window'
+  })
+  .vAlign();

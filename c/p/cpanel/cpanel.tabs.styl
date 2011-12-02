@@ -1,0 +1,64 @@
+ul#cpanel-tabs
+  clearfix()
+  li
+    float left
+    box-shadow b75 0 1px 3px
+    bg url(../i/cp/main-menu.png) top left no-repeat
+    a
+      d block
+      w 103px
+      h 31px
+      ti -999em
+
+    &.ui-tabs-selected, &:active
+      box-shadow #000 0 0 0
+
+    &.home
+      &:hover, &:focus
+        bgp 0 -31px
+      &:active, &.ui-tabs-selected
+        bgp 0 -62px
+    &.profile
+      bgp -103px 0
+      &:hover, &:focus
+        bgp -103px -31px
+      &:active, &.ui-tabs-selected
+        bgp -103px -62px
+    &.music
+      bgp -206px 0
+      &:hover, &:focus
+        bgp -206px -31px
+      &:active, &.ui-tabs-selected
+        bgp -206px -62px
+    &.gallery
+      bgp -309px 0
+      &:hover, &:focus
+        bgp -309px -31px
+      &:active, &.ui-tabs-selected
+        bgp -309px -62px
+    &.stats
+      bgp -412px 0
+      &:hover, &:focus
+        bgp -412px -31px
+      &:active, &.ui-tabs-selected
+        bgp -412px -62px
+    &.account
+      w 104px
+      bgp -515px 0
+      &:hover, &:focus
+        bgp -515px -31px
+      &:active, &.ui-tabs-selected
+        bgp -515px -62px
+    &.minimize
+      w 31px
+      bgp -619px 0
+      &:hover, &:focus
+        bgp -619px -31px
+      &:active
+        bgp -619px -62px
+      &.minimized
+        bgp -649px 0
+        &:hover, &:focus
+          bgp -649px -31px
+        &:active
+          bgp -649px -62px
