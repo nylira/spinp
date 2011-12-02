@@ -73,7 +73,7 @@ $(function(){
 }); 
 
 /* popups options */
-$('a.exit, a.cancel').click(function() {
+$('a.exit, a.cancel, a.ok').click(function() {
   $(this).closest('.popup').showPop();
 });
 $('#albums div.active').dblclick(function() {
@@ -97,6 +97,9 @@ $('a.change.account.info').click(function() {
 });
 $('a.change.billing.info').click(function() {
   $('.popup.billing-info').showPop();
+});
+$('a.security-code').click(function() {
+  $('.popup.security-code').showPop();
 });
 
 /* custom scrollbar */
