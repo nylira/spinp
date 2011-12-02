@@ -131,7 +131,7 @@ $("select")
   });
 
 /* select box watching */
-$('td.fullscreen .selector .selector-arrow').click(function(){
+$('.selector .selector-arrow').click(function(){
   $(this).parent().toggleClass('active');
 });
 $('.selector-dropdown a.slideshow').click(function(){

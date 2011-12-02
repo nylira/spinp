@@ -5,12 +5,11 @@
       pr 17px
       li
         clearfix()
+        relative()
         &.row
           w 100%
           ml 14px
           mb 19px
-          clearfix()
-          relative()
           &.third
             w 196px
             a.edit
@@ -75,6 +74,7 @@
           a.selectBox
             w 106px
             left 83px
+
         &.location
           input
             w 119px
@@ -84,11 +84,70 @@
               left 135px
             &.country
               left 261px
+
         &.band-logo
-          a.selectBox
+          .selector
+            absolute top 4px left 108px
             left 108px
             w 263px
 
+            .selector-dropdown
+              w 263px
+              h 32px
+              bg b25
+              bg rgba(30,30,30,.5)
+              border-radius 5px
+              box-shadow w7 0 1px 0, inset b75 0 1px 1px, inset b13 0 0 7px
+              m 0
+              p 0 3px
+              z 1
+              &:hover, &:focus
+                .selector-label
+                  c m235
+
+              &.active
+                h 64px
+                bg m30
+                box-shadow inset b13 0 0 7px, b60 2px 2px 4px
+                bb none
+                absolute top 0 left 0
+                z 9999
+                .selector-options li a.upload.logo
+                  d block
+                .selector-arrow
+                  bgp 0 -36px
+
+              .selector-arrow
+                cursor pointer
+                absolute top 3px right 3px
+                &:hover
+                  bgp 0 -18px
+
+              .selector-dropdown-menu
+                bg transparent
+                box-shadow none
+
+              .selector-options li a
+                d block
+                m 3px 0
+                bxs()
+                w 236px
+                lhh 26px
+                text-shadow b80 0 -1px 0
+                border-radius 4px
+                background linear-gradient(top, m120, m109 50%, m86 50%,  m77)
+                box-shadow b50 0 1px 2px
+                b 1px solid m35
+                ta center
+                &:hover, &:focus
+                  background linear-gradient(top, m153, m138 50%, m110 50%,  m98)
+                  c m235
+                &:active
+                  bg m120
+                  box-shadow rgba(33,29,30,.65) 0 2px 2px, inset b20 0 0 5px
+                  c m180
+                &.upload.logo
+                  d none
 
         &.section 
           fl()
@@ -103,6 +162,9 @@
               f bold 13px/1.5 sans
               c m160
               aa()
+            .help
+              absolute bottom 4px right 9px
+              top auto
 
           &.get-paid
             w 617px
