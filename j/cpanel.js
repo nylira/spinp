@@ -98,6 +98,9 @@ $('a.change.account.info').click(function() {
 $('a.change.billing.info').click(function() {
   $('.popup.billing-info').showPop();
 });
+$('a.security-code').click(function() {
+  $('.popup.security-code').showPop();
+});
 $('a#change-plan').click(function() {
   $('.popup.plan').showPop();
 });
