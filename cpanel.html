@@ -531,7 +531,7 @@ b62FfUf78V0" frameborder="0" allowfullscreen></iframe></textarea></div>
           <span class="ui-tooltip-bottom">Must be at least 6 characters.</span>
         </div>
       <li class="row big confirm password">
-        <label>Username</label>
+        <label>Confirm Password</label>
         <input type="password">
         <div class="help">
           <span class="icon">?</span>
@@ -546,6 +546,97 @@ b62FfUf78V0" frameborder="0" allowfullscreen></iframe></textarea></div>
     </ul>
   </footer>
 </form>
+
+<form class="popup window account billing-info">
+  <header>
+    <ul>
+      <li class="title">Billing Information
+      <li class="exit"><a class="exit" href="#">Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row">
+        <label>Edit your Billing Information below.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your Billing Information below. Click Save to save your settings.</span>
+        </div>
+      <li class="row half card-type">
+        <label>Card Type</label>
+        <select>
+          <option>American Express
+          <option>Discover
+          <option>MasterCard
+          <option selected>Visa
+        </select>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select your card type.</span>
+        </div>
+      <li class="row big card-number">
+        <label>Card Number</label>
+        <input type="number" placeholder="**** **** **** 7865">
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your credit card number.</span>
+        </div>
+      <li class="row big security-code">
+        <label>Security Code</label>
+        <input type="number">
+        <a class="what-is-this security-code" href="#">What is this?</a>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter the security code found on your credit card. <a class="security-code" href="#">What is this?</a></span>
+        </div>
+      <li class="row big expiration-date">
+        <label>Expiration Date</label>
+        <select class="month">
+          <option>1 - JAN</option>
+          <option>2 - FEB</option>
+          <option>3 - MAR</option>
+          <option>4 - APR</option>
+          <option>5 - MAY</option>
+          <option>6 - JUN</option>
+          <option>7 - JUL</option>
+          <option>8 - AUG</option>
+          <option>9 - SEP</option>
+          <option>10 - OCT</option>
+          <option>11 - NOV</option>
+          <option>12 - DEC</option>
+        </select>
+        <select class="year">
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+        </select>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter the expiration date on your card.</span>
+        </div>
+      <li class="row big zip-code">
+        <label>Billing Zip Code</label>
+        <input type="number">
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter the Billing Zip/Postal Code.</span>
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save">Save</a>
+      <li><a class="cancel">Cancel</a>
+    </ul>
+  </footer>
+</form>
+
 
 <script src="j/jquery.min.js"></script>
 <script src="j/jquery-ui.min.js"></script>

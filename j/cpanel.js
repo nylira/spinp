@@ -95,6 +95,9 @@ $('td.status a.delete').click(function() {
 $('a.change.account.info').click(function() {
   $('.popup.account-info').showPop();
 });
+$('a.change.billing.info').click(function() {
+  $('.popup.billing-info').showPop();
+});
 
 /* custom scrollbar */
 $(function() {

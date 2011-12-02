@@ -325,6 +325,10 @@ ul#cpanel-tabs li.minimize.minimized:active{background-position:-649px -62px}
 .popup.lyrics header li.title{background:url("../i/popups/form-lyrics.png")}
 .popup.video header li.title{background:url("../i/popups/form-video.png")}
 .popup.custom-price header li.title{background:url("../i/popups/form-custom-price.png")}
+.popup.account-info header li.title{background:url("../i/popups/form-account-info.png")}
+.popup.billing-info header li.title{background:url("../i/popups/form-billing-info.png")}
+.popup.plan header li.title{background:url("../i/popups/form-plan.png")}
+.popup.security-code header li.title{background:url("../i/popups/form-security-code.png")}
 form div.help{position:absolute;top:13px;right:7px;width:14px;height:15px;}
 form div.help span.icon{display:block;width:14px;font:bold 11px/15px 'Helvetica Neue',Arial,Helvetica,sans-serif;text-align:center;color:#6f6f6f;background:#3c3c3c;-webkit-box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;-moz-box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;cursor:pointer}
 form div.help .ui-tooltip-top,form div.help .ui-tooltip-bottom{z-index:1000;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:250ms ease-in-out opacity;-moz-transition:250ms ease-in-out opacity;transition:250ms ease-in-out opacity}
@@ -343,10 +347,16 @@ form ul.rows li.row.disabled{background:rgba(40,40,40,0.80)}
 form ul.rows li.row .light{position:absolute;top:8px;left:4px}
 form ul.rows li.row label{font:bold 13px/40px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#a0a0a0;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;position:absolute;left:30px}
 form ul.rows li.row input[type=text],form ul.rows li.row input[type=email],form ul.rows li.row input[type=number],form ul.rows li.row input[type=password]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:absolute;top:8px;left:28px;right:26px;bottom:8px;border:none;height:24px;padding:6px .5em 5px;font:bold 13px/1 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;background:#1e1e1e;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
-form ul.rows li.row a.selectBox{display:block !important;position:absolute;top:2px;right:28px;width:98px;height:24px;background:#1e1e1e;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;padding-left:8px;}
+form ul.rows li.row a.selectBox{display:block !important;position:absolute;top:2px;right:28px;width:98px;height:24px;background:#1e1e1e;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;padding-left:8px;}
 form ul.rows li.row a.selectBox span.selectBox-label{line-height:24px}
 form ul.rows li.row a.selectBox span.selectBox-arrow{top:3px;right:3px}
 form ul.rows li.row .help{position:absolute;top:13px;right:7px}
+form ul.rows li.row.half{width:239px;}
+form ul.rows li.row.half input{right:7px}
+form ul.rows li.row.big{height:45px;}
+form ul.rows li.row.big .light{top:11px}
+form ul.rows li.row.big input{height:29px;padding:8px .5em 7px;font:bold 14px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}
+form ul.rows li.row.big .help{top:15px}
 .popup .content{zoom:1;overflow:visible;}
 .popup .content:before,.popup .content:after{content:"";display:table}
 .popup .content:after{clear:both}
@@ -427,15 +437,17 @@ form ul.rows li.row .help{position:absolute;top:13px;right:7px}
 .popup.custom-price .content ul.rows li.row label{left:11px}
 .popup.custom-price .content ul.rows li.row input{width:85px;left:134px;text-align:right}
 .popup.custom-price .content ul.rows li.row span.unit{font:bold 13px/40px 'Helvetica Neue',Arial,Helvetica,sans-serif;padding-left:6px;color:#a0a0a0;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;position:absolute;position:absolute;top:0;left:219px}
-.popup.account-info .content ul.rows li.row{margin-bottom:12px;}
-.popup.account-info .content ul.rows li.row label{left:13px}
+.popup.account .content ul.rows li.row{margin-bottom:12px;}
+.popup.account .content ul.rows li.row label{left:13px}
 .popup.account-info .content ul.rows li.row input{left:93px}
-.popup.account-info .content ul.rows li.row.half{width:239px;}
-.popup.account-info .content ul.rows li.row.half input{right:7px}
-.popup.account-info .content ul.rows li.row.half.last-name{margin-left:13px}
+.popup.account-info .content ul.rows li.row.last-name{margin-left:13px}
 .popup.account-info .content ul.rows li.row.band-name{margin-bottom:0}
-.popup.account-info .content ul.rows li.row.big{height:45px;}
-.popup.account-info .content ul.rows li.row.big .light{top:11px}
-.popup.account-info .content ul.rows li.row.big input{height:29px;padding:8px .5em 7px;font:bold 14px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}
-.popup.account-info .content ul.rows li.row.big .help{top:15px}
+.popup.account-info .content ul.rows li.row.password input{left:143px}
 .popup.account-info .content ul.rows li.desc{font:bold 10px/20px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#999;padding-left:30px;-webkit-font-smoothing:antialiased;text-shadow:#000 0 -1px 0;margin-bottom:12px}
+.popup.billing-info .content ul.rows li.row input::-webkit-outer-spin-button,.popup.billing-info .content ul.rows li.row input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.popup.billing-info .content ul.rows li.row.card-type a.selectBox{left:91px;width:120px}
+.popup.billing-info .content ul.rows li.row.card-number input{left:141px}
+.popup.billing-info .content ul.rows li.row.security-code input,.popup.billing-info .content ul.rows li.row.expiration-date input,.popup.billing-info .content ul.rows li.row.zip-code input{height:24px;padding:6px .5em 5px;font:bold 13px/1 'Helvetica Neue',Arial,Helvetica,sans-serif;top:10px;width:103px;left:121px}
+.popup.billing-info .content ul.rows li.row.security-code a.what-is-this{display:block;text-decoration:underline;font:bold 10px/1.5 'Helvetica Neue',Arial,Helvetica,sans-serif;position:absolute;top:13px;left:234px;color:#999;text-shadow:#000 0 -1px 0}
+.popup.billing-info .content ul.rows li.row.expiration-date a.selectBox.month{left:121px;width:96px}
+.popup.billing-info .content ul.rows li.row.expiration-date a.selectBox.year{left:224px;width:70px}

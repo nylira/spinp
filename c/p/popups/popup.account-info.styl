@@ -1,30 +1,24 @@
-.popup.account-info
+.popup.account
   .content
     ul.rows
       li.row
         mb 12px
         label
           left 13px
+
+.popup.account-info
+  .content
+    ul.rows
+      li.row
         input
           left 93px
-        &.half
-          w 239px
-          input
-            right 7px
-          &.last-name
-            ml 13px
+        &.last-name
+          ml 13px
         &.band-name
           mb 0
-        &.big
-          h 45px
-          .light
-            top 11px
+        &.password
           input
-            h 29px
-            p 8px .5em 7px
-            f bold 14px/1 sans
-          .help
-            top 15px
+            left 143px
 
       li.desc
         f bold 10px/20px sans
@@ -33,3 +27,44 @@
         aa()
         text-shadow #000 0 -1px 0
         mb 12px
+
+.popup.billing-info
+  .content
+    ul.rows
+      li.row
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button
+          -webkit-appearance none
+          m 0
+        &.card-type
+          a.selectBox
+            left 91px
+            w 120px
+        &.card-number
+          input
+            left 141px
+        &.security-code, &.expiration-date, &.zip-code
+          input
+            h 24px
+            p 6px .5em 5px
+            f bold 13px/1 sans
+            top 10px
+            w 103px
+            left 121px
+
+        &.security-code
+          a.what-is-this
+            d block
+            td underline
+            f bold 10px/1.5 sans
+            absolute top 13px left 234px
+            c m153
+            text-shadow #000 0 -1px 0
+        &.expiration-date
+          a.selectBox
+            &.month
+              left 121px
+              w 96px
+            &.year
+              left 224px
+              w 70px
