@@ -1,0 +1,120 @@
+#profile-panel
+  form
+    ul.rows
+      pl 3px
+      pr 17px
+      li
+        clearfix()
+        &.row
+          w 100%
+          ml 14px
+          mb 19px
+          clearfix()
+          relative()
+          &.third
+            w 196px
+            a.edit
+              button-dim-133()
+              absolute top 4px left 31px
+          &.half
+            w 301px
+            mb 0
+            label
+              left 11px
+            input, a.selectBox
+              left 117px
+              w 155px
+          &.two-third
+            w 406px
+
+        &.background
+          h 216px
+          .light
+            absolute bottom 11px left 27px
+            top auto
+          label
+            lh 20px
+            absolute bottom 11px left 52px
+
+          .home-background-image
+            r 167px
+            absolute top 12px left 15px
+            bg b10
+            bg #1a1b1c
+            box-shadow w7 0 1px 0, inset b37 0 1px 1px, inset b7 0 0 7px
+
+            p
+              absolute top 46px left 0
+              f bold 21px/1 sans
+              c m50
+              ta center
+              aa()
+              text-shadow #000 0 -1px 0
+
+            a.upload
+              d block
+              bg url(../i/popups/cover-art-upload.png)
+              r 80px
+              m 43px
+              opacity 0
+              hide-text()
+              &:hover
+                bgp 0 -80px
+              &:active
+                bgp 0 -160px
+
+            &:hover
+              p
+                d none
+              a.upload
+                opacity 1
+
+        &.genre
+          label
+            left 10px
+          a.selectBox
+            w 106px
+            left 83px
+        &.location
+          input
+            w 119px
+            &.city
+              left 9px
+            &.state
+              left 135px
+            &.country
+              left 261px
+        &.band-logo
+          a.selectBox
+            left 108px
+            w 263px
+
+
+        &.section 
+          fl()
+          ml 14px
+          &.band-name
+            w 406px
+            mb 12px
+            mt -6px
+            p.url
+              text-shadow #000 0 -1px 0
+              p 2px 8px
+              f bold 13px/1.5 sans
+              c m160
+              aa()
+
+          &.get-paid
+            w 617px
+            mb 13px
+            mt -10px
+
+        &.desc
+          p 10px 19px 0
+          clear both
+          f 12px/1.5 sans
+          c m200
+          aa()
+          a
+            c m200
+            td underline

@@ -169,7 +169,8 @@ $('ul.plans li.plan').click(function() {
 /* #cpanel effects */
 $('#cpanel')
   .tabs({
-    selected: 5,
+    selected: 1,
+    fx: {height: 'toggle', opacity:'toggle', duration:'normal'}
   })
   .draggable({
     handle: '#top-bar',
