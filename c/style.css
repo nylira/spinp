@@ -453,10 +453,17 @@ form ul.rows li.row.big .help{top:15px}
 .popup.billing-info .content ul.rows li.row.expiration-date a.selectBox.year{left:224px;width:70px}
 .popup.security-code{height:423px;width:393px;}
 .popup.security-code .content{height:329px}
-.popup.plan .content ul.rows li.row.plan{height:215px;}
+.popup.plan .content ul.rows li.row.label{margin-bottom:0;zoom:1}
+.popup.plan .content ul.rows li.row.label:before,.popup.plan .content ul.rows li.row.label:after{content:"";display:table}
+.popup.plan .content ul.rows li.row.label:after{clear:both}
+.popup.plan .content ul.rows li.row.plan{height:215px;margin-bottom:0;}
 .popup.plan .content ul.rows li.row.plan ul.plans{zoom:1;padding:8px 0 7px;}
 .popup.plan .content ul.rows li.row.plan ul.plans:before,.popup.plan .content ul.rows li.row.plan ul.plans:after{content:"";display:table}
 .popup.plan .content ul.rows li.row.plan ul.plans:after{clear:both}
 .popup.plan .content ul.rows li.row.plan ul.plans li.plan{float:left;width:151px;height:200px;background:#1e1e1e;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;margin-left:9px;cursor:pointer;position:relative;((null)):0;((null)):0;}
 .popup.plan .content ul.rows li.row.plan ul.plans li.plan:hover,.popup.plan .content ul.rows li.row.plan ul.plans li.plan:focus{background:#1e1e1e url("../i/popups/plan-hover.png")}
 .popup.plan .content ul.rows li.row.plan ul.plans li.plan.active:after{content:'';width:169px;height:215px;position:absolute;top:-8px;left:-9px;background:url("../i/popups/plan-selected.png")}
+.popup.plan .content ul.rows li.desc{clear:both;padding:5px 22px;font:12px/1.5 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#c8c8c8;-webkit-font-smoothing:antialiased;text-shadow:#000 0 -1px 0;}
+.popup.plan .content ul.rows li.desc a{color:#c8c8c8;text-decoration:underline}
+.popup.plan .content ul.rows li.cancel{font:bold 13px/26px 'Helvetica Neue',Arial,Helvetica,sans-serif;padding:0 22px;color:#a0a0a0;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;}
+.popup.plan .content ul.rows li.cancel a{color:#a0a0a0;text-decoration:underline}

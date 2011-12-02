@@ -78,8 +78,12 @@
   .content
     ul.rows
       li.row
+        &.label
+          mb 0
+          clearfix()
         &.plan
           h 215px
+          mb 0
           ul.plans
             clearfix()
             p 8px 0 7px
@@ -101,3 +105,22 @@
                 h 215px
                 absolute top -8px left -9px
                 bg url(../i/popups/plan-selected.png)
+      li.desc
+        clear both
+        p 5px 22px
+        f 12px/1.5 sans
+        c m200
+        aa()
+        text-shadow #000 0 -1px 0
+        a
+          c m200
+          td underline
+      li.cancel
+        f bold 13px/26px sans
+        p 0 22px
+        c m160
+        text-shadow #000 0 -1px 0
+        aa()
+        a
+          c m160
+          td underline
