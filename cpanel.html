@@ -141,7 +141,7 @@
             <li class="row">
               <label>Enter Your Domain</label>
               <input type="text" placeholder="www.yourdomain.com">
-              <a class="button gray" href="#">Test</a>
+              <a id="test-domain" class="button dim">Test</a>
               <div class="help">
                 <span class="icon">?</span>
                 <div class="ui-tooltip-bottom">Message.</div>
@@ -153,12 +153,12 @@
     <section class="your-plan">
       <header><h2>Your Plan</h2></header>
       <div class="content">
-        <p>You currently have an active Spindal Silver Plan account subscription. Your subscription will automatically renew and you will be charged $8.00 on December 8th, 2011 unless you cancel your recurring payment.</p>
+        <p>You currently have an active Spindal Silver Plan account subscription. Your subscription will automatically renew and you will be charged $8.00 on December 8th, 2011 unless you <a id="cancel-account" href="#">cancel</a> your recurring payment.</p>
         <form>
           <ul class="rows">
             <li class="row">
               <label>Silver Plan</label>
-              <a class="button gray" href="#">Change Plan</a>
+              <a id="change-plan" class="button dim">Change Plan</a>
               <div class="help">
                 <span class="icon">?</span>
                 <div class="ui-tooltip-bottom">Message.</div>
@@ -377,7 +377,7 @@ You're scheming on a thing that's a mirage</textarea></div>
         <label>Embed Video from Youtube&reg; or Vimeo&reg; below.</label>
         <div class="help">
           <span class="icon">?</span>
-          <span class="ui-tooltip-top">Past the embed code below from either the Youtube&reg; or Vimeo&reg; video. Need more help? <a href="#">Click here</a></span>
+          <span class="ui-tooltip-top">Paste the embed code below from either the Youtube&reg; or Vimeo&reg; video. Need more help? <a href="#">Click here</a></span>
         </div>
       <li class="row textarea">
         <div class="textarea-scroll"><textarea>
@@ -476,6 +476,66 @@ b62FfUf78V0" frameborder="0" allowfullscreen></iframe></textarea></div>
         <div class="help">
           <span class="icon">?</span>
           <span class="ui-tooltip-bottom">Help.</span>
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save">Save</a>
+      <li><a class="cancel">Cancel</a>
+    </ul>
+  </footer>
+</form>
+
+<form class="popup window account account-info">
+  <header>
+    <ul>
+      <li class="title">Account Information
+      <li class="exit"><a class="exit" href="#">Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row">
+        <label>Edit your Account Information below.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">This information below is the person who is authorized to act on behalf of the band.</span>
+        </div>
+      <li class="row band-name">
+        <label>Band Name</label>
+        <input type="text" placeholder="TheKillers">
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">No spaces please. This should be your real Band Name so your fans can easily find you. </span>
+        </div>
+      <li class="desc spindal-url"> Your public Spindal web address is: www.Spindal.com/BandName
+      <li class="row half first-name">
+        <label>First Name</label>
+        <input type="text" placeholder="Brandon">
+      <li class="row half last-name">
+        <label>Last Name</label>
+        <input type="text" placeholder="Flowers">
+      <li class="row big username">
+        <label>Username</label>
+        <input type="text" placeholder="brandonflowers@gmail.com">
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">This needs to be a valid email address.</span>
+        </div>
+      <li class="row big password">
+        <label>Password</label>
+        <input type="text" placeholder="********">
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Must be at least 6 characters.</span>
+        </div>
+      <li class="row big confirm password">
+        <label>Username</label>
+        <input type="password">
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Must match your password above</span>
         </div>
     </ul>
   </div>

@@ -75,6 +75,7 @@ button-window()
   c #fff
   text-shadow #000 0 -1px 0
   aa()
+  b none
   cursor pointer
   &:hover, &:focus
     bgp 0 -32px
@@ -85,6 +86,11 @@ button-window-dim()
   button-window()
   w 124px
   bg url(../i/popups/button-dim.png) 
+
+button-dim()
+  button-window()
+  w 174px
+  bg url(../i/cp/button-dim.png) 
 
 button-window-em()
   button-window()

@@ -178,7 +178,7 @@ html.cpanel,body.cpanel{height:100%;overflow-y:hidden}
 #cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;margin:0 auto;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;z-index:2}
 #cpanel #top-bar{height:16px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #080808), color-stop(1, #282828));background:-webkit-linear-gradient(top, #080808 0%, #282828 100%);background:-moz-linear-gradient(top, #080808 0%, #282828 100%);background:linear-gradient(top, #080808 0%, #282828 100%);-webkit-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-moz-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;cursor:pointer;}
 #cpanel #top-bar:hover,#cpanel #top-bar:focus{background:#1e1e1e}
-#cpanel #top-bar a#logout{float:right;display:block;color:#3c3c3c;height:16px;width:16px;line-height:16px;}
+#cpanel #top-bar a#logout{float:right;display:block;color:#3c3c3c;height:16px;width:16px;font:12px/16px 'Helvetica Neue',Arial,Helvetica,sans-serif;text-align:center;}
 #cpanel #top-bar a#logout:hover,#cpanel #top-bar a#logout:focus{color:#6e6e6e}
 #cpanel #bottom-bar{height:17px;-webkit-box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;-moz-box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;background:#000 -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.15)), color-stop(1, rgba(255,255,255,0.01)));background:#000 -webkit-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%);background:#000 -moz-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%);background:#000 linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%)}
 ul#cpanel-tabs{zoom:1;}
@@ -281,22 +281,26 @@ ul#cpanel-tabs li.minimize.minimized:active{background-position:-649px -62px}
 #music-panel #songs table tbody tr td.status a.delete:hover,#music-panel #songs table tbody tr td.status a.delete:focus{background-position:0 -21px}
 #music-panel #songs table tbody tr td.status a.delete:active{background-position:0 -42px}
 #account-panel{padding:7px 17px 0;}
-#account-panel section{margin-bottom:22px;}
-#account-panel section header{border-bottom:1px solid rgba(0,0,0,0.20);-webkit-box-shadow:rgba(255,255,255,0.05) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.05) 0 1px 0;box-shadow:rgba(255,255,255,0.05) 0 1px 0;}
+#account-panel section{margin-bottom:18px;}
+#account-panel section header{border-bottom:1px solid #141414;-webkit-box-shadow:rgba(255,255,255,0.05) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.05) 0 1px 0;box-shadow:rgba(255,255,255,0.05) 0 1px 0;}
 #account-panel section header h2{font:bold 16px/28px 'Helvetica Neue',Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;color:#c8c8c8;text-shadow:rgba(0,0,0,0.80) 0 -1px 1px;-webkit-text-fill-color:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #b1b1b1));-webkit-text-fill-color:-webkit-linear-gradient(top, #fff 0%, #b1b1b1 100%);-webkit-text-fill-color:-moz-linear-gradient(top, #fff 0%, #b1b1b1 100%);-webkit-text-fill-color:linear-gradient(top, #fff 0%, #b1b1b1 100%);-webkit-text-stroke:rgba(255,255,255,0.50) 0 1px 0;padding-left:.5em}
-#account-panel section .content{zoom:1;color:#999;-webkit-font-smoothing:antialiased;padding:5px 0 0;}
+#account-panel section .content{zoom:1;color:#c8c8c8;-webkit-font-smoothing:antialiased;padding:8px 0 0;}
 #account-panel section .content:before,#account-panel section .content:after{content:"";display:table}
 #account-panel section .content:after{clear:both}
-#account-panel section .content p{font:13px/1.5 'Helvetica Neue',Arial,Helvetica,sans-serif;text-shadow:#000 0 -1px 0;padding:0 8px 10px}
+#account-panel section .content p{font:12px/1.5 'Helvetica Neue',Arial,Helvetica,sans-serif;text-shadow:#000 0 -1px 0;padding:0 8px 1.25em;}
+#account-panel section .content p.url{margin-top:-.5em;font:bold 13px/1.5 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#a0a0a0}
+#account-panel section .content p a{text-decoration:underline;color:#c8c8c8}
 #account-panel section .content div.info{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;width:301px;height:107px;float:left;background:rgba(25,25,25,0.50);-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;padding:8px 10px;position:relative;((null)):0;((null)):0;}
 #account-panel section .content div.info.account{margin-right:14px}
-#account-panel section .content div.info ul li{font:bold 12px/21px 'Helvetica Neue',Arial,Helvetica,sans-serif}
+#account-panel section .content div.info ul li{font:bold 12px/21px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#999}
 #account-panel section .content div.info a.change{position:absolute;top:4px;right:0;display:block;font:bold 10px/24px 'Helvetica Neue',Arial,Helvetica,sans-serif;padding:0 10px;color:#c8c8c8;-webkit-font-smoothing:antialiased;text-decoration:underline;text-shadow:#000 0 -1px 0}
 #account-panel section .content form ul.rows{padding:0;}
 #account-panel section .content form ul.rows li.row{margin:0;width:100%;}
 #account-panel section .content form ul.rows li.row label{left:7px}
 #account-panel section .content form ul.rows li.row input[type=text]{width:266px;left:139px}
-#account-panel section .content form ul.rows li.row .button.gray{display:block;width:172px;height:32px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;background:#969696;position:absolute;top:4px;left:412px;font:bold 13px/32px 'Helvetica Neue',Arial,Helvetica,sans-serif;text-align:center;color:#fff;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,0.70) 0 -1px 0}
+#account-panel section .content form ul.rows li.row a.button.dim{display:block;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:86px;height:32px;background:#666;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:url("../i/popups/button.png");-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;font:bold 13px/31px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#fff;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;border:none;cursor:pointer;width:174px;background:url("../i/cp/button-dim.png");position:absolute;top:4px;left:412px}
+#account-panel section .content form ul.rows li.row a.button.dim:hover,#account-panel section .content form ul.rows li.row a.button.dim:focus{background-position:0 -32px}
+#account-panel section .content form ul.rows li.row a.button.dim:active,#account-panel section .content form ul.rows li.row a.button.dim.active{background-position:0 -64px}
 .lightbox-screen{content:'';width:100%;height:100%;background:rgba(0,0,0,0.60);position:relative;((null)):0;((null)):0;position:fixed;top:0;right:0;bottom:0;left:0;z-index:9998;-webkit-transition:.5s ease-in-out opacity;-moz-transition:.5s ease-in-out opacity;transition:.5s ease-in-out opacity}
 .popup{display:block;zoom:1;position:fixed;top:-1000px;left:50%;background:#363636 url("../i/popups/bg.png");-webkit-box-shadow:rgba(0,0,0,0.75) 0 0 8px;-moz-box-shadow:rgba(0,0,0,0.75) 0 0 8px;box-shadow:rgba(0,0,0,0.75) 0 0 8px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;z-index:9999;-webkit-transform:rotateY(-90deg) rotateX(45deg) scale(.25);-moz-transform:rotateY(-90deg) rotateX(45deg) scale(.25);transform:rotateY(-90deg) rotateX(45deg) scale(.25);-webkit-transition:.15s ease opacity;-moz-transition:.15s ease opacity;transition:.15s ease opacity;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
 .popup:before,.popup:after{content:"";display:table}
@@ -361,13 +365,13 @@ form ul.rows li.row .help{position:absolute;top:13px;right:7px}
 .popup footer ul:after{clear:both}
 .popup footer ul li{float:right;margin-left:12px;}
 .popup footer ul li.left{float:left;margin-left:0}
-.popup footer ul li a.delete{display:block;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:86px;height:32px;background:#666;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:url("../i/popups/button.png");-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;font:bold 13px/31px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#fff;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;cursor:pointer;width:124px;background:url("../i/popups/button-dim.png")}
+.popup footer ul li a.delete{display:block;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:86px;height:32px;background:#666;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:url("../i/popups/button.png");-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;font:bold 13px/31px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#fff;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;border:none;cursor:pointer;width:124px;background:url("../i/popups/button-dim.png")}
 .popup footer ul li a.delete:hover,.popup footer ul li a.delete:focus{background-position:0 -32px}
 .popup footer ul li a.delete:active,.popup footer ul li a.delete.active{background-position:0 -64px}
-.popup footer ul li a.cancel{display:block;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:86px;height:32px;background:#666;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:url("../i/popups/button.png");-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;font:bold 13px/31px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#fff;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;cursor:pointer;}
+.popup footer ul li a.cancel{display:block;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:86px;height:32px;background:#666;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:url("../i/popups/button.png");-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;font:bold 13px/31px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#fff;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;border:none;cursor:pointer;}
 .popup footer ul li a.cancel:hover,.popup footer ul li a.cancel:focus{background-position:0 -32px}
 .popup footer ul li a.cancel:active,.popup footer ul li a.cancel.active{background-position:0 -64px}
-.popup footer ul li a.save,.popup footer ul li a.yes{display:block;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:86px;height:32px;background:#666;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:url("../i/popups/button.png");-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;font:bold 13px/31px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#fff;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;cursor:pointer;background:url("../i/popups/button-em.png") -1px -1px;border:1px solid transparent;cursor:pointer;}
+.popup footer ul li a.save,.popup footer ul li a.yes{display:block;text-align:center;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:86px;height:32px;background:#666;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:url("../i/popups/button.png");-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;box-shadow:rgba(255,255,255,0.07) 0 1px 0;font:bold 13px/31px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#fff;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;border:none;cursor:pointer;background:url("../i/popups/button-em.png") -1px -1px;border:1px solid transparent;cursor:pointer;}
 .popup footer ul li a.save:hover,.popup footer ul li a.yes:hover,.popup footer ul li a.save:focus,.popup footer ul li a.yes:focus{background-position:0 -32px}
 .popup footer ul li a.save:active,.popup footer ul li a.yes:active,.popup footer ul li a.save.active,.popup footer ul li a.yes.active{background-position:0 -64px}
 .popup footer ul li a.save:hover,.popup footer ul li a.yes:hover,.popup footer ul li a.save:focus,.popup footer ul li a.yes:focus{background-position:-1px -33px;-webkit-box-shadow:rgba(41,121,206,0.80) 0 0 5px;-moz-box-shadow:rgba(41,121,206,0.80) 0 0 5px;box-shadow:rgba(41,121,206,0.80) 0 0 5px;border-color:rgba(41,121,206,0.80)}
@@ -400,7 +404,7 @@ form ul.rows li.row .help{position:absolute;top:13px;right:7px}
 .popup.album-settings .content ul.rows li.row.album-name{height:45px;}
 .popup.album-settings .content ul.rows li.row.album-name .light{top:11px}
 .popup.album-settings .content ul.rows li.row.album-name input{height:29px;padding:8px .5em 7px;font:bold 14px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}
-.popup.album-settings .content ul.rows li.row.album-name a.help{top:15px}
+.popup.album-settings .content ul.rows li.row.album-name .help{top:15px}
 .popup.album-settings .content ul.rows li.row.cover-art{height:183px;width:205px;}
 .popup.album-settings .content ul.rows li.row.cover-art .help{position:absolute;bottom:9px;left:7px;top:auto;}
 .popup.album-settings .content ul.rows li.row.cover-art .help .ui-tooltip-bottom{right:auto;left:-15px;}
@@ -423,3 +427,15 @@ form ul.rows li.row .help{position:absolute;top:13px;right:7px}
 .popup.custom-price .content ul.rows li.row label{left:11px}
 .popup.custom-price .content ul.rows li.row input{width:85px;left:134px;text-align:right}
 .popup.custom-price .content ul.rows li.row span.unit{font:bold 13px/40px 'Helvetica Neue',Arial,Helvetica,sans-serif;padding-left:6px;color:#a0a0a0;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;position:absolute;position:absolute;top:0;left:219px}
+.popup.account-info .content ul.rows li.row{margin-bottom:12px;}
+.popup.account-info .content ul.rows li.row label{left:13px}
+.popup.account-info .content ul.rows li.row input{left:93px}
+.popup.account-info .content ul.rows li.row.half{width:239px;}
+.popup.account-info .content ul.rows li.row.half input{right:7px}
+.popup.account-info .content ul.rows li.row.half.last-name{margin-left:13px}
+.popup.account-info .content ul.rows li.row.band-name{margin-bottom:0}
+.popup.account-info .content ul.rows li.row.big{height:45px;}
+.popup.account-info .content ul.rows li.row.big .light{top:11px}
+.popup.account-info .content ul.rows li.row.big input{height:29px;padding:8px .5em 7px;font:bold 14px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}
+.popup.account-info .content ul.rows li.row.big .help{top:15px}
+.popup.account-info .content ul.rows li.desc{font:bold 10px/20px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#999;padding-left:30px;-webkit-font-smoothing:antialiased;text-shadow:#000 0 -1px 0;margin-bottom:12px}

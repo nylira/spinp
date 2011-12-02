@@ -92,6 +92,9 @@ $('td.lyrics a.add').click(function() {
 $('td.status a.delete').click(function() {
   $('.popup.delete-song').showPop();
 });
+$('a.change.account.info').click(function() {
+  $('.popup.account-info').showPop();
+});
 
 /* custom scrollbar */
 $(function() {
@@ -110,13 +113,13 @@ $(function() {
 });
 
 /* custom selectbox */
-$("select").selectBox();
-
-$('select').change(function() {
-  if($(this).val() === "custom") {
-    $('.popup.custom-price').showPop();
-  }
-});
+$("select")
+  .selectBox()
+  .change(function() {
+    if($(this).val() === "custom") {
+      $('.popup.custom-price').showPop();
+    }
+  });
 
 /* select box watching */
 $('td.fullscreen .selector .selector-arrow').click(function(){
@@ -148,7 +151,7 @@ $('.popup.textarea textarea').autoResize({
   }
 });
 
-/* draggable header */
+/* #cpanel effects */
 $('#cpanel')
   .tabs({
     selected: 5,

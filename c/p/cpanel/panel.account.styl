@@ -1,10 +1,10 @@
 #account-panel
   p 7px 17px 0
   section
-    mb 22px
+    mb 18px
 
     header
-      bb 1px solid b20
+      bb 1px solid m20
       box-shadow w5 0 1px 0
       h2
         f bold 16px/28px sans
@@ -16,13 +16,21 @@
         pl .5em
     .content
       clearfix()
-      c m153
+      c m200
       aa()
-      p 5px 0 0 
+      p 8px 0 0 
       p
-        f 13px/1.5 sans
+        f 12px/1.5 sans
         text-shadow #000 0 -1px 0
-        p 0 8px 10px
+        p 0 8px 1.25em
+        &.url
+          mt -.5em
+          f bold 13px/1.5 sans
+          c m160
+        a
+          text-decoration underline
+          c m200
+
       div.info
         border-radius 3px
         w 301px
@@ -37,6 +45,7 @@
         ul
           li
             f bold 12px/21px sans
+            c m153
         a.change
           absolute top 4px right 0
           d block
@@ -46,6 +55,7 @@
           aa()
           text-decoration underline
           text-shadow #000 0 -1px 0
+
       form
         ul.rows
           p 0
@@ -57,16 +67,6 @@
             input[type=text]
               w 266px
               left 139px
-            .button.gray
-              d block
-              w 172px
-              h 32px
-              border-radius 3px
-              box-shadow w7 0 1px 0
-              bg m150
+            a.button.dim
+              button-dim()
               absolute top 4px left 412px
-              f bold 13px/32px sans
-              ta center
-              c #fff
-              aa()
-              text-shadow b70 0 -1px 0
