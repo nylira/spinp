@@ -98,8 +98,8 @@ $('a.change.account.info').click(function() {
 $('a.change.billing.info').click(function() {
   $('.popup.billing-info').showPop();
 });
-$('a.security-code').click(function() {
-  $('.popup.security-code').showPop();
+$('a#change-plan').click(function() {
+  $('.popup.plan').showPop();
 });
 
 /* custom scrollbar */
@@ -155,6 +155,12 @@ $('.popup.textarea textarea').autoResize({
   animateCallback : function() {
     $(this).closest('.textarea-scroll').jScrollPane();
   }
+});
+
+/* select a spindal plan */
+$('ul.plans li.plan').click(function() {
+  $(this).siblings().removeClass('active');
+  $(this).toggleClass('active');
 });
 
 /* #cpanel effects */

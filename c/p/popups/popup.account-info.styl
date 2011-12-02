@@ -73,3 +73,31 @@
   w 393px
   .content
     h 329px
+
+.popup.plan
+  .content
+    ul.rows
+      li.row
+        &.plan
+          h 215px
+          ul.plans
+            clearfix()
+            p 8px 0 7px
+            li.plan
+              fl()
+              w 151px
+              h 200px
+              bg m30
+              border-radius 3px
+              box-shadow w7 0 1px 0, inset b37 0 1px 0, inset b7 0 0 7px
+              ml 9px
+              cursor pointer
+              relative()
+              &:hover, &:focus
+                bg m30 url(../i/popups/plan-hover.png)
+              &.active:after
+                content ''
+                w 169px
+                h 215px
+                absolute top -8px left -9px
+                bg url(../i/popups/plan-selected.png)
