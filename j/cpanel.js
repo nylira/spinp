@@ -111,6 +111,7 @@ $('a.create.band-logo').click(function() {
 });
 $('a.edit.bio').click(function() {
   $('.popup.bio').showPop();
+  $('.popup.bio .textarea-scroll').jScrollPane();
 });
 $('a.edit.live').click(function() {
   $('.popup.live').showPop();
