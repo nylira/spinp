@@ -461,6 +461,32 @@ form ul.rows li.row.big .help{top:15px}
 .popup.news .content ul.rows li.row.half.blog.url input{left:74px;width:136px}
 .popup.news .content ul.rows li.row.email a.selectBox{left:207px;width:255px}
 .popup.news .content ul.rows li.row.api input{left:95px;width:335px}
+.popup.url .content ul.rows li.row{margin-bottom:15px;}
+.popup.url .content ul.rows li.row.url input{left:115px;width:347px}
+.popup.live ul.rows li.row{margin-bottom:9px}
+.popup.live ul.thead{background:url("../i/popups/form-live-thead.png") top left no-repeat;display:block;height:26px;line-height:26px;}
+.popup.live ul.thead li{display:table-cell;text-align:center;color:transparent}
+.popup.live #events{max-height:271px;overflow:hidden;overflow-x:hidden;overflow-y:scroll;position:relative;((null)):0;((null)):0;z-index:0;}
+.popup.live #events table tr th.date,.popup.live #events table tr td.date{min-width:66px}
+.popup.live #events table tr th.venue,.popup.live #events table tr td.venue{min-width:140px}
+.popup.live #events table tr th.location,.popup.live #events table tr td.location{min-width:140px}
+.popup.live #events table tr th.tickets,.popup.live #events table tr td.tickets{min-width:137px}
+.popup.live #events table tr th.status,.popup.live #events table tr td.status{min-width:40px}
+.popup.live #events table tbody tr{background:#343638;}
+.popup.live #events table tbody tr:nth-of-type(even){background:#3e4042}
+.popup.live #events table tbody tr td .light{margin:6px 3px 9px}
+.popup.live #events table tbody tr td.date span.num{font:bold 12px/35px 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#a0a0a0;text-shadow:rgba(0,0,0,0.80) 0 -1px 0;width:18px;text-align:right;display:inline-block}
+.popup.live #events table tbody tr td.date a.add{display:inline-block;height:21px;width:21px;margin:6px 0 0 6px;background:url("../i/cp/song-lyrics.png") top left no-repeat;text-indent:-999em;}
+.popup.live #events table tbody tr td.date a.add:hover,.popup.live #events table tbody tr td.date a.add:focus{background-position:0 -21px}
+.popup.live #events table tbody tr td.date a.add:active{background-position:0 -42px}
+.popup.live #events table tbody tr td.venue,.popup.live #events table tbody tr td.location,.popup.live #events table tbody tr td.tickets{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.popup.live #events table tbody tr td.venue input,.popup.live #events table tbody tr td.location input,.popup.live #events table tbody tr td.tickets input{display:inline-block;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:130px;height:20px;margin:6px 5px 10px;padding:4px 2px;background:transparent;border:0;font:bold 12px/1 'Helvetica Neue',Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;color:#fff;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.popup.live #events table tbody tr td.venue input:focus,.popup.live #events table tbody tr td.location input:focus,.popup.live #events table tbody tr td.tickets input:focus{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #323232), color-stop(1, #262626));background:-webkit-linear-gradient(top, #323232 0%, #262626 100%);background:-moz-linear-gradient(top, #323232 0%, #262626 100%);background:linear-gradient(top, #323232 0%, #262626 100%);-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.13) 0 1px 2px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.13) 0 1px 2px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.13) 0 1px 2px}
+.popup.live #events table tbody tr td.tickets input{width:99px;margin:5px 0 0}
+.popup.live #events table tbody tr td.status{text-align:center;}
+.popup.live #events table tbody tr td.status a.delete{display:inline-block;height:21px;width:19px;margin:7px 2px 7px 0;background:url("../i/cp/song-delete.png") top left no-repeat;text-indent:-999em;}
+.popup.live #events table tbody tr td.status a.delete:hover,.popup.live #events table tbody tr td.status a.delete:focus{background-position:0 -21px}
+.popup.live #events table tbody tr td.status a.delete:active{background-position:0 -42px}
 .popup.slideshow .content ul.rows{padding-right:0;position:relative;((null)):0;((null)):0;z-index:10000;}
 .popup.slideshow .content ul.rows li.row{width:240px;}
 .popup.slideshow .content ul.rows li.row.transition-time input{display:block;position:absolute;top:8px;right:auto;bottom:auto;left:116px;width:54px;height:24px;margin:0;padding:6px 0 6px 8px;background:#1e1e1e;border:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;font:bold 12px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}

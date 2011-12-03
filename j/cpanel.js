@@ -115,6 +115,7 @@ $('a.edit.bio').click(function() {
 });
 $('a.edit.live').click(function() {
   $('.popup.live').showPop();
+  $('.popup.live #events').jScrollPane();
 });
 $('a.edit.news').click(function() {
   $('.popup.news').showPop();

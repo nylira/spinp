@@ -85,3 +85,111 @@
           input
             left 95px
             w 335px
+.popup.url
+  .content
+    ul.rows
+      li.row
+        mb 15px
+        &.url
+          input
+            left 115px
+            w 347px
+
+.popup.live
+  ul.rows
+    li.row
+      mb 9px
+
+  ul.thead
+    bg url(../i/popups/form-live-thead.png) top left no-repeat
+    d block
+    lhh 26px
+    li
+      display table-cell
+      ta center
+      c transparent
+
+  #events
+    max-height 270px + 1px
+    overflow hidden
+    overflow-x hidden
+    overflow-y scroll
+    relative()
+    z-index 0
+    table
+      tr
+        th, td
+          &.date
+            min-width 66px
+          &.venue
+            min-width 140px
+          &.location
+            min-width 140px
+          &.tickets
+            min-width 137px
+          &.status
+            min-width 40px
+      tbody
+        tr
+          bg rgb(52,54,56)
+          &:nth-of-type(even)
+            bg rgb(62,64,66)
+          td
+            .light
+              m 6px 3px 9px
+            &.date
+              span.num
+                f bold 12px/35px sans
+                c m160
+                text-shadow b80 0 -1px 0
+                w 18px
+                ta right
+                d inline-block
+              a.add
+                d inline-block
+                r 21px
+                m 6px 0 0 6px
+                bg url(../i/cp/song-lyrics.png) top left no-repeat
+                ti -999em
+                &:hover, &:focus
+                  bgp 0 -21px
+                &:active
+                  bgp 0 -42px
+            &.venue, &.location, &.tickets
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
+              input
+                d inline-block
+                bxs()
+                w 130px
+                h 20px
+                m 6px 5px 10px
+                p 4px 2px
+                bg transparent
+                b 0
+                f bold 12px/1 sans
+                aa()
+                c #fff
+                border-radius 3px
+                &:focus
+                  background linear-gradient(top, m50, m38)
+                  box-shadow w7 0 1px 0, inset b13 0 1px 2px
+            &.tickets
+              input
+                w 99px
+                m 5px 0 0
+                
+            &.status
+              ta center
+              a.delete
+                d inline-block
+                h 21px
+                w 19px
+                m 7px 2px 7px 0
+                bg url(../i/cp/song-delete.png) top left no-repeat
+                ti -999em
+                &:hover, &:focus
+                  bgp 0 -21px
+                &:active
+                  bgp 0 -42px
