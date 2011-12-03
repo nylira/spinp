@@ -1,0 +1,60 @@
+.popup.profile
+  .content
+    ul.rows
+      li.row
+        mb 12px
+        label
+          left 13px
+
+.popup.band-logo
+  .content
+    ul.rows
+      li.row
+        mb 16px
+        &.band-name
+          input
+            left 93px
+        &.font
+          &.face
+            a.selectBox
+              left 55px
+              w 155px
+          &.color
+            a.selectBox
+              left 84px
+              w 126px
+          &.alignment
+            a.selectBox
+              left 89px
+              w 121px
+          &.size
+            input
+              d block
+              position absolute
+              top 8px
+              right auto
+              bottom auto
+              left 88px
+              w 54px + 28px + 20px
+              h 24px
+              m 0
+              p 6px 0 6px 8px
+              bg m30
+              b none
+              border-radius 3px
+              box-shadow w7 0 1px 0, inset b75 0 1px 1px, inset b13 0 0 7px
+              f bold 12px/1 sans
+            input[type=number]::-webkit-inner-spin-button
+              bg url(../i/popups/input-number.png) top left
+              h 8px
+              w 16px
+              -webkit-appearance none
+            input[type=number]::-webkit-outer-spin-button
+              -webkit-appearance none
+            span.unit
+              f bold 13px/40px sans
+              pl 7px
+              c m160
+              text-shadow #000 0 -1px 0
+              aa()
+              absolute top 0 left 190px

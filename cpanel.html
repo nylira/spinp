@@ -143,8 +143,8 @@
         <div class="selector">
           <div class="selector-dropdown">
             <ul class="selector-options selector-dropdown-menu">
-              <li><a class="create logo" href="#">Create Logo</a>
-              <li><a class="upload logo" href="#">Upload Logo</a>
+              <li><a class="create band-logo" href="#">Create Logo</a>
+              <li><a class="upload band-logo" href="#">Upload Logo</a>
             </ul>
             <div class="selector-arrow"></div>
           </div>
@@ -334,6 +334,91 @@
   <div id="bottom-bar"></div>
 </div>
 
+<!-- Profile popups -->
+<form class="popup window profile band-logo">
+  <header>
+    <ul>
+      <li class="title">Band Logo
+      <li class="exit"><a class="exit" href="#">Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row">
+        <label>Create Your Band Logo.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Create your Band Logo by entering the information below.</span>
+        </div>
+      <li class="row band-name">
+        <label>Band Name</label>
+        <input type="text" placeholder="Name">
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your Band Name to appear in your Profile Player.</span>
+        </div>
+      <li class="row half font face">
+        <label>Font</label>
+        <select>
+          <option>Arial</option>
+          <option>Arial Bold</option>
+          <option>Clarendon</option>
+          <option>Clarendon Bold</option>
+          <option>Courier</option>
+          <option>Courier Bold</option>
+          <option selected>Helvetica</option>
+          <option>Franklin Gothic</option>
+          <option>Lucida Sans</option>
+          <option>Meta</option>
+          <option>Meta Bold</option>
+          <option>Times New Roman</option>
+          <option>Times New Roman Bold</option>
+          <option>Verdana</option>
+          <option>Verdana Bold</option>
+        </select>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select from the fonts below to best represent your Band.</span>
+        </div>
+      <li class="row half font color">
+        <label>Font Color</label>
+        <select>
+          <option selected>#000000</option>
+        </select>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select from the color chart below to best represent your Band.</span>
+        </div>
+      <li class="row half font size">
+        <label>Font Size</label>
+        <input type="number" value="12">
+        <span class="unit">px</span>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Adjust the font size below.</span>
+        </div>
+      <li class="row half font alignment">
+        <label>Alignment</label>
+        <select>
+          <option selected>Left</option>
+          <option>Center</option>
+          <option>Right</option>
+        </select>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select the Alignment below.</span>
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save">Save</a>
+      <li><a class="cancel">Cancel</a>
+    </ul>
+  </footer>
+</form>
+
+<!-- Music popups -->
 <form class="popup window album-settings">
   <header>
     <ul>

@@ -260,7 +260,7 @@ ul#cpanel-tabs li.minimize.minimized:active{background-position:-649px -62px}
 #profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a{display:block;margin:3px 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:236px;height:26px;line-height:26px;text-shadow:rgba(0,0,0,0.80) 0 -1px 0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #787878), color-stop(0.5, #6d6d6d), color-stop(0.5, #565656), color-stop(1, #4d4d4d));background:-webkit-linear-gradient(top, #787878 0%, #6d6d6d 50%, #565656 50%, #4d4d4d 100%);background:-moz-linear-gradient(top, #787878 0%, #6d6d6d 50%, #565656 50%, #4d4d4d 100%);background:linear-gradient(top, #787878 0%, #6d6d6d 50%, #565656 50%, #4d4d4d 100%);-webkit-box-shadow:rgba(0,0,0,0.50) 0 1px 2px;-moz-box-shadow:rgba(0,0,0,0.50) 0 1px 2px;box-shadow:rgba(0,0,0,0.50) 0 1px 2px;border:1px solid #232323;text-align:center;}
 #profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a:hover,#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a:focus{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #999), color-stop(0.5, #8a8a8a), color-stop(0.5, #6e6e6e), color-stop(1, #626262));background:-webkit-linear-gradient(top, #999 0%, #8a8a8a 50%, #6e6e6e 50%, #626262 100%);background:-moz-linear-gradient(top, #999 0%, #8a8a8a 50%, #6e6e6e 50%, #626262 100%);background:linear-gradient(top, #999 0%, #8a8a8a 50%, #6e6e6e 50%, #626262 100%);color:#ebebeb}
 #profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a:active{background:#787878;-webkit-box-shadow:rgba(33,29,30,0.65) 0 2px 2px,inset rgba(0,0,0,0.20) 0 0 5px;-moz-box-shadow:rgba(33,29,30,0.65) 0 2px 2px,inset rgba(0,0,0,0.20) 0 0 5px;box-shadow:rgba(33,29,30,0.65) 0 2px 2px,inset rgba(0,0,0,0.20) 0 0 5px;color:#b4b4b4}
-#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a.upload.logo{display:none}
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a.upload.band-logo{display:none}
 #profile-panel form ul.rows li.section{float:left;margin-left:14px;}
 #profile-panel form ul.rows li.section.band-name{width:406px;margin-bottom:12px;margin-top:-6px;}
 #profile-panel form ul.rows li.section.band-name p.url{text-shadow:#000 0 -1px 0;padding:2px 8px;font:bold 13px/1.5 'Helvetica Neue',Arial,Helvetica,sans-serif;color:#a0a0a0;-webkit-font-smoothing:antialiased}
@@ -377,6 +377,13 @@ ul#cpanel-tabs li.minimize.minimized:active{background-position:-649px -62px}
 .popup.billing-info header li.title{background:url("../i/popups/form-billing-info.png")}
 .popup.plan header li.title{background:url("../i/popups/form-plan.png")}
 .popup.security-code header li.title{background:url("../i/popups/form-security-code.png")}
+.popup.band-logo header li.title{background:url("../i/popups/form-band-logo.png")}
+.popup.news header li.title{background:url("../i/popups/form-news.png")}
+.popup.bio header li.title{background:url("../i/popups/form-bio.png")}
+.popup.live header li.title{background:url("../i/popups/form-live.png")}
+.popup.facebook header li.title{background:url("../i/popups/form-facebook.png")}
+.popup.twitter header li.title{background:url("../i/popups/form-twitter.png")}
+.popup.store header li.title{background:url("../i/popups/form-store.png")}
 form div.help{position:absolute;top:13px;right:7px;width:14px;height:15px;}
 form div.help span.icon{display:block;width:14px;font:bold 11px/15px 'Helvetica Neue',Arial,Helvetica,sans-serif;text-align:center;color:#6f6f6f;background:#3c3c3c;-webkit-box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;-moz-box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;cursor:pointer}
 form div.help .ui-tooltip-top,form div.help .ui-tooltip-bottom{z-index:1000;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:250ms ease-in-out opacity;-moz-transition:250ms ease-in-out opacity;transition:250ms ease-in-out opacity}
@@ -436,6 +443,17 @@ form ul.rows li.row.big .help{top:15px}
 .popup footer ul li a.save:active,.popup footer ul li a.yes:active,.popup footer ul li a.ok:active,.popup footer ul li a.save.active,.popup footer ul li a.yes.active,.popup footer ul li a.ok.active{background-position:-1px -65px;-webkit-box-shadow:rgba(41,121,206,0.80) 0 0 5px;-moz-box-shadow:rgba(41,121,206,0.80) 0 0 5px;box-shadow:rgba(41,121,206,0.80) 0 0 5px;border-color:rgba(41,121,206,0.80)}
 .popup.message.confirm ul{padding-left:93px;}
 .popup.message.confirm ul li{float:left}
+.popup.profile .content ul.rows li.row{margin-bottom:12px;}
+.popup.profile .content ul.rows li.row label{left:13px}
+.popup.band-logo .content ul.rows li.row{margin-bottom:16px;}
+.popup.band-logo .content ul.rows li.row.band-name input{left:93px}
+.popup.band-logo .content ul.rows li.row.font.face a.selectBox{left:55px;width:155px}
+.popup.band-logo .content ul.rows li.row.font.color a.selectBox{left:84px;width:126px}
+.popup.band-logo .content ul.rows li.row.font.alignment a.selectBox{left:89px;width:121px}
+.popup.band-logo .content ul.rows li.row.font.size input{display:block;position:absolute;top:8px;right:auto;bottom:auto;left:88px;width:102px;height:24px;margin:0;padding:6px 0 6px 8px;background:#1e1e1e;border:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;font:bold 12px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}
+.popup.band-logo .content ul.rows li.row.font.size input[type=number]::-webkit-inner-spin-button{background:url("../i/popups/input-number.png") top left;height:8px;width:16px;-webkit-appearance:none}
+.popup.band-logo .content ul.rows li.row.font.size input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none}
+.popup.band-logo .content ul.rows li.row.font.size span.unit{font:bold 13px/40px 'Helvetica Neue',Arial,Helvetica,sans-serif;padding-left:7px;color:#a0a0a0;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;position:absolute;top:0;left:190px}
 .popup.slideshow .content ul.rows{padding-right:0;position:relative;((null)):0;((null)):0;z-index:10000;}
 .popup.slideshow .content ul.rows li.row{width:240px;}
 .popup.slideshow .content ul.rows li.row.transition-time input{display:block;position:absolute;top:8px;right:auto;bottom:auto;left:116px;width:54px;height:24px;margin:0;padding:6px 0 6px 8px;background:#1e1e1e;border:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;font:bold 12px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}

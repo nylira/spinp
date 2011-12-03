@@ -105,6 +105,29 @@ $('a#change-plan').click(function() {
   $('.popup.plan').showPop();
 });
 
+/* popups - profile */
+$('a.create.band-logo').click(function() {
+  $('.popup.band-logo').showPop();
+});
+$('a.edit.bio').click(function() {
+  $('.popup.bio').showPop();
+});
+$('a.edit.live').click(function() {
+  $('.popup.live').showPop();
+});
+$('a.edit.news').click(function() {
+  $('.popup.news').showPop();
+});
+$('a.edit.facebook').click(function() {
+  $('.popup.facebook').showPop();
+});
+$('a.edit.twitter').click(function() {
+  $('.popup.twitter').showPop();
+});
+$('a.edit.store').click(function() {
+  $('.popup.store').showPop();
+});
+
 /* custom scrollbar */
 $(function() {
   $('#songs').jScrollPane();
