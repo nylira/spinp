@@ -454,6 +454,13 @@ form ul.rows li.row.big .help{top:15px}
 .popup.band-logo .content ul.rows li.row.font.size input[type=number]::-webkit-inner-spin-button{background:url("../i/popups/input-number.png") top left;height:8px;width:16px;-webkit-appearance:none}
 .popup.band-logo .content ul.rows li.row.font.size input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none}
 .popup.band-logo .content ul.rows li.row.font.size span.unit{font:bold 13px/40px 'Helvetica Neue',Arial,Helvetica,sans-serif;padding-left:7px;color:#a0a0a0;text-shadow:#000 0 -1px 0;-webkit-font-smoothing:antialiased;position:absolute;top:0;left:190px}
+.popup.news .content ul.rows li.row{margin-bottom:17px;}
+.popup.news .content ul.rows li.row label{left:30px}
+.popup.news .content ul.rows li.row.label label,.popup.news .content ul.rows li.row.blog.url label{left:13px}
+.popup.news .content ul.rows li.row.half input,.popup.news .content ul.rows li.row.half a.selectBox{left:96px;width:114px}
+.popup.news .content ul.rows li.row.half.blog.url input{left:74px;width:136px}
+.popup.news .content ul.rows li.row.email a.selectBox{left:207px;width:255px}
+.popup.news .content ul.rows li.row.api input{left:95px;width:335px}
 .popup.slideshow .content ul.rows{padding-right:0;position:relative;((null)):0;((null)):0;z-index:10000;}
 .popup.slideshow .content ul.rows li.row{width:240px;}
 .popup.slideshow .content ul.rows li.row.transition-time input{display:block;position:absolute;top:8px;right:auto;bottom:auto;left:116px;width:54px;height:24px;margin:0;padding:6px 0 6px 8px;background:#1e1e1e;border:none;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;font:bold 12px/1 'Helvetica Neue',Arial,Helvetica,sans-serif}
