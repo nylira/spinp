@@ -89,7 +89,7 @@ $('td.lyrics a.add').click(function() {
   $('.popup.lyrics').showPop();
   $('.popup.lyrics .textarea-scroll').jScrollPane();
 });
-$('td.status a.delete').click(function() {
+$('#songs td.status a.delete').click(function() {
   $('.popup.delete-song').showPop();
 });
 $('a.change.account.info').click(function() {
@@ -116,6 +116,9 @@ $('a.edit.bio').click(function() {
 $('a.edit.live').click(function() {
   $('.popup.live').showPop();
   $('.popup.live #events').jScrollPane();
+});
+$('#events td.status a.delete').click(function() {
+  $('.popup.delete-event').showPop();
 });
 $('a.edit.news').click(function() {
   $('.popup.news').showPop();
