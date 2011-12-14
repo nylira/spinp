@@ -57,7 +57,7 @@ $('#cpanel-tabs li.minimize').click(function() {
 
 /* bxslider album nav */
 $(function(){
-  var slider = $('ul.albums').bxSlider({
+  var slider = $('#cpanel ul.albums').bxSlider({
     controls: false,
     displaySlideQty: 3,
     moveSlideQty: 1
@@ -175,18 +175,18 @@ $('.selector-dropdown a.video').click(function(){
 });
 
 /* textarea blur */
-$("textarea").focus(function(event) {
-  // Erase text from inside textarea
-  $(this).text("");
-  // Disable text erase
-  $(this).unbind(event);
-});
-
-$('.popup.textarea textarea').autoResize({
-  animateCallback : function() {
-    $(this).closest('.textarea-scroll').jScrollPane();
-  }
-});
+$(".popup.textarea textarea")
+  .autoResize({
+    animateCallback : function() {
+      $(this).closest('.textarea-scroll').jScrollPane();
+    }
+  })
+  .focus(function(event) {
+    // Erase text from inside textarea
+    $(this).text("");
+    // Disable text erase
+    $(this).unbind(event);
+  });
 
 /* select a spindal plan */
 $('ul.plans li.plan').click(function() {

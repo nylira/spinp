@@ -19,8 +19,8 @@ span.amp{font-family:Baskerville,Palatino,"Book Antiqua",Georgia,'serif';font-st
 *::-webkit-selection{background:#ffffe0}
 a{color:#000;text-decoration:none;}
 a:hover,a:focus{color:#000}
-html,body{height:100%}
-body{font-size:13px;line-height:1.5;font-family:'Helvetica Neue',Arial,Helvetica,sans-serif;color:#1b1b1b;background:#000;overflow-y:scroll;-webkit-perspective:1000;}
+html,body{height:100%;overflow-y:hidden}
+body{font-size:13px;line-height:1.5;font-family:'Helvetica Neue',Arial,Helvetica,sans-serif;color:#1b1b1b;background:#262626 url("../i/cp/cp-bg.png");-webkit-perspective:1000;}
 body .light{display:inline-block;height:20px;width:20px;background:url("../i/cp/light.png") top center no-repeat;cursor:pointer;}
 body .light.disabled{background-position:0 -20px}
 .ui-tooltip,.ui-tooltip-top,.ui-tooltip-right,.ui-tooltip-bottom,.ui-tooltip-left{display:block;width:225px;position:relative;((null)):0;((null)):0;font:12px/1.2 'Helvetica Neue',Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;color:#fff;padding:.6em 1em;background:#8c8c8c;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:rgba(0,0,0,0.19) 0 5px 5px;-moz-box-shadow:rgba(0,0,0,0.19) 0 5px 5px;box-shadow:rgba(0,0,0,0.19) 0 5px 5px;}
@@ -70,7 +70,7 @@ a.spindal.hide{right:0;background:rgba(0,0,0,0.50);-webkit-border-radius:2px 0 0
 a.spindal.hide:hover,a.spindal.hide:focus{background:rgba(0,0,0,0.80)}
 a.spindal.hide:active{background:rgba(0,0,0,0.90)}
 header.artist:hover a.spindal.hide{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
-a.play.big{display:block;position:fixed;top:50%;left:50%;z-index:1000;margin:-75px 0 0 -75px;height:150px;width:150px;-webkit-border-radius:75px;-moz-border-radius:75px;border-radius:75px;border:9px solid rgba(0,0,0,0.50);-webkit-transition:;-moz-transition:;transition:;}
+a.play.big{display:block;position:absolute;top:50%;left:50%;z-index:1;margin:-75px 0 0 -75px;height:150px;width:150px;-webkit-border-radius:75px;-moz-border-radius:75px;border-radius:75px;border:9px solid rgba(0,0,0,0.50);-webkit-transition:;-moz-transition:;transition:;}
 a.play.big p{background:rgba(0,0,0,0.80);height:132px;width:132px;-webkit-border-radius:66px;-moz-border-radius:66px;border-radius:66px;}
 a.play.big p span{display:block;border:4px solid #fff;height:132px;width:132px;-webkit-border-radius:66px;-moz-border-radius:66px;border-radius:66px;text-indent:-999em;background:url("../i/icon-play-big.png") 50px center no-repeat}
 a.play.big:hover{border-color:transparent;}
@@ -175,7 +175,7 @@ nav.artist dd form input[type='submit']:hover{background-position:left -19px}
 nav.artist dd form input[type='submit']:active{background-position:left -38px}
 ul.bgs li.bg img{min-height:100%;min-width:1024px;width:100%;height:auto;position:fixed;top:0;left:0}
 html.cpanel,body.cpanel{height:100%;overflow-y:hidden}
-#cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;margin:0 auto;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;z-index:2}
+#cpanel{background:#262626 url("../i/cp/cp-bg.png");width:650px;-webkit-box-shadow:rgba(0,0,0,0.60) 0 0 10px;-moz-box-shadow:rgba(0,0,0,0.60) 0 0 10px;box-shadow:rgba(0,0,0,0.60) 0 0 10px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;position:relative;((null)):0;((null)):0;position:absolute;top:0;left:50%;margin-left:-325px;z-index:2}
 #cpanel #top-bar{height:16px;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #080808), color-stop(1, #282828));background:-webkit-linear-gradient(top, #080808 0%, #282828 100%);background:-moz-linear-gradient(top, #080808 0%, #282828 100%);background:linear-gradient(top, #080808 0%, #282828 100%);-webkit-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-moz-box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;box-shadow:rgba(0,0,0,0.70) 0 1px 5px,inset rgba(0,0,0,0.50) 0 -1px 3px;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;cursor:pointer;}
 #cpanel #top-bar:hover,#cpanel #top-bar:focus{background:#1e1e1e}
 #cpanel #top-bar a#logout{float:right;display:block;color:#3c3c3c;height:16px;width:16px;font:12px/16px 'Helvetica Neue',Arial,Helvetica,sans-serif;text-align:center;}
