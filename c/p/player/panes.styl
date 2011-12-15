@@ -1,0 +1,60 @@
+.spindal.pane
+  bg w80
+  w 355px
+  p 80px 35px 20px 20px
+  z 99
+  min-height 100%
+  box-shadow b25 1px 0 3px
+  transition 1s ease all
+  absolute top 0 left -355px
+  &.active
+    left 245px
+
+  h1
+    f bold 18px/2 sans
+
+  .body
+    f 13px/1.5 sans
+    overflow-y scroll
+  &.live
+    p 72px 0 0
+    w 505px
+    absolute top 0 left -505px
+    &.active
+      left 245px
+    table
+      w 100%
+      bb 1px solid w40
+      border-collapse separate
+      tr
+        th, td
+          pl x
+          &.date
+            w 120px
+          &.loc
+            w 160px
+          &.venue
+            w 140px
+          &.tickets
+            w 85px
+            ta center
+            a
+              fw bold
+              c #666
+              text-shadow w80 0 1px 0
+      thead
+        tr
+          th
+            fw bold
+            tt uppercase
+            ta left
+            c #000
+            lh 2em
+            bb 1px solid b20
+      tbody
+        tr
+          td
+            bt 1px solid w40
+            bb 1px solid b20
+            f 12px/38px sans
+

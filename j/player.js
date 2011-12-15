@@ -108,6 +108,20 @@ function onAfter(curr, next, opts, fwd) {
  $(this).parent().animate({height: $ht});
 }
 
+// hide and show the panes
+$("div.pane a.pane").click(function() {
+  $(this).closest("div.pane").toggleClass("active");
+});
+$("#spindal a.show.lyrics").click(function() {
+  $("div.spindal.pane.lyrics").toggleClass("active");
+})
+$("#spindal a.show.bio").click(function() {
+  $("div.spindal.pane.bio").toggleClass("active");
+})
+$("#spindal a.show.live").click(function() {
+  $("div.spindal.pane.live").toggleClass("active");
+})
+
 // page on-load animation
 setTimeout(function(){
   $("#spindal").toggleClass("active");

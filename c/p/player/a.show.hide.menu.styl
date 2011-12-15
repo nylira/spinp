@@ -1,4 +1,4 @@
-a.spindal
+a.spindal, a.pane
   absolute top x
   transition 1s ease all
   d block
@@ -18,18 +18,21 @@ a.spindal
       left 0
 
   &.hide
+    top 25px
     right 0
-    bg b50
-    border-radius 2px 0 0 2px
     z-index 10
-    w 41px
-    h 60px
-    o 0
+    w 25px
+    h 49px
+    opacity 0
     &:hover, &:focus
-      bg b80
+      opacity .80
     &:active
-      bg b90
+      opacity .90
 
-header.artist:hover
-  a.spindal.hide
-    o 1
+header.artist:hover, .spindal.pane:hover
+  a.spindal.hide, a.pane.hide
+    opacity .40
+    &:hover, &:focus
+      opacity .80
+    &:active
+      opacity .90
