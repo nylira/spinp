@@ -83,12 +83,26 @@
 
   ul.thead
     bg url(../i/cp/songs-th.png) top left no-repeat
-    d block
     lhh 26px
+    relative()
     li
-      display table-cell
+      float left
       ta center
       c transparent
+      &.add-song
+        absolute top 0 right 0
+        min-width 40px
+        bgp -610px 0
+        a.add-song
+          d block
+          h 26px
+          w 40px
+          bg url(../i/cp/song-add.png) no-repeat
+          hide-text()
+          &:hover, &:focus
+            bgp 0 -26px
+          &:active, &.active
+            bgp 0 -52px
 
   #songs
     max-height 270px + 7px
@@ -105,19 +119,14 @@
             cursor text
           &.upload
             min-width 98px
-            bgp -186px 0
           &.download
             min-width 114px
-            bgp -284px 0
           &.lyrics
             min-width 60px
-            bgp -398px 0
           &.fullscreen
             min-width 152px
-            bgp -458px 0
           &.status
             min-width 40px
-            bgp -610px 0
       tbody
         tr
           bg rgb(52,54,56)

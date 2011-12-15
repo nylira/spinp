@@ -293,15 +293,19 @@ ul#cpanel-tabs li.minimize.minimized:active{background-position:-649px -62px}
 #music-panel #albums menu.rollover a.help:hover,#music-panel #albums menu.rollover a.help:focus{background-position:26px -24px}
 #music-panel #albums menu.rollover a.help:active{background-position:26px -48px}
 #music-panel #albums:hover menu.rollover,#music-panel #albums:focus menu.rollover{display:block}
-#music-panel ul.thead{background:url("../i/cp/songs-th.png") top left no-repeat;display:block;height:26px;line-height:26px;}
-#music-panel ul.thead li{display:table-cell;text-align:center;color:transparent}
+#music-panel ul.thead{background:url("../i/cp/songs-th.png") top left no-repeat;height:26px;line-height:26px;position:relative;((null)):0;((null)):0;}
+#music-panel ul.thead li{float:left;text-align:center;color:transparent;}
+#music-panel ul.thead li.add-song{position:absolute;top:0;right:0;min-width:40px;background-position:-610px 0;}
+#music-panel ul.thead li.add-song a.add-song{display:block;height:26px;width:40px;background:url("../i/cp/song-add.png") no-repeat;text-indent:-99999em;overflow:hidden;text-align:left;}
+#music-panel ul.thead li.add-song a.add-song:hover,#music-panel ul.thead li.add-song a.add-song:focus{background-position:0 -26px}
+#music-panel ul.thead li.add-song a.add-song:active,#music-panel ul.thead li.add-song a.add-song.active{background-position:0 -52px}
 #music-panel #songs{max-height:277px;overflow:hidden;overflow-x:hidden;overflow-y:scroll;position:relative;((null)):0;((null)):0;z-index:0;}
 #music-panel #songs table tr th.name,#music-panel #songs table tr td.name{max-width:186px;cursor:text}
-#music-panel #songs table tr th.upload,#music-panel #songs table tr td.upload{min-width:98px;background-position:-186px 0}
-#music-panel #songs table tr th.download,#music-panel #songs table tr td.download{min-width:114px;background-position:-284px 0}
-#music-panel #songs table tr th.lyrics,#music-panel #songs table tr td.lyrics{min-width:60px;background-position:-398px 0}
-#music-panel #songs table tr th.fullscreen,#music-panel #songs table tr td.fullscreen{min-width:152px;background-position:-458px 0}
-#music-panel #songs table tr th.status,#music-panel #songs table tr td.status{min-width:40px;background-position:-610px 0}
+#music-panel #songs table tr th.upload,#music-panel #songs table tr td.upload{min-width:98px}
+#music-panel #songs table tr th.download,#music-panel #songs table tr td.download{min-width:114px}
+#music-panel #songs table tr th.lyrics,#music-panel #songs table tr td.lyrics{min-width:60px}
+#music-panel #songs table tr th.fullscreen,#music-panel #songs table tr td.fullscreen{min-width:152px}
+#music-panel #songs table tr th.status,#music-panel #songs table tr td.status{min-width:40px}
 #music-panel #songs table tbody tr{background:#343638;}
 #music-panel #songs table tbody tr:nth-of-type(even){background:#3e4042}
 #music-panel #songs table tbody tr td .light{margin:6px 3px 9px}
